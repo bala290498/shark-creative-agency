@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'About Us | Shark Creative Agency',
     description: 'Learn about our mission, values, and the talented team behind Shark Creative Agency.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.png'],
   },
 }
 

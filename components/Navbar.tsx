@@ -36,10 +36,16 @@ export default function Navbar() {
             <Link href="/about" className="text-gray-700 hover:text-tiger-orange transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0">
               About Us
             </Link>
+            <Link href="/blog" className="text-gray-700 hover:text-tiger-orange transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0">
+              Blog
+            </Link>
             <Link href="/careers" className="text-gray-700 hover:text-tiger-orange transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0">
               Careers
             </Link>
-            <Link href="/contact" className="btn-primary flex-1 text-center min-w-0">
+            <Link href="/internship" className="text-gray-700 hover:text-tiger-orange transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0">
+              Internship
+            </Link>
+            <Link href="/contact" className="btn-primary whitespace-nowrap text-center px-4 md:px-6 flex-shrink-0">
               Contact Us
             </Link>
           </div>
@@ -75,8 +81,14 @@ export default function Navbar() {
             <Link href="/about" className="block text-gray-700 hover:text-tiger-orange text-center" onClick={() => setIsOpen(false)}>
               About Us
             </Link>
+            <Link href="/blog" className="block text-gray-700 hover:text-tiger-orange text-center" onClick={() => setIsOpen(false)}>
+              Blog
+            </Link>
             <Link href="/careers" className="block text-gray-700 hover:text-tiger-orange text-center" onClick={() => setIsOpen(false)}>
               Careers
+            </Link>
+            <Link href="/internship" className="block text-gray-700 hover:text-tiger-orange text-center" onClick={() => setIsOpen(false)}>
+              Internship
             </Link>
             <div className="flex justify-center pt-2">
               <Link href="/contact" className="btn-primary w-full text-center" onClick={() => setIsOpen(false)}>

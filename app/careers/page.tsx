@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Careers | Shark Creative Agency',
     description: 'Join our team and help shape the future of creative digital solutions.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.png'],
   },
 }
 
