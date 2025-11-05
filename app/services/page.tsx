@@ -57,10 +57,10 @@ export default function Services() {
       <section className="bg-white text-gray-900 section-padding">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 px-4">
               Our Services
             </h1>
-            <p className="text-xl md:text-2xl text-gray-700">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 px-4">
               Comprehensive creative solutions to elevate your brand and drive business growth
             </p>
           </div>
@@ -74,13 +74,13 @@ export default function Services() {
             {services.map((service, index) => {
               const IconComponent = service.icon
               return (
-              <div key={index} className="p-8 rounded-lg border border-gray-200 hover:shadow-xl transition-shadow">
-                <IconComponent className="w-12 h-12 text-tiger-orange mb-4" />
-                <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
-                <p className="text-gray-600 mb-4">{service.description}</p>
+              <div key={index} className="p-4 sm:p-6 md:p-8 rounded-lg border border-gray-200 hover:shadow-xl transition-shadow">
+                <IconComponent className="w-10 h-10 sm:w-12 sm:h-12 text-tiger-orange mb-3 md:mb-4" />
+                <h3 className="text-xl sm:text-2xl font-semibold mb-2 md:mb-3">{service.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600 mb-3 md:mb-4">{service.description}</p>
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-gray-700">
+                    <li key={idx} className="flex items-center text-sm sm:text-base text-gray-700">
                       <span className="text-tiger-orange mr-2">✓</span>
                       {feature}
                     </li>
@@ -96,19 +96,19 @@ export default function Services() {
       <section className="bg-white section-padding">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Our Process</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Our Process</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               We follow a proven process to ensure exceptional results
             </p>
           </div>
           
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div className="text-center">
               <div className="bg-tiger-orange text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 1
               </div>
-              <h3 className="text-xl font-semibold mb-2">Discovery</h3>
-              <p className="text-gray-600">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">Discovery</h3>
+              <p className="text-sm sm:text-base text-gray-600">
                 We learn about your business, goals, and target audience to create a tailored strategy.
               </p>
             </div>
@@ -149,8 +149,8 @@ export default function Services() {
       {/* CTA Section */}
       <section className="bg-white section-padding">
         <div className="container-custom text-center">
-          <h2 className="text-4xl font-bold mb-4 text-gray-900">Ready to Get Started?</h2>
-          <p className="text-xl mb-8 text-gray-700 max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-900">Ready to Get Started?</h2>
+          <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 max-w-2xl mx-auto px-4">
             Let's discuss how we can help transform your brand and achieve your business goals.
           </p>
           <div className="flex justify-center">

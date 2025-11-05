@@ -109,10 +109,10 @@ export default function Careers() {
       <section className="bg-white text-gray-900 section-padding">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 px-4">
               Join Our Team
             </h1>
-            <p className="text-xl md:text-2xl text-gray-700">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 px-4">
               Build your career with a team of creative professionals passionate about excellence
             </p>
           </div>
@@ -123,8 +123,8 @@ export default function Careers() {
       <section className="section-padding">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Why Work With Us?</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Why Work With Us?</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               We're building a culture of creativity, innovation, and growth
             </p>
           </div>
@@ -133,10 +133,10 @@ export default function Careers() {
             {benefits.map((benefit, index) => {
               const IconComponent = benefit.icon
               return (
-              <div key={index} className="p-6 rounded-lg border border-gray-200">
-                <IconComponent className="w-10 h-10 text-tiger-orange mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
-                <p className="text-gray-600">{benefit.description}</p>
+              <div key={index} className="p-4 sm:p-6 rounded-lg border border-gray-200">
+                <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-tiger-orange mb-3 md:mb-4" />
+                <h3 className="text-lg sm:text-xl font-semibold mb-2">{benefit.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600">{benefit.description}</p>
               </div>
             )})}
           </div>
@@ -147,18 +147,18 @@ export default function Careers() {
       <section className="bg-white section-padding">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Open Positions</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Open Positions</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               Explore current opportunities to join our team
             </p>
           </div>
           
           <div className="space-y-6 max-w-4xl mx-auto">
             {openPositions.map((position, index) => (
-              <div key={index} className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+              <div key={index} className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3 md:mb-4">
                   <div>
-                    <h3 className="text-2xl font-semibold mb-2">{position.title}</h3>
+                    <h3 className="text-xl sm:text-2xl font-semibold mb-2">{position.title}</h3>
                     <div className="flex flex-wrap gap-4 text-sm text-gray-600">
                       <span className="flex items-center">
                         <MapPin className="w-4 h-4 mr-2 text-tiger-orange" />
@@ -176,11 +176,11 @@ export default function Careers() {
                   </div>
                 </div>
                 
-                <p className="text-gray-700 mb-4">{position.description}</p>
+                <p className="text-sm sm:text-base text-gray-700 mb-3 md:mb-4">{position.description}</p>
                 
-                <div className="mb-4">
-                  <h4 className="font-semibold mb-2">Requirements:</h4>
-                  <ul className="list-disc list-inside space-y-1 text-gray-700">
+                <div className="mb-3 md:mb-4">
+                  <h4 className="font-semibold mb-2 text-sm sm:text-base">Requirements:</h4>
+                  <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700">
                     {position.requirements.map((req, idx) => (
                       <li key={idx}>{req}</li>
                     ))}
@@ -204,16 +204,16 @@ export default function Careers() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">Our Culture</h2>
-              <p className="text-xl text-gray-600">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Our Culture</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 px-4">
                 We believe in creating an environment where everyone can thrive
               </p>
             </div>
             
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-2xl font-semibold mb-4">Collaboration</h3>
-                <p className="text-gray-700">
+                <h3 className="text-xl sm:text-2xl font-semibold mb-3 md:mb-4">Collaboration</h3>
+                <p className="text-sm sm:text-base text-gray-700">
                   We work together as a team, sharing ideas, supporting each other, and celebrating successes together. Collaboration is at the heart of everything we do.
                 </p>
               </div>
@@ -246,8 +246,8 @@ export default function Careers() {
       {/* CTA Section */}
       <section className="bg-white section-padding">
         <div className="container-custom text-center">
-          <h2 className="text-4xl font-bold mb-4 text-gray-900">Don't See a Position That Fits?</h2>
-          <p className="text-xl mb-8 text-gray-700 max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-900">Don't See a Position That Fits?</h2>
+          <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 max-w-2xl mx-auto px-4">
             We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.
           </p>
           <div className="flex justify-center">

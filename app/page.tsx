@@ -30,7 +30,7 @@ export default function Home() {
                   Shark Creative Agency
                 </h1>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 min-h-[3rem] md:min-h-[4rem]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6 min-h-[3rem] md:min-h-[4rem]">
                 <TextType 
                   text={[
                     "Transform Your Brand with Creative Excellence",
@@ -45,7 +45,7 @@ export default function Home() {
                   cursorClassName="text-tiger-orange"
                 />
               </h2>
-              <p className="text-xl md:text-2xl mb-8 text-gray-700">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-gray-700">
                 We're a full-service creative agency specializing in digital solutions, branding, and marketing that drive results.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 max-w-md">
@@ -130,8 +130,8 @@ export default function Home() {
       <section className="section-padding">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Our Services</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Our Services</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               Comprehensive solutions to elevate your brand and drive business growth
             </p>
           </div>
@@ -139,8 +139,8 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
               <Palette className="w-10 h-10 text-tiger-orange mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Brand Identity</h3>
-              <p className="text-gray-600">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">Brand Identity</h3>
+              <p className="text-sm sm:text-base text-gray-600">
                 Create a memorable brand that resonates with your audience and stands out in the market.
               </p>
             </div>
@@ -182,8 +182,8 @@ export default function Home() {
       <section className="bg-white section-padding">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Why Choose Shark Creative Agency?</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Why Choose Shark Creative Agency?</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               We combine creativity with strategy to deliver exceptional results
             </p>
           </div>
@@ -191,8 +191,8 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <Rocket className="w-12 h-12 text-tiger-orange mb-4 mx-auto" />
-              <h3 className="text-2xl font-semibold mb-2">Innovative Solutions</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl sm:text-2xl font-semibold mb-2">Innovative Solutions</h3>
+              <p className="text-sm sm:text-base text-gray-600">
                 We stay ahead of trends and use cutting-edge technology to deliver innovative solutions that set you apart.
               </p>
             </div>
@@ -222,8 +222,8 @@ export default function Home() {
       {/* CTA Section */}
       <section className="bg-white section-padding">
         <div className="container-custom text-center">
-          <h2 className="text-4xl font-bold mb-4 text-gray-900">Ready to Transform Your Brand?</h2>
-          <p className="text-xl mb-8 text-gray-700 max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-900">Ready to Transform Your Brand?</h2>
+          <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 max-w-2xl mx-auto px-4">
             Let's work together to create something amazing. Get in touch with us today.
           </p>
           <div className="flex justify-center">
