@@ -10,6 +10,34 @@
   body {
     @apply bg-white text-gray-900;
   }
+  
+  a {
+    @apply no-underline;
+    color: inherit;
+  }
+  
+  a:visited {
+    color: inherit;
+  }
+  
+  a:active {
+    color: inherit;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+  
+  *:focus-visible {
+    outline: 2px solid #ff6b35;
+    outline-offset: 2px;
+  }
 }
 
 @layer components {

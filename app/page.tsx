@@ -43,36 +43,36 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Side - Text Content */}
             <div>
-              <div className="mb-4">
-                <h1 className="text-4xl md:text-5xl font-bold text-tiger-orange mb-2">
-                  Shark Creative Agency
-                </h1>
-              </div>
+            <div className="mb-4">
+              <h1 className="text-4xl md:text-5xl font-bold text-tiger-orange mb-2">
+                Shark Creative Agency
+              </h1>
+            </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6 min-h-[3rem] md:min-h-[4rem]">
-                <TextType 
-                  text={[
-                    "Transform Your Brand with Creative Excellence",
-                    "Innovative Digital Solutions for Your Business",
-                    "Elevate Your Brand with Expert Design"
-                  ]}
-                  typingSpeed={75}
-                  pauseDuration={1500}
-                  showCursor={true}
-                  cursorCharacter="|"
-                  className="text-gray-900"
-                  cursorClassName="text-tiger-orange"
-                />
-              </h2>
+              <TextType 
+                text={[
+                  "Transform Your Brand with Creative Excellence",
+                  "Innovative Digital Solutions for Your Business",
+                  "Elevate Your Brand with Expert Design"
+                ]}
+                typingSpeed={75}
+                pauseDuration={1500}
+                showCursor={true}
+                cursorCharacter="|"
+                className="text-gray-900"
+                cursorClassName="text-tiger-orange"
+              />
+            </h2>
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-gray-700">
-                We're a full-service creative agency specializing in digital solutions, branding, and marketing that drive results.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 max-w-md">
-                <Link href="/services" className="btn-primary text-center w-full sm:w-auto">
-                  Our Services
-                </Link>
-                <Link href="/contact" className="btn-secondary text-center w-full sm:w-auto">
-                  Get Started
-                </Link>
+              We're a full-service creative agency specializing in digital solutions, branding, and marketing that drive results.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 max-w-md">
+              <Link href="/services" className="btn-primary text-center w-full sm:w-auto">
+                Our Services
+              </Link>
+              <Link href="/contact" className="btn-secondary text-center w-full sm:w-auto">
+                Get Started
+              </Link>
               </div>
             </div>
 
