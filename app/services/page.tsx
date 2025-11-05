@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { Palette, Laptop, Smartphone, Search, BarChart3, Video } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Services',
@@ -13,37 +14,37 @@ export const metadata: Metadata = {
 export default function Services() {
   const services = [
     {
-      icon: '🎨',
+      icon: Palette,
       title: 'Brand Identity & Design',
       description: 'Create a cohesive brand identity that tells your story and connects with your audience. From logo design to brand guidelines, we help you establish a strong visual presence.',
       features: ['Logo Design', 'Brand Guidelines', 'Visual Identity', 'Brand Strategy']
     },
     {
-      icon: '💻',
+      icon: Laptop,
       title: 'Web Design & Development',
       description: 'Modern, responsive websites that look great on all devices and provide an exceptional user experience. We build sites that convert visitors into customers.',
       features: ['Responsive Design', 'E-commerce Solutions', 'CMS Integration', 'Performance Optimization']
     },
     {
-      icon: '📱',
+      icon: Smartphone,
       title: 'Digital Marketing',
       description: 'Strategic marketing campaigns that increase your online visibility, engage your audience, and drive qualified leads to your business.',
       features: ['Social Media Marketing', 'Email Campaigns', 'Content Marketing', 'PPC Advertising']
     },
     {
-      icon: '🔍',
+      icon: Search,
       title: 'SEO Optimization',
       description: 'Improve your search engine rankings and drive organic traffic with our comprehensive SEO strategies. We help you rank higher and attract more customers.',
       features: ['Keyword Research', 'On-Page SEO', 'Technical SEO', 'Link Building']
     },
     {
-      icon: '📊',
+      icon: BarChart3,
       title: 'Analytics & Reporting',
       description: 'Track your performance with detailed analytics and insights. We provide comprehensive reporting to help you understand what\'s working and optimize your strategy.',
       features: ['Performance Tracking', 'Custom Dashboards', 'Monthly Reports', 'Data Analysis']
     },
     {
-      icon: '🎬',
+      icon: Video,
       title: 'Content Creation',
       description: 'Engaging content that captures attention and drives action. From blog posts to video production, we create content that resonates with your audience.',
       features: ['Copywriting', 'Video Production', 'Photography', 'Graphic Design']
@@ -70,9 +71,11 @@ export default function Services() {
       <section className="section-padding">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
+            {services.map((service, index) => {
+              const IconComponent = service.icon
+              return (
               <div key={index} className="p-8 rounded-lg border border-gray-200 hover:shadow-xl transition-shadow">
-                <div className="text-5xl mb-4">{service.icon}</div>
+                <IconComponent className="w-12 h-12 text-tiger-orange mb-4" />
                 <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
                 <p className="text-gray-600 mb-4">{service.description}</p>
                 <ul className="space-y-2">
@@ -84,7 +87,7 @@ export default function Services() {
                   ))}
                 </ul>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { User } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'About Us',
@@ -110,8 +111,8 @@ export default function About() {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-gray-200 w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center text-4xl">
-                👤
+              <div className="bg-gray-200 w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <User className="w-16 h-16 text-gray-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Sarah Johnson</h3>
               <p className="text-tiger-orange mb-2">Creative Director</p>
@@ -121,8 +122,8 @@ export default function About() {
             </div>
             
             <div className="text-center">
-              <div className="bg-gray-200 w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center text-4xl">
-                👤
+              <div className="bg-gray-200 w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <User className="w-16 h-16 text-gray-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Michael Chen</h3>
               <p className="text-tiger-orange mb-2">Technical Lead</p>
@@ -132,8 +133,8 @@ export default function About() {
             </div>
             
             <div className="text-center">
-              <div className="bg-gray-200 w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center text-4xl">
-                👤
+              <div className="bg-gray-200 w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <User className="w-16 h-16 text-gray-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Emily Rodriguez</h3>
               <p className="text-tiger-orange mb-2">Marketing Strategist</p>

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { DollarSign, Building2, Umbrella, Home, BookOpen, Zap, MapPin, Globe, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Careers',
@@ -71,32 +72,32 @@ export default function Careers() {
 
   const benefits = [
     {
-      icon: '💰',
+      icon: DollarSign,
       title: 'Competitive Salary',
       description: 'We offer competitive compensation packages that reflect your skills and experience.'
     },
     {
-      icon: '🏥',
+      icon: Building2,
       title: 'Health Benefits',
       description: 'Comprehensive health, dental, and vision insurance for you and your family.'
     },
     {
-      icon: '🏖️',
+      icon: Umbrella,
       title: 'Flexible Time Off',
       description: 'Take time off when you need it with our flexible vacation and sick leave policy.'
     },
     {
-      icon: '🏠',
+      icon: Home,
       title: 'Remote Work',
       description: 'Work from anywhere with our flexible remote and hybrid work options.'
     },
     {
-      icon: '📚',
+      icon: BookOpen,
       title: 'Professional Development',
       description: 'We invest in your growth with training, conferences, and learning opportunities.'
     },
     {
-      icon: '⚡',
+      icon: Zap,
       title: 'Modern Tools',
       description: 'Access to the latest software, tools, and technology to do your best work.'
     }
@@ -129,13 +130,15 @@ export default function Careers() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {benefits.map((benefit, index) => (
+            {benefits.map((benefit, index) => {
+              const IconComponent = benefit.icon
+              return (
               <div key={index} className="p-6 rounded-lg border border-gray-200">
-                <div className="text-4xl mb-4">{benefit.icon}</div>
+                <IconComponent className="w-10 h-10 text-tiger-orange mb-4" />
                 <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
                 <p className="text-gray-600">{benefit.description}</p>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </section>
@@ -158,15 +161,15 @@ export default function Careers() {
                     <h3 className="text-2xl font-semibold mb-2">{position.title}</h3>
                     <div className="flex flex-wrap gap-4 text-sm text-gray-600">
                       <span className="flex items-center">
-                        <span className="mr-2">📍</span>
+                        <MapPin className="w-4 h-4 mr-2 text-tiger-orange" />
                         {position.department}
                       </span>
                       <span className="flex items-center">
-                        <span className="mr-2">🌍</span>
+                        <Globe className="w-4 h-4 mr-2 text-tiger-orange" />
                         {position.location}
                       </span>
                       <span className="flex items-center">
-                        <span className="mr-2">⏰</span>
+                        <Clock className="w-4 h-4 mr-2 text-tiger-orange" />
                         {position.type}
                       </span>
                     </div>

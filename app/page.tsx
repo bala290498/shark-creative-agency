@@ -4,6 +4,7 @@ import Image from 'next/image'
 import TextType from '@/components/TextType'
 import GrowthGraphCard from '@/components/GrowthGraphCard'
 import LineGraphCard from '@/components/LineGraphCard'
+import { Palette, Laptop, Smartphone, Search, Rocket, Target, Handshake } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -136,7 +137,7 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">🎨</div>
+              <Palette className="w-10 h-10 text-tiger-orange mb-4" />
               <h3 className="text-xl font-semibold mb-2">Brand Identity</h3>
               <p className="text-gray-600">
                 Create a memorable brand that resonates with your audience and stands out in the market.
@@ -144,7 +145,7 @@ export default function Home() {
             </div>
             
             <div className="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">💻</div>
+              <Laptop className="w-10 h-10 text-tiger-orange mb-4" />
               <h3 className="text-xl font-semibold mb-2">Web Design</h3>
               <p className="text-gray-600">
                 Modern, responsive websites that convert visitors into customers and drive business growth.
@@ -152,7 +153,7 @@ export default function Home() {
             </div>
             
             <div className="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">📱</div>
+              <Smartphone className="w-10 h-10 text-tiger-orange mb-4" />
               <h3 className="text-xl font-semibold mb-2">Digital Marketing</h3>
               <p className="text-gray-600">
                 Strategic marketing campaigns that increase visibility and generate qualified leads.
@@ -160,7 +161,7 @@ export default function Home() {
             </div>
             
             <div className="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">🔍</div>
+              <Search className="w-10 h-10 text-tiger-orange mb-4" />
               <h3 className="text-xl font-semibold mb-2">SEO Optimization</h3>
               <p className="text-gray-600">
                 Improve your search engine rankings and drive organic traffic to your website.
@@ -188,7 +189,7 @@ export default function Home() {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-5xl mb-4">🚀</div>
+              <Rocket className="w-12 h-12 text-tiger-orange mb-4 mx-auto" />
               <h3 className="text-2xl font-semibold mb-2">Innovative Solutions</h3>
               <p className="text-gray-600">
                 We stay ahead of trends and use cutting-edge technology to deliver innovative solutions that set you apart.
@@ -196,7 +197,7 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <div className="text-5xl mb-4">🎯</div>
+              <Target className="w-12 h-12 text-tiger-orange mb-4 mx-auto" />
               <h3 className="text-2xl font-semibold mb-2">Results-Driven</h3>
               <p className="text-gray-600">
                 Every project is designed with your business goals in mind, ensuring measurable results and ROI.
@@ -204,7 +205,7 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <div className="text-5xl mb-4">🤝</div>
+              <Handshake className="w-12 h-12 text-tiger-orange mb-4 mx-auto" />
               <h3 className="text-2xl font-semibold mb-2">Collaborative Approach</h3>
               <p className="text-gray-600">
                 We work closely with you throughout the process, ensuring your vision comes to life exactly as you imagined.
