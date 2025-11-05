@@ -5,7 +5,7 @@ author: "Emily Rodriguez"
 date: "2024-12-05"
 readTime: "6 min read"
 category: "Marketing"
-image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop"
 ---
 
 Digital marketing has become essential for businesses of all sizes. With the right strategies, you can reach your target audience, build brand awareness, and drive conversions. Let's explore some proven digital marketing strategies that deliver real results.
