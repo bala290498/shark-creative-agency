@@ -4,6 +4,7 @@ import Image from 'next/image'
 import TextType from '@/components/TextType'
 import GrowthGraphCard from '@/components/GrowthGraphCard'
 import LineGraphCard from '@/components/LineGraphCard'
+import { Testimonials } from '@/components/ui/testimonials'
 import { Palette, Laptop, Smartphone, Search, Rocket, Target, Handshake } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -214,6 +215,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <Testimonials />
 
       {/* CTA Section */}
       <section className="bg-white section-padding">
