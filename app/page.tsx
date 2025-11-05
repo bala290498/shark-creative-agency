@@ -11,8 +11,26 @@ export const metadata: Metadata = {
   title: 'Home',
   description: 'Shark Creative Agency delivers cutting-edge digital solutions including web design, branding, marketing, and creative services. Transform your brand with our expert team.',
   openGraph: {
+    type: 'website',
+    url: 'https://sharkcreativeagency.com',
     title: 'Shark Creative Agency - Innovative Digital Solutions',
     description: 'Transform your brand with cutting-edge digital solutions from Shark Creative Agency.',
+    siteName: 'Shark Creative Agency',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Shark Creative Agency - Innovative Digital Solutions',
+      },
+    ],
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Shark Creative Agency - Innovative Digital Solutions',
+    description: 'Transform your brand with cutting-edge digital solutions from Shark Creative Agency.',
+    images: ['/og-image.jpg'],
   },
 }
 

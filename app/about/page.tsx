@@ -6,8 +6,26 @@ export const metadata: Metadata = {
   title: 'About Us',
   description: 'Learn about Shark Creative Agency - a full-service creative agency specializing in digital solutions, branding, and marketing. Discover our mission, values, and talented team.',
   openGraph: {
+    type: 'website',
+    url: 'https://sharkcreativeagency.com/about',
     title: 'About Us | Shark Creative Agency',
     description: 'Learn about our mission, values, and the talented team behind Shark Creative Agency.',
+    siteName: 'Shark Creative Agency',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'About Shark Creative Agency',
+      },
+    ],
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Us | Shark Creative Agency',
+    description: 'Learn about our mission, values, and the talented team behind Shark Creative Agency.',
+    images: ['/og-image.jpg'],
   },
 }
 

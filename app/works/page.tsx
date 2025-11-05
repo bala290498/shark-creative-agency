@@ -7,8 +7,26 @@ export const metadata: Metadata = {
   title: 'Our Works',
   description: 'Explore our portfolio of creative projects, digital solutions, and successful campaigns. See how Shark Creative Agency has helped businesses transform their brands.',
   openGraph: {
+    type: 'website',
+    url: 'https://sharkcreativeagency.com/works',
     title: 'Our Works | Shark Creative Agency',
     description: 'Explore our portfolio of creative projects and digital solutions.',
+    siteName: 'Shark Creative Agency',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Our Works - Shark Creative Agency Portfolio',
+      },
+    ],
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Our Works | Shark Creative Agency',
+    description: 'Explore our portfolio of creative projects and digital solutions.',
+    images: ['/og-image.jpg'],
   },
 }
 

@@ -6,8 +6,26 @@ export const metadata: Metadata = {
   title: 'Services',
   description: 'Comprehensive creative services including web design, branding, digital marketing, SEO, social media management, and content creation. Transform your brand with Shark Creative Agency.',
   openGraph: {
+    type: 'website',
+    url: 'https://sharkcreativeagency.com/services',
     title: 'Services | Shark Creative Agency',
     description: 'Comprehensive creative services to elevate your brand and drive business growth.',
+    siteName: 'Shark Creative Agency',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Services - Shark Creative Agency',
+      },
+    ],
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Services | Shark Creative Agency',
+    description: 'Comprehensive creative services to elevate your brand and drive business growth.',
+    images: ['/og-image.jpg'],
   },
 }
 

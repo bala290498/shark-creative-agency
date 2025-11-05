@@ -5,8 +5,26 @@ export const metadata: Metadata = {
   title: 'Contact Us',
   description: 'Get in touch with Shark Creative Agency. Contact us for inquiries about our services, partnerships, or to start your next project.',
   openGraph: {
+    type: 'website',
+    url: 'https://sharkcreativeagency.com/contact',
     title: 'Contact Us | Shark Creative Agency',
     description: 'Get in touch with us to discuss your project and how we can help.',
+    siteName: 'Shark Creative Agency',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Contact - Shark Creative Agency',
+      },
+    ],
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Us | Shark Creative Agency',
+    description: 'Get in touch with us to discuss your project and how we can help.',
+    images: ['/og-image.jpg'],
   },
 }
 

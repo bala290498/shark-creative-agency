@@ -5,8 +5,26 @@ export const metadata: Metadata = {
   title: 'Careers',
   description: 'Join Shark Creative Agency and build your career with a team of creative professionals. Explore open positions in design, development, marketing, and more.',
   openGraph: {
+    type: 'website',
+    url: 'https://sharkcreativeagency.com/careers',
     title: 'Careers | Shark Creative Agency',
     description: 'Join our team and help shape the future of creative digital solutions.',
+    siteName: 'Shark Creative Agency',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Careers - Shark Creative Agency',
+      },
+    ],
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Careers | Shark Creative Agency',
+    description: 'Join our team and help shape the future of creative digital solutions.',
+    images: ['/og-image.jpg'],
   },
 }
 
