@@ -60,8 +60,8 @@ export default function Contact() {
                   <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-tiger-orange mr-3 sm:mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-base sm:text-lg mb-1">Email</h3>
-                    <a href="mailto:info@sharkcreativeagency.com" className="text-sm sm:text-base text-tiger-orange hover:underline break-all">
-                      info@sharkcreativeagency.com
+                    <a href="mailto:contact@sharkcreativeagency.com" className="text-sm sm:text-base text-tiger-orange hover:underline break-all">
+                      contact@sharkcreativeagency.com
                     </a>
                   </div>
                 </div>
@@ -70,8 +70,8 @@ export default function Contact() {
                   <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-tiger-orange mr-3 sm:mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-base sm:text-lg mb-1">Phone</h3>
-                    <a href="tel:+15551234567" className="text-sm sm:text-base text-tiger-orange hover:underline">
-                      +1 (555) 123-4567
+                    <a href="tel:+917010584543" className="text-sm sm:text-base text-tiger-orange hover:underline">
+                      +91 7010584543
                     </a>
                   </div>
                 </div>

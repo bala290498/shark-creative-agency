@@ -54,8 +54,16 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-600">
-              <li>Email: info@sharkcreativeagency.com</li>
-              <li>Phone: +1 (555) 123-4567</li>
+              <li>
+                <a href="mailto:contact@sharkcreativeagency.com" className="hover:text-tiger-orange transition-colors">
+                  contact@sharkcreativeagency.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+917010584543" className="hover:text-tiger-orange transition-colors">
+                  +91 7010584543
+                </a>
+              </li>
               <li className="flex space-x-4 mt-4">
                 <a href="#" className="hover:text-tiger-orange transition-colors" aria-label="Facebook">Facebook</a>
                 <a href="#" className="hover:text-tiger-orange transition-colors" aria-label="Twitter">Twitter</a>
