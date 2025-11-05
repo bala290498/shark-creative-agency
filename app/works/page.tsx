@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'Shark Creative Agency',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Our Works - Shark Creative Agency Portfolio',

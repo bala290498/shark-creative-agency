@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description: 'Transform your brand with cutting-edge digital solutions from Shark Creative Agency.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Shark Creative Agency',
