@@ -77,8 +77,56 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Side - Blank */}
-            <div></div>
+            {/* Right Side - Blob Container with Hero Image */}
+            <div className="relative h-[500px] md:h-[600px] hidden md:block">
+              {/* Blob Container */}
+              <div className="absolute top-0 right-0 w-full h-full z-10">
+                <div 
+                  className="w-full h-full relative blob-shape overflow-hidden"
+                  style={{
+                    background: 'linear-gradient(135deg, #ff6b35 0%, #ff8c5a 100%)',
+                  }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-tiger-orange to-tiger-orange-600 opacity-90 blob-shape"></div>
+                  {/* Hero Image inside blob - clipped to blob shape */}
+                  <div className="absolute inset-0 blob-shape overflow-hidden">
+                    <Image
+                      src="/hero.png"
+                      alt="Hero"
+                      fill
+                      className="object-cover"
+                      priority
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile: Show blob with hero image */}
+            <div className="relative h-[400px] md:hidden">
+              <div className="relative w-full h-full rounded-lg">
+                <div 
+                  className="w-full h-full relative blob-shape overflow-hidden"
+                  style={{
+                    background: 'linear-gradient(135deg, #ff6b35 0%, #ff8c5a 100%)',
+                  }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-tiger-orange to-tiger-orange-600 opacity-90 blob-shape"></div>
+                  {/* Hero Image inside blob - clipped to blob shape */}
+                  <div className="absolute inset-0 blob-shape overflow-hidden">
+                    <Image
+                      src="/hero.png"
+                      alt="Hero"
+                      fill
+                      className="object-cover"
+                      priority
+                      sizes="100vw"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
