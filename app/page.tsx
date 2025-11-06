@@ -77,18 +77,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Side - Hero Image */}
-            <div className="relative h-[500px] md:h-[600px]">
-              <div className="relative w-full h-full rounded-lg overflow-hidden shadow-lg">
-                <Image
-                  src="/hero.png"
-                  alt="Hero"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
-            </div>
+            {/* Right Side - Blank */}
+            <div></div>
           </div>
         </div>
       </section>
