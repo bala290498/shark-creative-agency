@@ -10,8 +10,8 @@ export default function Navbar() {
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50 w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20">
-        <div className="flex flex-col md:flex-row justify-between items-center py-4 md:py-0 md:h-16 relative">
-          <Link href="/" className="flex items-center mb-4 md:mb-0 md:flex-shrink-0">
+        <div className="flex items-center justify-between py-4 md:py-0 md:h-16">
+          <Link href="/" className="flex items-center md:flex-shrink-0">
             <Image 
               src="/logo.png" 
               alt="Shark Creative Agency" 
@@ -52,7 +52,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-700 absolute top-4 right-4"
+            className="md:hidden text-gray-700 p-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-tiger-orange transition"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
