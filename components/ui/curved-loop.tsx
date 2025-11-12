@@ -129,7 +129,7 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
       onPointerLeave={endDrag}
     >
       <svg
-        className="select-none w-full overflow-visible block text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase leading-none"
+        className={`select-none w-full overflow-visible block text-4xl md:text-6xl lg:text-7xl xl:text-8xl ${className ?? ''}`}
         viewBox="0 0 1440 120"
         style={{ height: 'auto', display: 'block' }}
       >
@@ -140,7 +140,7 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
           <path ref={pathRef} id={pathId} d={pathD} fill="none" stroke="transparent" />
         </defs>
         {ready && (
-          <text xmlSpace="preserve" dominantBaseline="middle" className={className ?? ''} style={{ fill: '#ffffff' }}>
+          <text xmlSpace="preserve" dominantBaseline="middle" className="font-bold uppercase leading-none" style={{ fill: '#ffffff' }}>
             <textPath ref={textPathRef} href={`#${pathId}`} startOffset={offset + 'px'} xmlSpace="preserve">
               {totalText}
             </textPath>
