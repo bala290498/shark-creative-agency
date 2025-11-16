@@ -13,11 +13,11 @@ export default function LineGraphCard() {
           <div className="flex flex-col gap-1">
             <div className="flex justify-between items-center">
               <span className="text-[10px] text-gray-600">Growth</span>
-              <span className="text-[10px] font-semibold text-tiger-orange">{growthPercentage}%</span>
+              <span className="text-[10px] font-semibold text-secondary-500">{growthPercentage}%</span>
             </div>
             <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
               <div 
-                className="h-full bg-tiger-orange rounded-full transition-all duration-500"
+                className="h-full bg-secondary-500 rounded-full transition-all duration-500"
                 style={{ width: `${growthPercentage}%` }}
               />
             </div>

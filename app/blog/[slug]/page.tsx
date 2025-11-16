@@ -94,7 +94,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
         <div className="container-custom py-8 md:py-12">
           <Link 
             href="/blog" 
-            className="inline-flex items-center gap-2 text-tiger-orange hover:text-tiger-orange-600 mb-6 transition-colors"
+            className="inline-flex items-center gap-2 text-secondary-500 hover:text-secondary-600 mb-6 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             <span className="text-sm sm:text-base">Back to Blog</span>
@@ -102,7 +102,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
           
           <div className="max-w-3xl mx-auto">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs sm:text-sm font-medium text-tiger-orange bg-tiger-orange/10 px-3 py-1 rounded">
+              <span className="text-xs sm:text-sm font-medium text-secondary-500 bg-secondary-500/10 px-3 py-1 rounded">
                 {post.category}
               </span>
               <div className="flex items-center gap-1 text-xs sm:text-sm text-gray-500">
@@ -155,17 +155,17 @@ export default function BlogPost({ params }: BlogPostPageProps) {
                   li: ({ children }) => <li className="text-base sm:text-lg">{children}</li>,
                   strong: ({ children }) => <strong className="font-semibold text-gray-900">{children}</strong>,
                   a: ({ href, children }) => (
-                    <a href={href} className="text-tiger-orange hover:text-tiger-orange-600 underline" target="_blank" rel="noopener noreferrer">
+                    <a href={href} className="text-secondary-500 hover:text-secondary-600 underline" target="_blank" rel="noopener noreferrer">
                       {children}
                     </a>
                   ),
                   code: ({ children }) => (
-                    <code className="bg-gray-100 text-tiger-orange px-2 py-1 rounded text-sm font-mono">
+                    <code className="bg-gray-100 text-secondary-500 px-2 py-1 rounded text-sm font-mono">
                       {children}
                     </code>
                   ),
                   blockquote: ({ children }) => (
-                    <blockquote className="border-l-4 border-tiger-orange pl-4 italic text-gray-600 my-4">
+                    <blockquote className="border-l-4 border-secondary-500 pl-4 italic text-gray-600 my-4">
                       {children}
                     </blockquote>
                   ),
@@ -186,7 +186,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
             Check out more insights and tips on our blog.
           </p>
           <div className="flex justify-center">
-            <Link href="/blog" className="btn-primary inline-block w-full sm:w-auto px-12">
+            <Link href="/blog" className="btn-secondary-gradient inline-block w-full sm:w-auto px-12">
               View All Posts
             </Link>
           </div>

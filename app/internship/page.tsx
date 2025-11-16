@@ -157,7 +157,7 @@ export default function Internship() {
               const IconComponent = benefit.icon
               return (
               <div key={index} className="p-4 sm:p-6 rounded-lg border border-gray-200 bg-white hover:shadow-md transition-shadow">
-                <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-tiger-orange mb-3 md:mb-4" />
+                <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-3 md:mb-4" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2">{benefit.title}</h3>
                 <p className="text-sm sm:text-base text-gray-600">{benefit.description}</p>
               </div>
@@ -184,15 +184,15 @@ export default function Internship() {
                     <h3 className="text-xl sm:text-2xl font-semibold mb-2">{position.title}</h3>
                     <div className="flex flex-wrap gap-3 md:gap-4 text-xs sm:text-sm text-gray-600">
                       <span className="flex items-center">
-                        <MapPin className="w-4 h-4 mr-2 text-tiger-orange" />
+                        <MapPin className="w-4 h-4 mr-2 text-secondary-500" />
                         {position.department}
                       </span>
                       <span className="flex items-center">
-                        <Users className="w-4 h-4 mr-2 text-tiger-orange" />
+                        <Users className="w-4 h-4 mr-2 text-secondary-500" />
                         {position.location}
                       </span>
                       <span className="flex items-center">
-                        <Clock className="w-4 h-4 mr-2 text-tiger-orange" />
+                        <Clock className="w-4 h-4 mr-2 text-secondary-500" />
                         {position.duration}
                       </span>
                     </div>
@@ -214,7 +214,7 @@ export default function Internship() {
                   <h4 className="font-semibold mb-2 text-sm sm:text-base">Skills You'll Learn:</h4>
                   <div className="flex flex-wrap gap-2">
                     {position.skills.map((skill, idx) => (
-                      <span key={idx} className="bg-tiger-orange/10 text-tiger-orange px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
+                      <span key={idx} className="bg-secondary-500/10 text-secondary-500 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                         {skill}
                       </span>
                     ))}
@@ -223,7 +223,7 @@ export default function Internship() {
                 
                 <a 
                   href={`mailto:internships@sharkcreativeagency.com?subject=Internship Application for ${position.title}`}
-                  className="btn-primary inline-block w-full sm:w-auto text-center"
+                  className="btn-secondary-gradient inline-block w-full sm:w-auto text-center"
                 >
                   Apply Now
                 </a>
@@ -246,7 +246,7 @@ export default function Internship() {
             
             <div className="grid md:grid-cols-2 gap-6 md:gap-8">
               <div className="bg-white p-6 rounded-lg border border-gray-200">
-                <Calendar className="w-8 h-8 text-tiger-orange mb-4" />
+                <Calendar className="w-8 h-8 text-secondary-500 mb-4" />
                 <h3 className="text-xl sm:text-2xl font-semibold mb-3 md:mb-4">Structured Program</h3>
                 <p className="text-sm sm:text-base text-gray-700">
                   Our internship program includes orientation, regular check-ins, project assignments, and a final presentation. You'll have clear goals and milestones to track your progress.
@@ -254,7 +254,7 @@ export default function Internship() {
               </div>
               
               <div className="bg-white p-6 rounded-lg border border-gray-200">
-                <Users className="w-8 h-8 text-tiger-orange mb-4" />
+                <Users className="w-8 h-8 text-secondary-500 mb-4" />
                 <h3 className="text-xl sm:text-2xl font-semibold mb-3 md:mb-4">Team Collaboration</h3>
                 <p className="text-sm sm:text-base text-gray-700">
                   Work alongside our team members, attend meetings, and contribute to real projects. You'll be part of the team, not just an observer.
@@ -262,7 +262,7 @@ export default function Internship() {
               </div>
               
               <div className="bg-white p-6 rounded-lg border border-gray-200">
-                <TrendingUp className="w-8 h-8 text-tiger-orange mb-4" />
+                <TrendingUp className="w-8 h-8 text-secondary-500 mb-4" />
                 <h3 className="text-xl sm:text-2xl font-semibold mb-3 md:mb-4">Skill Development</h3>
                 <p className="text-sm sm:text-base text-gray-700">
                   Develop both technical and soft skills through hands-on projects, workshops, and mentorship. We invest in your professional growth.
@@ -270,7 +270,7 @@ export default function Internship() {
               </div>
               
               <div className="bg-white p-6 rounded-lg border border-gray-200">
-                <Briefcase className="w-8 h-8 text-tiger-orange mb-4" />
+                <Briefcase className="w-8 h-8 text-secondary-500 mb-4" />
                 <h3 className="text-xl sm:text-2xl font-semibold mb-3 md:mb-4">Real-World Experience</h3>
                 <p className="text-sm sm:text-base text-gray-700">
                   Work on actual client projects and campaigns. Your contributions will make a real impact and help build your professional portfolio.
@@ -291,7 +291,7 @@ export default function Internship() {
           <div className="flex justify-center">
             <a 
               href="mailto:internships@sharkcreativeagency.com?subject=General Internship Inquiry"
-              className="btn-primary inline-block w-full sm:w-auto px-12"
+              className="btn-secondary-gradient inline-block w-full sm:w-auto px-12"
             >
               Send Your Resume
             </a>

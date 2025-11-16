@@ -30,7 +30,7 @@ export default function BlogClient({ posts, categories }: BlogClientProps) {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-4 py-2 rounded-lg text-sm sm:text-base font-medium transition-colors ${
                   category === selectedCategory
-                    ? 'bg-tiger-orange text-white'
+                    ? 'bg-secondary-500 text-white'
                     : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
                 }`}
               >
@@ -71,7 +71,7 @@ export default function BlogClient({ posts, categories }: BlogClientProps) {
                     </div>
                     <div className="p-4 sm:p-6">
                       <div className="flex items-center gap-3 mb-3">
-                        <span className="text-xs sm:text-sm font-medium text-tiger-orange bg-tiger-orange/10 px-2 py-1 rounded">
+                        <span className="text-xs sm:text-sm font-medium text-secondary-500 bg-secondary-500/10 px-2 py-1 rounded">
                           {post.category}
                         </span>
                         <div className="flex items-center gap-1 text-xs sm:text-sm text-gray-500">
@@ -90,7 +90,7 @@ export default function BlogClient({ posts, categories }: BlogClientProps) {
                           <Clock className="w-3 h-3 sm:w-4 sm:h-4" />
                           <span>{post.readTime}</span>
                         </div>
-                        <div className="flex items-center gap-2 text-tiger-orange font-medium text-sm sm:text-base">
+                        <div className="flex items-center gap-2 text-secondary-500 font-medium text-sm sm:text-base">
                           <span>Read More</span>
                           <ArrowRight className="w-4 h-4" />
                         </div>

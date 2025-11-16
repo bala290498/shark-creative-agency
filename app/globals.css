@@ -48,13 +48,17 @@
   .btn-secondary {
     @apply bg-tiger-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-tiger-orange-600 transition-colors duration-200;
   }
+
+  .btn-secondary-gradient {
+    @apply gradient-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200;
+  }
   
   .section-padding {
     @apply py-16 md:py-24;
   }
   
   .container-custom {
-    @apply w-full px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20;
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20;
   }
   
   .blob-shape {
@@ -86,6 +90,29 @@
       0% 60%,
       0% 40%
     );
+  }
+
+  .gradient-secondary {
+    background: linear-gradient(135deg, #ffde59 0%, #ff914d 100%);
+  }
+
+  .gradient-secondary-reverse {
+    background: linear-gradient(135deg, #ff914d 0%, #ffde59 100%);
+  }
+
+  .gradient-secondary-vertical {
+    background: linear-gradient(180deg, #ffde59 0%, #ff914d 100%);
+  }
+
+  .gradient-secondary-horizontal {
+    background: linear-gradient(90deg, #ffde59 0%, #ff914d 100%);
+  }
+
+  .text-gradient-secondary {
+    background: linear-gradient(135deg, #ffde59 0%, #ff914d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
 

@@ -24,35 +24,35 @@ export default function Navbar() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center justify-end flex-1 w-full ml-8 space-x-2 md:space-x-4 lg:space-x-6">
-            <Link href="/" className="text-gray-700 hover:text-tiger-orange transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
+            <Link href="/" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
               Home
             </Link>
-            <Link href="/works" className="text-gray-700 hover:text-tiger-orange transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
+            <Link href="/works" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
               Our Works
             </Link>
-            <Link href="/services" className="text-gray-700 hover:text-tiger-orange transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
+            <Link href="/services" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
               Services
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-tiger-orange transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
+            <Link href="/about" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
               About Us
             </Link>
-            <Link href="/blog" className="text-gray-700 hover:text-tiger-orange transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
+            <Link href="/blog" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
               Blog
             </Link>
-            <Link href="/careers" className="text-gray-700 hover:text-tiger-orange transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
+            <Link href="/careers" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
               Careers
             </Link>
-            <Link href="/internship" className="text-gray-700 hover:text-tiger-orange transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
+            <Link href="/internship" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
               Internship
             </Link>
-            <Link href="/contact" className="btn-primary whitespace-nowrap text-center px-4 md:px-6 flex-shrink-0 no-underline">
+            <Link href="/contact" className="btn-secondary-gradient whitespace-nowrap text-center px-4 md:px-6 flex-shrink-0 no-underline">
               Contact Us
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-700 p-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-tiger-orange transition"
+            className="md:hidden text-gray-700 p-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary-500 transition"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -69,29 +69,29 @@ export default function Navbar() {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden py-4 space-y-4">
-            <Link href="/" className="block text-gray-700 hover:text-tiger-orange text-center no-underline" onClick={() => setIsOpen(false)}>
+            <Link href="/" className="block text-gray-700 hover:text-secondary-500 text-center no-underline" onClick={() => setIsOpen(false)}>
               Home
             </Link>
-            <Link href="/works" className="block text-gray-700 hover:text-tiger-orange text-center no-underline" onClick={() => setIsOpen(false)}>
+            <Link href="/works" className="block text-gray-700 hover:text-secondary-500 text-center no-underline" onClick={() => setIsOpen(false)}>
               Our Works
             </Link>
-            <Link href="/services" className="block text-gray-700 hover:text-tiger-orange text-center no-underline" onClick={() => setIsOpen(false)}>
+            <Link href="/services" className="block text-gray-700 hover:text-secondary-500 text-center no-underline" onClick={() => setIsOpen(false)}>
               Services
             </Link>
-            <Link href="/about" className="block text-gray-700 hover:text-tiger-orange text-center no-underline" onClick={() => setIsOpen(false)}>
+            <Link href="/about" className="block text-gray-700 hover:text-secondary-500 text-center no-underline" onClick={() => setIsOpen(false)}>
               About Us
             </Link>
-            <Link href="/blog" className="block text-gray-700 hover:text-tiger-orange text-center no-underline" onClick={() => setIsOpen(false)}>
+            <Link href="/blog" className="block text-gray-700 hover:text-secondary-500 text-center no-underline" onClick={() => setIsOpen(false)}>
               Blog
             </Link>
-            <Link href="/careers" className="block text-gray-700 hover:text-tiger-orange text-center no-underline" onClick={() => setIsOpen(false)}>
+            <Link href="/careers" className="block text-gray-700 hover:text-secondary-500 text-center no-underline" onClick={() => setIsOpen(false)}>
               Careers
             </Link>
-            <Link href="/internship" className="block text-gray-700 hover:text-tiger-orange text-center no-underline" onClick={() => setIsOpen(false)}>
+            <Link href="/internship" className="block text-gray-700 hover:text-secondary-500 text-center no-underline" onClick={() => setIsOpen(false)}>
               Internship
             </Link>
             <div className="flex justify-center pt-2">
-              <Link href="/contact" className="btn-primary w-full text-center no-underline" onClick={() => setIsOpen(false)}>
+              <Link href="/contact" className="btn-secondary-gradient w-full text-center no-underline" onClick={() => setIsOpen(false)}>
                 Contact Us
               </Link>
             </div>

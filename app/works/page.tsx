@@ -231,7 +231,7 @@ export default function Works() {
             Let&apos;s work together to create something amazing. Get in touch with us today.
           </p>
           <div className="flex justify-center">
-            <Link href="/contact" className="btn-primary inline-block w-full sm:w-auto px-12">
+            <Link href="/contact" className="btn-secondary-gradient inline-block w-full sm:w-auto px-12">
               Contact Us Today
             </Link>
           </div>

@@ -84,28 +84,28 @@ export default function About() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">Our Values</h2>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <span className="text-tiger-orange text-xl sm:text-2xl mr-3">✓</span>
+                  <span className="text-secondary-500 text-xl sm:text-2xl mr-3">✓</span>
                   <div>
                     <h3 className="font-semibold text-base sm:text-lg mb-1">Excellence</h3>
                     <p className="text-sm sm:text-base text-gray-700">We strive for excellence in everything we do, setting high standards and consistently exceeding them.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-tiger-orange text-xl sm:text-2xl mr-3">✓</span>
+                  <span className="text-secondary-500 text-xl sm:text-2xl mr-3">✓</span>
                   <div>
                     <h3 className="font-semibold text-base sm:text-lg mb-1">Innovation</h3>
                     <p className="text-sm sm:text-base text-gray-700">We embrace new ideas, technologies, and approaches to stay ahead of the curve and deliver cutting-edge solutions.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-tiger-orange text-xl sm:text-2xl mr-3">✓</span>
+                  <span className="text-secondary-500 text-xl sm:text-2xl mr-3">✓</span>
                   <div>
                     <h3 className="font-semibold text-base sm:text-lg mb-1">Integrity</h3>
                     <p className="text-sm sm:text-base text-gray-700">We conduct business with honesty, transparency, and ethical practices, building trust with every interaction.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-tiger-orange text-xl sm:text-2xl mr-3">✓</span>
+                  <span className="text-secondary-500 text-xl sm:text-2xl mr-3">✓</span>
                   <div>
                     <h3 className="font-semibold text-base sm:text-lg mb-1">Collaboration</h3>
                     <p className="text-sm sm:text-base text-gray-700">We believe in the power of teamwork and work closely with clients as partners in their success.</p>
@@ -133,7 +133,7 @@ export default function About() {
                 <User className="w-16 h-16 text-gray-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Sarah Johnson</h3>
-              <p className="text-tiger-orange mb-2">Creative Director</p>
+              <p className="text-secondary-500 mb-2">Creative Director</p>
               <p className="text-gray-600">
                 Leading our creative vision with over 10 years of experience in branding and design.
               </p>
@@ -144,7 +144,7 @@ export default function About() {
                 <User className="w-16 h-16 text-gray-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Michael Chen</h3>
-              <p className="text-tiger-orange mb-2">Technical Lead</p>
+              <p className="text-secondary-500 mb-2">Technical Lead</p>
               <p className="text-gray-600">
                 Expert in web development and digital solutions with a passion for innovation.
               </p>
@@ -155,7 +155,7 @@ export default function About() {
                 <User className="w-16 h-16 text-gray-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Emily Rodriguez</h3>
-              <p className="text-tiger-orange mb-2">Marketing Strategist</p>
+              <p className="text-secondary-500 mb-2">Marketing Strategist</p>
               <p className="text-gray-600">
                 Driving results through data-driven marketing strategies and campaign optimization.
               </p>
@@ -196,7 +196,7 @@ export default function About() {
             We're always looking for talented individuals who share our passion for creativity and excellence.
           </p>
           <div className="flex justify-center">
-            <Link href="/careers" className="btn-primary inline-block w-full sm:w-auto px-12">
+            <Link href="/careers" className="btn-secondary-gradient inline-block w-full sm:w-auto px-12">
               View Open Positions
             </Link>
           </div>

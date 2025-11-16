@@ -27,16 +27,16 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-600">
               <li>
-                <Link href="/" className="hover:text-tiger-orange transition-colors">Home</Link>
+                <Link href="/" className="hover:text-secondary-500 transition-colors">Home</Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-tiger-orange transition-colors">Services</Link>
+                <Link href="/services" className="hover:text-secondary-500 transition-colors">Services</Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-tiger-orange transition-colors">About Us</Link>
+                <Link href="/about" className="hover:text-secondary-500 transition-colors">About Us</Link>
               </li>
               <li>
-                <Link href="/careers" className="hover:text-tiger-orange transition-colors">Careers</Link>
+                <Link href="/careers" className="hover:text-secondary-500 transition-colors">Careers</Link>
               </li>
             </ul>
           </div>
@@ -55,20 +55,20 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-600">
               <li>
-                <a href="mailto:contact@sharkcreativeagency.com" className="hover:text-tiger-orange transition-colors">
+                <a href="mailto:contact@sharkcreativeagency.com" className="hover:text-secondary-500 transition-colors">
                   contact@sharkcreativeagency.com
                 </a>
               </li>
               <li>
-                <a href="tel:+917010584543" className="hover:text-tiger-orange transition-colors">
+                <a href="tel:+917010584543" className="hover:text-secondary-500 transition-colors">
                   +91 7010584543
                 </a>
               </li>
               <li className="flex space-x-4 mt-4">
-                <a href="#" className="hover:text-tiger-orange transition-colors" aria-label="Facebook">Facebook</a>
-                <a href="#" className="hover:text-tiger-orange transition-colors" aria-label="Twitter">Twitter</a>
-                <a href="#" className="hover:text-tiger-orange transition-colors" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" className="hover:text-tiger-orange transition-colors" aria-label="Instagram">Instagram</a>
+                <a href="#" className="hover:text-secondary-500 transition-colors" aria-label="Facebook">Facebook</a>
+                <a href="#" className="hover:text-secondary-500 transition-colors" aria-label="Twitter">Twitter</a>
+                <a href="#" className="hover:text-secondary-500 transition-colors" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" className="hover:text-secondary-500 transition-colors" aria-label="Instagram">Instagram</a>
               </li>
             </ul>
           </div>

@@ -57,27 +57,27 @@ export default function Contact() {
               
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-tiger-orange mr-3 sm:mr-4 mt-1 flex-shrink-0" />
+                  <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 sm:mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-base sm:text-lg mb-1">Email</h3>
-                    <a href="mailto:contact@sharkcreativeagency.com" className="text-sm sm:text-base text-tiger-orange hover:underline break-all">
+                    <a href="mailto:contact@sharkcreativeagency.com" className="text-sm sm:text-base text-secondary-500 hover:underline break-all">
                       contact@sharkcreativeagency.com
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-tiger-orange mr-3 sm:mr-4 mt-1 flex-shrink-0" />
+                  <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 sm:mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-base sm:text-lg mb-1">Phone</h3>
-                    <a href="tel:+917010584543" className="text-sm sm:text-base text-tiger-orange hover:underline">
+                    <a href="tel:+917010584543" className="text-sm sm:text-base text-secondary-500 hover:underline">
                       +91 7010584543
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-tiger-orange mr-3 sm:mr-4 mt-1 flex-shrink-0" />
+                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 sm:mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-base sm:text-lg mb-1">Address</h3>
                     <p className="text-sm sm:text-base text-gray-700">
@@ -89,7 +89,7 @@ export default function Contact() {
                 </div>
                 
                 <div className="flex items-start">
-                  <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-tiger-orange mr-3 sm:mr-4 mt-1 flex-shrink-0" />
+                  <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 sm:mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-base sm:text-lg mb-1">Business Hours</h3>
                     <p className="text-sm sm:text-base text-gray-700">
@@ -157,7 +157,7 @@ export default function Contact() {
                   ></textarea>
                 </div>
                 
-                <button type="submit" className="btn-primary w-full">
+                <button type="submit" className="btn-secondary-gradient w-full">
                   Send Message
                 </button>
               </form>

@@ -93,13 +93,13 @@ export default function Services() {
               const IconComponent = service.icon
               return (
               <div key={index} className="p-4 sm:p-6 md:p-8 rounded-lg border border-gray-200 hover:shadow-xl transition-shadow">
-                <IconComponent className="w-10 h-10 sm:w-12 sm:h-12 text-tiger-orange mb-3 md:mb-4" />
+                <IconComponent className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-3 md:mb-4" />
                 <h3 className="text-xl sm:text-2xl font-semibold mb-2 md:mb-3">{service.title}</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-3 md:mb-4">{service.description}</p>
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center text-sm sm:text-base text-gray-700">
-                      <span className="text-tiger-orange mr-2">✓</span>
+                      <span className="text-secondary-500 mr-2">✓</span>
                       {feature}
                     </li>
                   ))}
@@ -122,7 +122,7 @@ export default function Services() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div className="text-center">
-              <div className="bg-tiger-orange text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="gradient-secondary text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 1
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Discovery</h3>
@@ -132,7 +132,7 @@ export default function Services() {
             </div>
             
             <div className="text-center">
-              <div className="bg-tiger-orange text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="gradient-secondary text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 2
               </div>
               <h3 className="text-xl font-semibold mb-2">Strategy</h3>
@@ -142,7 +142,7 @@ export default function Services() {
             </div>
             
             <div className="text-center">
-              <div className="bg-tiger-orange text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="gradient-secondary text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 3
               </div>
               <h3 className="text-xl font-semibold mb-2">Execution</h3>
@@ -152,7 +152,7 @@ export default function Services() {
             </div>
             
             <div className="text-center">
-              <div className="bg-tiger-orange text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="gradient-secondary text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 4
               </div>
               <h3 className="text-xl font-semibold mb-2">Optimization</h3>
@@ -172,7 +172,7 @@ export default function Services() {
             Let's discuss how we can help transform your brand and achieve your business goals.
           </p>
           <div className="flex justify-center">
-            <Link href="/contact" className="btn-primary inline-block w-full sm:w-auto px-12">
+            <Link href="/contact" className="btn-secondary-gradient inline-block w-full sm:w-auto px-12">
               Contact Us Today
             </Link>
           </div>

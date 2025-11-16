@@ -21,7 +21,7 @@ export default function ProgressCircleCard({ percentage = 75 }: { percentage?: n
             cx="40"
             cy="40"
             r={radius}
-            stroke="#ff6b35"
+            stroke="#ff914d"
             strokeWidth="8"
             fill="none"
             strokeDasharray={circumference}
@@ -31,7 +31,7 @@ export default function ProgressCircleCard({ percentage = 75 }: { percentage?: n
           />
         </svg>
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-lg font-bold text-tiger-orange">{percentage}%</span>
+          <span className="text-lg font-bold text-secondary-500">{percentage}%</span>
         </div>
       </div>
     </div>

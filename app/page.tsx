@@ -5,8 +5,9 @@ import TextType from '@/components/TextType'
 import { Testimonials } from '@/components/ui/testimonials'
 import CurvedLoop from '@/components/ui/curved-loop'
 import LogoLoop from '@/components/ui/logo-loop'
-import { Palette, Laptop, Smartphone, Search, Rocket, Target, Handshake } from 'lucide-react'
+import { Palette, Laptop, Smartphone, Search, Rocket, Target, Handshake, Eye } from 'lucide-react'
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiPython, SiFigma, SiAdobe, SiJavascript, SiHtml5, SiCss3, SiMongodb } from 'react-icons/si'
+import { getInstagramPosts } from '@/lib/instagram'
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -36,20 +37,20 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
+  const instagramPosts = getInstagramPosts()
+
   return (
     <>
       {/* Hero Section */}
       <section className="bg-white text-gray-900 section-padding pb-4 md:pb-8">
         <div className="container-custom">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
-            {/* Left Side - Text Content */}
-            <div>
+          <div className="max-w-4xl mx-auto text-center">
             <div className="mb-4">
-              <h1 className="text-4xl md:text-5xl font-bold text-tiger-orange mb-2">
+              <h1 className="text-4xl md:text-5xl font-bold text-gradient-secondary mb-2">
                 Shark Creative Agency
               </h1>
             </div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6 min-h-[3rem] md:min-h-[4rem]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6 min-h-[3rem] md:min-h-[4rem]">
               <TextType 
                 text={[
                   "Transform Your Brand",
@@ -61,71 +62,19 @@ export default function Home() {
                 showCursor={true}
                 cursorCharacter="|"
                 className="text-gray-900"
-                cursorClassName="text-tiger-orange"
+                cursorClassName="text-secondary-500"
               />
             </h2>
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-gray-700">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-gray-700">
               We're a full-service creative agency specializing in digital solutions, branding, and marketing that drive results.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link href="/services" className="btn-primary text-center w-full sm:w-auto">
                 Our Services
               </Link>
-              <Link href="/contact" className="btn-secondary text-center w-full sm:w-auto">
+              <Link href="/contact" className="btn-secondary-gradient text-center w-full sm:w-auto">
                 Get Started
               </Link>
-              </div>
-            </div>
-
-            {/* Right Side - Blob Container with Hero Image */}
-            <div className="relative h-[500px] md:h-[600px] hidden md:block">
-              {/* Blob Container */}
-              <div className="absolute top-0 right-0 w-full h-full z-10">
-                <div 
-                  className="w-full h-full relative blob-shape overflow-hidden"
-                  style={{
-                    background: 'linear-gradient(135deg, #ff6b35 0%, #ff8c5a 100%)',
-                  }}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-tiger-orange to-tiger-orange-600 opacity-90 blob-shape"></div>
-                  {/* Hero Image inside blob - clipped to blob shape */}
-                  <div className="absolute inset-0 blob-shape overflow-hidden">
-                    <Image
-                      src="/hero.png"
-                      alt="Hero"
-                      fill
-                      className="object-cover"
-                      priority
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Mobile: Show blob with hero image */}
-            <div className="relative h-[400px] md:hidden">
-              <div className="relative w-full h-full rounded-lg">
-                <div 
-                  className="w-full h-full relative blob-shape overflow-hidden"
-                  style={{
-                    background: 'linear-gradient(135deg, #ff6b35 0%, #ff8c5a 100%)',
-                  }}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-tiger-orange to-tiger-orange-600 opacity-90 blob-shape"></div>
-                  {/* Hero Image inside blob - clipped to blob shape */}
-                  <div className="absolute inset-0 blob-shape overflow-hidden">
-                    <Image
-                      src="/hero.png"
-                      alt="Hero"
-                      fill
-                      className="object-cover"
-                      priority
-                      sizes="100vw"
-                    />
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -133,7 +82,7 @@ export default function Home() {
 
       {/* Curved Loop Marquee - Extended Belt with Image */}
       <div className="bg-white relative">
-        <div className="bg-tiger-orange relative h-[320px] md:h-[400px] w-full overflow-hidden">
+        <div className="gradient-secondary relative h-[320px] md:h-[400px] w-full overflow-hidden">
           {/* Top Loop - Above Image */}
           <div className="absolute inset-x-0 top-0 md:top-4 h-1/2 md:h-auto flex items-center px-4 md:px-0 z-0">
             <CurvedLoop 
@@ -180,7 +129,7 @@ export default function Home() {
             {/* Left Side - Bento Grid */}
             <div className="grid grid-cols-3 gap-3 md:gap-4">
               {/* Large Card - Happy Clients */}
-              <div className="col-span-2 bg-gradient-to-br from-tiger-orange to-tiger-orange-600 rounded-lg p-4 md:p-5 flex flex-col justify-center shadow-lg">
+              <div className="col-span-2 gradient-secondary rounded-lg p-4 md:p-5 flex flex-col justify-center shadow-lg">
                 <div className="text-white">
                   <div className="text-3xl md:text-4xl font-bold mb-1">500+</div>
                   <div className="text-sm md:text-base font-semibold mb-0.5">Happy Clients</div>
@@ -190,56 +139,56 @@ export default function Home() {
 
               {/* Lines of Code */}
               <div className="bg-white rounded-lg border border-gray-200 p-3 md:p-4 flex flex-col justify-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-tiger-orange mb-1">2M+</div>
+                <div className="text-2xl md:text-3xl font-bold text-secondary-500 mb-1">2M+</div>
                 <div className="text-xs md:text-sm font-medium text-gray-900">Lines of Code</div>
                 <div className="text-[10px] md:text-xs text-gray-600 mt-0.5">Written & optimized</div>
               </div>
 
               {/* Projects Delivered */}
               <div className="bg-white rounded-lg border border-gray-200 p-3 md:p-4 flex flex-col justify-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-tiger-orange mb-1">350+</div>
+                <div className="text-2xl md:text-3xl font-bold text-secondary-500 mb-1">350+</div>
                 <div className="text-xs md:text-sm font-medium text-gray-900">Projects</div>
                 <div className="text-[10px] md:text-xs text-gray-600 mt-0.5">Delivered</div>
               </div>
 
               {/* Years of Experience */}
               <div className="bg-white rounded-lg border border-gray-200 p-3 md:p-4 flex flex-col justify-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-tiger-orange mb-1">7+</div>
+                <div className="text-2xl md:text-3xl font-bold text-secondary-500 mb-1">7+</div>
                 <div className="text-xs md:text-sm font-medium text-gray-900">Years</div>
                 <div className="text-[10px] md:text-xs text-gray-600 mt-0.5">Experience</div>
               </div>
 
               {/* Countries Served */}
               <div className="bg-white rounded-lg border border-gray-200 p-3 md:p-4 flex flex-col justify-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-tiger-orange mb-1">25+</div>
+                <div className="text-2xl md:text-3xl font-bold text-secondary-500 mb-1">25+</div>
                 <div className="text-xs md:text-sm font-medium text-gray-900">Countries</div>
                 <div className="text-[10px] md:text-xs text-gray-600 mt-0.5">Global reach</div>
               </div>
 
               {/* Team Members */}
               <div className="bg-white rounded-lg border border-gray-200 p-3 md:p-4 flex flex-col justify-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-tiger-orange mb-1">50+</div>
+                <div className="text-2xl md:text-3xl font-bold text-secondary-500 mb-1">50+</div>
                 <div className="text-xs md:text-sm font-medium text-gray-900">Team Members</div>
                 <div className="text-[10px] md:text-xs text-gray-600 mt-0.5">Expert professionals</div>
               </div>
 
               {/* Awards Won */}
               <div className="bg-white rounded-lg border border-gray-200 p-3 md:p-4 flex flex-col justify-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-tiger-orange mb-1">15+</div>
+                <div className="text-2xl md:text-3xl font-bold text-secondary-500 mb-1">15+</div>
                 <div className="text-xs md:text-sm font-medium text-gray-900">Awards</div>
                 <div className="text-[10px] md:text-xs text-gray-600 mt-0.5">Industry recognition</div>
               </div>
 
               {/* Client Retention */}
               <div className="bg-white rounded-lg border border-gray-200 p-3 md:p-4 flex flex-col justify-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-tiger-orange mb-1">90%</div>
+                <div className="text-2xl md:text-3xl font-bold text-secondary-500 mb-1">90%</div>
                 <div className="text-xs md:text-sm font-medium text-gray-900">Retention</div>
                 <div className="text-[10px] md:text-xs text-gray-600 mt-0.5">Client satisfaction</div>
               </div>
 
               {/* Support Hours */}
               <div className="bg-white rounded-lg border border-gray-200 p-3 md:p-4 flex flex-col justify-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-tiger-orange mb-1">24/7</div>
+                <div className="text-2xl md:text-3xl font-bold text-secondary-500 mb-1">24/7</div>
                 <div className="text-xs md:text-sm font-medium text-gray-900">Support</div>
                 <div className="text-[10px] md:text-xs text-gray-600 mt-0.5">Always available</div>
               </div>
@@ -274,7 +223,7 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <Palette className="w-10 h-10 text-tiger-orange mb-4" />
+              <Palette className="w-10 h-10 text-secondary-500 mb-4" />
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Brand Identity</h3>
               <p className="text-sm sm:text-base text-gray-600">
                 Create a memorable brand that resonates with your audience and stands out in the market.
@@ -282,7 +231,7 @@ export default function Home() {
             </div>
             
             <div className="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <Laptop className="w-10 h-10 text-tiger-orange mb-4" />
+              <Laptop className="w-10 h-10 text-secondary-500 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Web Design</h3>
               <p className="text-gray-600">
                 Modern, responsive websites that convert visitors into customers and drive business growth.
@@ -290,7 +239,7 @@ export default function Home() {
             </div>
             
             <div className="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <Smartphone className="w-10 h-10 text-tiger-orange mb-4" />
+              <Smartphone className="w-10 h-10 text-secondary-500 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Digital Marketing</h3>
               <p className="text-gray-600">
                 Strategic marketing campaigns that increase visibility and generate qualified leads.
@@ -298,7 +247,7 @@ export default function Home() {
             </div>
             
             <div className="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <Search className="w-10 h-10 text-tiger-orange mb-4" />
+              <Search className="w-10 h-10 text-secondary-500 mb-4" />
               <h3 className="text-xl font-semibold mb-2">SEO Optimization</h3>
               <p className="text-gray-600">
                 Improve your search engine rankings and drive organic traffic to your website.
@@ -307,7 +256,7 @@ export default function Home() {
           </div>
           
           <div className="text-center mt-12">
-            <Link href="/services" className="btn-primary inline-block w-full sm:w-auto px-12">
+            <Link href="/services" className="btn-secondary-gradient inline-block w-full sm:w-auto px-12">
               View All Services
             </Link>
           </div>
@@ -321,19 +270,19 @@ export default function Home() {
             {/* Left Side - Statistics Cards */}
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-4xl md:text-5xl font-bold text-tiger-orange mb-2">7+</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary-500 mb-2">7+</div>
                 <p className="text-sm md:text-base text-gray-900 font-medium">Years of Experience</p>
               </div>
               <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-4xl md:text-5xl font-bold text-tiger-orange mb-2">90%</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary-500 mb-2">90%</div>
                 <p className="text-sm md:text-base text-gray-900 font-medium">Client Retention</p>
               </div>
               <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-4xl md:text-5xl font-bold text-tiger-orange mb-2">350+</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary-500 mb-2">350+</div>
                 <p className="text-sm md:text-base text-gray-900 font-medium">Projects Delivered</p>
               </div>
               <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-4xl md:text-5xl font-bold text-tiger-orange mb-2">150+</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary-500 mb-2">150+</div>
                 <p className="text-sm md:text-base text-gray-900 font-medium">Clients Worldwide</p>
               </div>
             </div>
@@ -420,7 +369,7 @@ export default function Home() {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <Rocket className="w-12 h-12 text-tiger-orange mb-4 mx-auto" />
+              <Rocket className="w-12 h-12 text-secondary-500 mb-4 mx-auto" />
               <h3 className="text-xl sm:text-2xl font-semibold mb-2">Innovative Solutions</h3>
               <p className="text-sm sm:text-base text-gray-600">
                 We stay ahead of trends and use cutting-edge technology to deliver innovative solutions that set you apart.
@@ -428,7 +377,7 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <Target className="w-12 h-12 text-tiger-orange mb-4 mx-auto" />
+              <Target className="w-12 h-12 text-secondary-500 mb-4 mx-auto" />
               <h3 className="text-2xl font-semibold mb-2">Results-Driven</h3>
               <p className="text-gray-600">
                 Every project is designed with your business goals in mind, ensuring measurable results and ROI.
@@ -436,7 +385,7 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <Handshake className="w-12 h-12 text-tiger-orange mb-4 mx-auto" />
+              <Handshake className="w-12 h-12 text-secondary-500 mb-4 mx-auto" />
               <h3 className="text-2xl font-semibold mb-2">Collaborative Approach</h3>
               <p className="text-gray-600">
                 We work closely with you throughout the process, ensuring your vision comes to life exactly as you imagined.
@@ -457,10 +406,55 @@ export default function Home() {
             Let's work together to create something amazing. Get in touch with us today.
           </p>
           <div className="flex justify-center">
-            <Link href="/contact" className="btn-primary inline-block w-full sm:w-auto px-12">
+            <Link href="/contact" className="btn-secondary-gradient inline-block w-full sm:w-auto px-12">
               Contact Us Today
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Instagram Section */}
+      <section className="bg-white section-padding">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-900">Follow Us on Instagram</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
+              Get inspired by our latest creative work and behind-the-scenes content
+            </p>
+          </div>
+          
+          {instagramPosts.length > 0 ? (
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
+              {instagramPosts.map((post, index) => (
+                <a
+                  key={index}
+                  href={post.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative w-full overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col"
+                >
+                  <div className="relative w-full">
+                    <Image
+                      src={post.image}
+                      alt={post.alt || `Instagram post ${index + 1}`}
+                      width={800}
+                      height={800}
+                      className="w-full h-auto group-hover:scale-110 transition-transform duration-300"
+                      sizes="(max-width: 768px) 50vw, 25vw"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 pointer-events-none" />
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    <Eye className="w-8 h-8 text-white drop-shadow-lg" />
+                  </div>
+                </a>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-12">
+              <p className="text-gray-600">No Instagram posts found. Add URLs to content/instagram/posts.md</p>
+            </div>
+          )}
         </div>
       </section>
     </>

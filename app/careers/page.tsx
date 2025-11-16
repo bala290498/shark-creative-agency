@@ -152,7 +152,7 @@ export default function Careers() {
               const IconComponent = benefit.icon
               return (
               <div key={index} className="p-4 sm:p-6 rounded-lg border border-gray-200">
-                <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-tiger-orange mb-3 md:mb-4" />
+                <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-3 md:mb-4" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2">{benefit.title}</h3>
                 <p className="text-sm sm:text-base text-gray-600">{benefit.description}</p>
               </div>
@@ -179,15 +179,15 @@ export default function Careers() {
                     <h3 className="text-xl sm:text-2xl font-semibold mb-2">{position.title}</h3>
                     <div className="flex flex-wrap gap-4 text-sm text-gray-600">
                       <span className="flex items-center">
-                        <MapPin className="w-4 h-4 mr-2 text-tiger-orange" />
+                        <MapPin className="w-4 h-4 mr-2 text-secondary-500" />
                         {position.department}
                       </span>
                       <span className="flex items-center">
-                        <Globe className="w-4 h-4 mr-2 text-tiger-orange" />
+                        <Globe className="w-4 h-4 mr-2 text-secondary-500" />
                         {position.location}
                       </span>
                       <span className="flex items-center">
-                        <Clock className="w-4 h-4 mr-2 text-tiger-orange" />
+                        <Clock className="w-4 h-4 mr-2 text-secondary-500" />
                         {position.type}
                       </span>
                     </div>
@@ -207,7 +207,7 @@ export default function Careers() {
                 
                 <a 
                   href={`mailto:careers@sharkcreativeagency.com?subject=Application for ${position.title}`}
-                  className="btn-primary inline-block w-full sm:w-auto text-center"
+                  className="btn-secondary-gradient inline-block w-full sm:w-auto text-center"
                 >
                   Apply Now
                 </a>
@@ -271,7 +271,7 @@ export default function Careers() {
           <div className="flex justify-center">
             <a 
               href="mailto:careers@sharkcreativeagency.com?subject=General Application"
-              className="btn-primary inline-block w-full sm:w-auto px-12"
+              className="btn-secondary-gradient inline-block w-full sm:w-auto px-12"
             >
               Send Your Resume
             </a>

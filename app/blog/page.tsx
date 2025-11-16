@@ -55,7 +55,7 @@ export default function Blog() {
       {/* Newsletter Section */}
       <section className="bg-white section-padding">
         <div className="container-custom">
-          <div className="max-w-2xl mx-auto text-center bg-gradient-to-br from-tiger-orange to-tiger-orange-600 rounded-2xl p-8 md:p-12 text-white">
+          <div className="max-w-2xl mx-auto text-center gradient-secondary rounded-2xl p-8 md:p-12 text-white">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
               Stay Updated
             </h2>
@@ -71,7 +71,7 @@ export default function Blog() {
               />
               <button
                 type="submit"
-                className="bg-white text-tiger-orange px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap"
+                className="bg-white text-secondary-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap"
               >
                 Subscribe
               </button>
