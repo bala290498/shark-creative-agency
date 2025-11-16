@@ -44,37 +44,70 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-white text-gray-900 section-padding pb-4 md:pb-8">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-4">
-              <h1 className="text-4xl md:text-5xl font-bold text-gradient-secondary mb-2">
-                Shark Creative Agency
-              </h1>
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Left Side - Text Content */}
+            <div>
+              <div className="mb-4">
+                <h1 className="text-4xl md:text-5xl font-bold text-gradient-secondary mb-2">
+                  Shark Creative Agency
+                </h1>
+              </div>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6 min-h-[3rem] md:min-h-[4rem]">
+                <TextType 
+                  text={[
+                    "Transform Your Brand",
+                    "Innovative Digital Solutions",
+                    "Elevate Your Brand"
+                  ]}
+                  typingSpeed={75}
+                  pauseDuration={1500}
+                  showCursor={true}
+                  cursorCharacter="|"
+                  className="text-gray-900"
+                  cursorClassName="text-secondary-500"
+                />
+              </h2>
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-gray-700">
+                We're a full-service creative agency specializing in digital solutions, branding, and marketing that drive results.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 max-w-md">
+                <Link href="/services" className="btn-primary text-center w-full sm:w-auto">
+                  Our Services
+                </Link>
+                <Link href="/contact" className="btn-secondary-gradient text-center w-full sm:w-auto">
+                  Get Started
+                </Link>
+              </div>
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6 min-h-[3rem] md:min-h-[4rem]">
-              <TextType 
-                text={[
-                  "Transform Your Brand",
-                  "Innovative Digital Solutions",
-                  "Elevate Your Brand with Expert Design"
-                ]}
-                typingSpeed={75}
-                pauseDuration={1500}
-                showCursor={true}
-                cursorCharacter="|"
-                className="text-gray-900"
-                cursorClassName="text-secondary-500"
-              />
-            </h2>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-gray-700">
-              We're a full-service creative agency specializing in digital solutions, branding, and marketing that drive results.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="/services" className="btn-primary text-center w-full sm:w-auto">
-                Our Services
-              </Link>
-              <Link href="/contact" className="btn-secondary-gradient text-center w-full sm:w-auto">
-                Get Started
-              </Link>
+
+            {/* Right Side - Hero Image */}
+            <div className="hidden md:block">
+              <div className="scale-[1.2] origin-center">
+                <Image
+                  src="/hero.png"
+                  alt="Hero"
+                  width={800}
+                  height={800}
+                  className="w-full h-auto"
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+            </div>
+
+            {/* Mobile: Show hero image */}
+            <div className="md:hidden">
+              <div className="scale-[1.2] origin-center">
+                <Image
+                  src="/hero.png"
+                  alt="Hero"
+                  width={800}
+                  height={800}
+                  className="w-full h-auto"
+                  priority
+                  sizes="100vw"
+                />
+              </div>
             </div>
           </div>
         </div>
