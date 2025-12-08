@@ -41,9 +41,6 @@ export default function Services() {
               <span className="text-blue-600">Develop.</span>{' '}
               <span className="text-purple-600">Digital Marketing.</span>
             </h1>
-            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-gray-900">
-              Everything You Need to Build a Successful Brand
-            </h2>
             <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700">
               We provide full-stack creative, development, and marketing services so your business can grow without managing multiple vendors.
             </p>
@@ -66,9 +63,9 @@ export default function Services() {
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-10">
-              <div className="bg-white p-4 md:p-6">
-                <div className="flex items-start gap-4">
-                  <Palette className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-white p-4 md:p-6 text-center">
+                <div className="flex flex-col items-center">
+                  <Palette className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Brand Identity & Logo Design</h3>
                     <p className="text-base sm:text-lg text-gray-700">
@@ -78,9 +75,9 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 md:p-6">
-                <div className="flex items-start gap-4">
-                  <Smartphone className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-white p-4 md:p-6 text-center">
+                <div className="flex flex-col items-center">
+                  <Smartphone className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">UI/UX Design</h3>
                     <p className="text-base sm:text-lg text-gray-700">
@@ -90,9 +87,9 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 md:p-6 md:col-span-2">
-                <div className="flex items-start gap-4">
-                  <Rocket className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-white p-4 md:p-6 md:col-span-2 text-center">
+                <div className="flex flex-col items-center">
+                  <Rocket className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Marketing Creatives</h3>
                     <p className="text-base sm:text-lg text-gray-700">
@@ -110,7 +107,7 @@ export default function Services() {
             </div>
 
             <div className="text-center">
-              <Link href="/works" className="btn-primary inline-block w-full sm:w-auto px-8 md:px-12">
+              <Link href="/contact-us" className="btn-primary inline-block w-full sm:w-auto px-8 md:px-12">
                 Explore Design Work
               </Link>
               </div>
@@ -127,9 +124,9 @@ export default function Services() {
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-10">
-              <div className="bg-gray-50 p-4 md:p-6">
-                <div className="flex items-start gap-4">
-                  <Globe className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-gray-50 p-4 md:p-6 text-center">
+                <div className="flex flex-col items-center">
+                  <Globe className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Custom Websites</h3>
                     <p className="text-base sm:text-lg text-gray-700">
@@ -139,9 +136,9 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="bg-gray-50 p-4 md:p-6">
-                <div className="flex items-start gap-4">
-                  <Building2 className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-gray-50 p-4 md:p-6 text-center">
+                <div className="flex flex-col items-center">
+                  <Building2 className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">E-Commerce Development</h3>
                     <p className="text-base sm:text-lg text-gray-700">
@@ -151,9 +148,9 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="bg-gray-50 p-4 md:p-6">
-                <div className="flex items-start gap-4">
-                  <Smartphone className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-gray-50 p-4 md:p-6 text-center">
+                <div className="flex flex-col items-center">
+                  <Smartphone className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Mobile App Development</h3>
                     <p className="text-base sm:text-lg text-gray-700">
@@ -163,9 +160,9 @@ export default function Services() {
                 </div>
           </div>
           
-              <div className="bg-gray-50 p-4 md:p-6">
-                <div className="flex items-start gap-4">
-                  <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-gray-50 p-4 md:p-6 text-center">
+                <div className="flex flex-col items-center">
+                  <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Backend & API Integration</h3>
                     <p className="text-base sm:text-lg text-gray-700">
@@ -183,7 +180,7 @@ export default function Services() {
             </div>
             
             <div className="text-center">
-              <Link href="/works" className="btn-primary inline-block w-full sm:w-auto px-8 md:px-12">
+              <Link href="/contact-us" className="btn-primary inline-block w-full sm:w-auto px-8 md:px-12">
                 See Development Solutions
               </Link>
             </div>
@@ -200,9 +197,9 @@ export default function Services() {
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-10">
-              <div className="bg-white p-4 md:p-6">
-                <div className="flex items-start gap-4">
-                  <Search className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-white p-4 md:p-6 text-center">
+                <div className="flex flex-col items-center">
+                  <Search className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Search Engine Optimization (SEO)</h3>
                     <p className="text-base sm:text-lg text-gray-700">
@@ -212,9 +209,9 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 md:p-6">
-                <div className="flex items-start gap-4">
-                  <BarChart3 className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-white p-4 md:p-6 text-center">
+                <div className="flex flex-col items-center">
+                  <BarChart3 className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Paid Advertising</h3>
                     <p className="text-base sm:text-lg text-gray-700">
@@ -224,9 +221,9 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 md:p-6">
-                <div className="flex items-start gap-4">
-                  <Users className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-white p-4 md:p-6 text-center">
+                <div className="flex flex-col items-center">
+                  <Users className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Social Media Management</h3>
                     <p className="text-base sm:text-lg text-gray-700">
@@ -236,9 +233,9 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 md:p-6">
-                <div className="flex items-start gap-4">
-                  <MessageSquare className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-white p-4 md:p-6 text-center">
+                <div className="flex flex-col items-center">
+                  <MessageSquare className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Content Marketing</h3>
                     <p className="text-base sm:text-lg text-gray-700">
@@ -248,9 +245,9 @@ export default function Services() {
                 </div>
             </div>
             
-              <div className="bg-white p-4 md:p-6 md:col-span-2">
-                <div className="flex items-start gap-4">
-                  <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-white p-4 md:p-6 md:col-span-2 text-center">
+                <div className="flex flex-col items-center">
+                  <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Analytics & Performance Tracking</h3>
                     <p className="text-base sm:text-lg text-gray-700">
@@ -284,24 +281,24 @@ export default function Services() {
               Your End-to-End Digital Partner
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 md:mb-10 max-w-3xl mx-auto">
-              <div className="bg-gray-50 p-4 flex items-start">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8 md:mb-10 max-w-4xl mx-auto">
+              <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Expert team of designers, developers, and marketers</span>
               </div>
-              <div className="bg-gray-50 p-4 flex items-start">
+              <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Industry-specific strategies</span>
               </div>
-              <div className="bg-gray-50 p-4 flex items-start">
+              <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Transparent communication & collaborative workflow</span>
               </div>
-              <div className="bg-gray-50 p-4 flex items-start">
+              <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">On-time project delivery</span>
               </div>
-              <div className="bg-gray-50 p-4 flex items-start md:col-span-2">
+              <div className="bg-gray-50 p-4 flex items-start md:col-span-2 border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Long-term support after launch</span>
               </div>
@@ -323,9 +320,9 @@ export default function Services() {
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-10">
-              <div className="bg-white p-4 md:p-6 lg:p-8">
-                <div className="flex items-start gap-4">
-                  <Target className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-white p-4 md:p-6 lg:p-8 text-center">
+                <div className="flex flex-col items-center">
+                  <Target className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Step 1 — Strategy</h3>
                     <p className="text-base sm:text-lg text-gray-700">
@@ -335,9 +332,9 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 md:p-6 lg:p-8">
-                <div className="flex items-start gap-4">
-                  <Palette className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-white p-4 md:p-6 lg:p-8 text-center">
+                <div className="flex flex-col items-center">
+                  <Palette className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Step 2 — Design</h3>
                     <p className="text-base sm:text-lg text-gray-700">
@@ -347,9 +344,9 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 md:p-6 lg:p-8">
-                <div className="flex items-start gap-4">
-                  <Code className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-white p-4 md:p-6 lg:p-8 text-center">
+                <div className="flex flex-col items-center">
+                  <Code className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Step 3 — Development</h3>
                     <p className="text-base sm:text-lg text-gray-700">
@@ -359,9 +356,9 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 md:p-6 lg:p-8">
-                <div className="flex items-start gap-4">
-                  <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-white p-4 md:p-6 lg:p-8 text-center">
+                <div className="flex flex-col items-center">
+                  <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Step 4 — Marketing</h3>
                     <p className="text-base sm:text-lg text-gray-700">
@@ -371,9 +368,9 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 md:p-6 lg:p-8 md:col-span-2">
-                <div className="flex items-start gap-4">
-                  <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+              <div className="bg-white p-4 md:p-6 lg:p-8 md:col-span-2 text-center">
+                <div className="flex flex-col items-center">
+                  <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
                     <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Step 5 — Improvement</h3>
                     <p className="text-base sm:text-lg text-gray-700">

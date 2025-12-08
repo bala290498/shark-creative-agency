@@ -27,9 +27,6 @@ export default function Navbar() {
             <Link href="/" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
               Home
             </Link>
-            <Link href="/works" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
-              Our Works
-            </Link>
             <Link href="/services" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
               Services
             </Link>
@@ -71,9 +68,6 @@ export default function Navbar() {
           <div className="md:hidden py-4 space-y-4">
             <Link href="/" className="block text-gray-700 hover:text-secondary-500 text-center no-underline" onClick={() => setIsOpen(false)}>
               Home
-            </Link>
-            <Link href="/works" className="block text-gray-700 hover:text-secondary-500 text-center no-underline" onClick={() => setIsOpen(false)}>
-              Our Works
             </Link>
             <Link href="/services" className="block text-gray-700 hover:text-secondary-500 text-center no-underline" onClick={() => setIsOpen(false)}>
               Services

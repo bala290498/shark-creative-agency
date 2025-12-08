@@ -51,9 +51,6 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Portfolio</h4>
             <ul className="space-y-2 text-gray-600">
               <li>
-                <Link href="/works" className="hover:text-secondary-500 transition-colors focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2 focus-visible:outline-none rounded">Our Works</Link>
-              </li>
-              <li>
                 <Link href="/blog" className="hover:text-secondary-500 transition-colors focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2 focus-visible:outline-none rounded">Blog</Link>
               </li>
             </ul>
