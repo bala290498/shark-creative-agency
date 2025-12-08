@@ -41,11 +41,11 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-white text-gray-900 section-padding pb-4 md:pb-8">
+      <section className="bg-white text-gray-900 section-padding pb-4 md:pb-8 pt-24 md:pt-32">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
-              <div className="mb-4">
-              <p className="text-base sm:text-lg md:text-xl text-secondary-500 font-semibold mb-2">
+              <div className="mb-4 md:mb-6">
+              <p className="text-lg sm:text-xl md:text-2xl text-secondary-500 font-semibold mb-2 md:mb-3">
                 Your Idea. Our Execution.
               </p>
               </div>
