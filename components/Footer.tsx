@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-white text-gray-900 border-t border-gray-200">
       <div className="container-custom section-padding">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div>
             <Link href="/" className="inline-block mb-4">
               <Image 
@@ -19,24 +19,21 @@ export default function Footer() {
               />
             </Link>
             <p className="text-gray-600">
-              Transforming brands through innovative digital solutions and creative excellence.
+              Shark Creative Agency — Where ideas transform into impact.
             </p>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-semibold mb-4">About</h4>
             <ul className="space-y-2 text-gray-600">
-              <li>
-                <Link href="/" className="hover:text-secondary-500 transition-colors">Home</Link>
-              </li>
-              <li>
-                <Link href="/services" className="hover:text-secondary-500 transition-colors">Services</Link>
-              </li>
               <li>
                 <Link href="/about" className="hover:text-secondary-500 transition-colors">About Us</Link>
               </li>
               <li>
                 <Link href="/careers" className="hover:text-secondary-500 transition-colors">Careers</Link>
+              </li>
+              <li>
+                <Link href="/internship" className="hover:text-secondary-500 transition-colors">Internship</Link>
               </li>
             </ul>
           </div>
@@ -44,16 +41,30 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-600">
-              <li>Web Design</li>
-              <li>Branding</li>
-              <li>Digital Marketing</li>
-              <li>SEO</li>
+              <li>
+                <Link href="/services" className="hover:text-secondary-500 transition-colors">Our Services</Link>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 className="font-semibold mb-4">Portfolio</h4>
+            <ul className="space-y-2 text-gray-600">
+              <li>
+                <Link href="/works" className="hover:text-secondary-500 transition-colors">Our Works</Link>
+              </li>
+              <li>
+                <Link href="/blog" className="hover:text-secondary-500 transition-colors">Blog</Link>
+              </li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-600">
+              <li>
+                <Link href="/contact" className="hover:text-secondary-500 transition-colors">Contact Us</Link>
+              </li>
               <li>
                 <a href="mailto:contact@sharkcreativeagency.com" className="hover:text-secondary-500 transition-colors">
                   contact@sharkcreativeagency.com
@@ -64,17 +75,14 @@ export default function Footer() {
                   +91 7010584543
                 </a>
               </li>
-              <li className="flex space-x-4 mt-4">
-                <a href="#" className="hover:text-secondary-500 transition-colors" aria-label="Facebook">Facebook</a>
-                <a href="#" className="hover:text-secondary-500 transition-colors" aria-label="Twitter">Twitter</a>
-                <a href="#" className="hover:text-secondary-500 transition-colors" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" className="hover:text-secondary-500 transition-colors" aria-label="Instagram">Instagram</a>
-              </li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-200 mt-8 pt-8 text-center text-gray-600">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-4">
+            <Link href="/privacy" className="hover:text-secondary-500 transition-colors">Privacy Policy</Link>
+          </div>
           <p>&copy; {currentYear} Shark Creative Agency. All rights reserved.</p>
         </div>
       </div>

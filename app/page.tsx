@@ -3,9 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import TextType from '@/components/TextType'
 import { Testimonials } from '@/components/ui/testimonials'
-import CurvedLoop from '@/components/ui/curved-loop'
 import LogoLoop from '@/components/ui/logo-loop'
-import { Palette, Laptop, Smartphone, Search, Rocket, Target, Handshake, Eye } from 'lucide-react'
+import { Rocket, Target, Handshake, Eye, X, CheckCircle2, Palette, Code, TrendingUp, Search, Lightbulb, Paintbrush, Smartphone, Globe, BarChart3, Users, MessageSquare, Clock, Zap, Building2, Sparkles } from 'lucide-react'
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiPython, SiFigma, SiAdobe, SiJavascript, SiHtml5, SiCss3, SiMongodb } from 'react-icons/si'
 import { getInstagramPosts } from '@/lib/instagram'
 
@@ -44,20 +43,18 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-white text-gray-900 section-padding pb-4 md:pb-8">
         <div className="container-custom">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
-            {/* Left Side - Text Content */}
-            <div>
+          <div className="max-w-4xl mx-auto text-center">
               <div className="mb-4">
-                <h1 className="text-4xl md:text-5xl font-bold text-gradient-secondary mb-2">
-                  Shark Creative Agency
-                </h1>
+              <p className="text-base sm:text-lg md:text-xl text-secondary-500 font-semibold mb-2">
+                Your Idea. Our Execution.
+              </p>
               </div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6 min-h-[3rem] md:min-h-[4rem]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-gray-900 leading-tight min-h-[3rem] md:min-h-[4rem] lg:min-h-[5rem]">
                 <TextType 
                   text={[
-                    "Transform Your Brand",
-                    "Innovative Digital Solutions",
-                    "Elevate Your Brand"
+                  "Build Your Brand.",
+                  "Design Your Experience.",
+                  "Accelerate Your Growth."
                   ]}
                   typingSpeed={75}
                   pauseDuration={1500}
@@ -66,273 +63,365 @@ export default function Home() {
                   className="text-gray-900"
                   cursorClassName="text-secondary-500"
                 />
-              </h2>
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-gray-700">
-                We're a full-service creative agency specializing in digital solutions, branding, and marketing that drive results.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 max-w-md">
-                <Link href="/services" className="btn-primary text-center w-full sm:w-auto">
-                  Our Services
-                </Link>
+            </h1>
+            <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 leading-relaxed max-w-3xl mx-auto">
+              We help entrepreneurs and businesses turn ideas into powerful brands with strategy, design, development, and marketing — all handled by one expert team.
+            </p>
+            
+            {/* Bullet Highlights */}
+            <div className="space-y-3 mb-6 md:mb-8 max-w-2xl mx-auto">
+              <div className="bg-gray-50 p-4 flex items-center justify-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+                <span className="text-base sm:text-lg text-gray-700">Complete brand foundation</span>
+              </div>
+              <div className="bg-gray-50 p-4 flex items-center justify-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+                <span className="text-base sm:text-lg text-gray-700">Modern, high-performing websites & apps</span>
+              </div>
+              <div className="bg-gray-50 p-4 flex items-center justify-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+                <span className="text-base sm:text-lg text-gray-700">Growth-focused digital marketing</span>
+              </div>
+              <div className="bg-gray-50 p-4 flex items-center justify-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+                <span className="text-base sm:text-lg text-gray-700">End-to-end creative support</span>
+              </div>
+            </div>
+
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4 md:mb-6">
                 <Link href="/contact" className="btn-secondary-gradient text-center w-full sm:w-auto">
                   Get Started
                 </Link>
+              <Link href="/contact" className="btn-primary text-center w-full sm:w-auto">
+                Book a Strategy Call
+              </Link>
+            </div>
+
+            {/* Micro-Trust Line */}
+            <p className="text-sm sm:text-base text-gray-600">
+              Community-backed. Proud collaborator of <span className="font-semibold text-gray-900">TrustRech Club</span>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Problem Statement Section */}
+      <section className="bg-gray-50 section-padding">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-gray-900">
+              Why Most Businesses Struggle
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl mb-8 md:mb-10 text-gray-700">
+              Most founders and companies face the same obstacles:
+            </p>
+            
+            {/* Problem List */}
+            <div className="space-y-3 mb-8 md:mb-10 max-w-2xl mx-auto">
+              <div className="bg-white p-4 flex items-start">
+                <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">No strong brand identity or positioning</span>
+              </div>
+              <div className="bg-white p-4 flex items-start">
+                <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">Outdated or inconsistent digital presence</span>
+              </div>
+              <div className="bg-white p-4 flex items-start">
+                <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">Websites or apps that don't convert</span>
+              </div>
+              <div className="bg-white p-4 flex items-start">
+                <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">Ineffective marketing campaigns</span>
+              </div>
+              <div className="bg-white p-4 flex items-start">
+                <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">No unified team to handle strategy + design + tech</span>
+              </div>
+              <div className="bg-white p-4 flex items-start">
+                <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">Confusing vendor communication and delayed delivery</span>
+            </div>
+          </div>
+          
+            {/* Closing Statement */}
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 font-medium max-w-3xl mx-auto">
+              Businesses have ideas — but lack a full-service partner to bring them to life.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Solution Section */}
+      <section className="bg-white section-padding">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-gray-900">
+              A Complete Digital Transformation Partner
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl mb-8 md:mb-10 text-gray-700">
+              Shark Creative Agency provides every service you need to launch, grow, and scale:
+            </p>
+            
+            <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 font-semibold">
+              We handle:
+            </p>
+            
+            {/* Services List */}
+            <div className="space-y-3 mb-8 md:mb-10 max-w-2xl mx-auto">
+              <div className="bg-gray-50 p-4 flex items-center justify-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+                <span className="text-base sm:text-lg text-gray-700">Brand foundation</span>
+              </div>
+              <div className="bg-gray-50 p-4 flex items-center justify-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+                <span className="text-base sm:text-lg text-gray-700">Brand identity</span>
+              </div>
+              <div className="bg-gray-50 p-4 flex items-center justify-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+                <span className="text-base sm:text-lg text-gray-700">Brand experience</span>
+              </div>
+              <div className="bg-gray-50 p-4 flex items-center justify-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+                <span className="text-base sm:text-lg text-gray-700">Brand marketing</span>
+              </div>
+              <div className="bg-gray-50 p-4 flex items-center justify-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+                <span className="text-base sm:text-lg text-gray-700">Brand improvement</span>
               </div>
             </div>
 
-            {/* Right Side - Hero Image */}
-            <div className="hidden md:block">
-              <div className="scale-[1.2] origin-center">
-                <Image
-                  src="/hero.png"
-                  alt="Hero"
-                  width={800}
-                  height={800}
-                  className="w-full h-auto"
-                  priority
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-            </div>
+            {/* Closing Statements */}
+            <p className="text-lg sm:text-xl md:text-2xl font-bold mb-4 md:mb-6 text-gray-900">
+              One agency. One team. One seamless workflow.
+            </p>
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 font-medium">
+              You focus on business — we take care of everything else.
+            </p>
+          </div>
+        </div>
+      </section>
 
-            {/* Mobile: Show hero image */}
-            <div className="md:hidden">
-              <div className="scale-[1.2] origin-center">
-                <Image
-                  src="/hero.png"
-                  alt="Hero"
-                  width={800}
-                  height={800}
-                  className="w-full h-auto"
-                  priority
-                  sizes="100vw"
-                />
+      {/* Services Section */}
+      <section className="bg-gray-50 section-padding">
+        <div className="container-custom">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 text-center text-gray-900">
+              What We Do
+            </h2>
+            
+            <div className="grid md:grid-cols-3 gap-8 md:gap-10">
+              {/* Design Services */}
+              <div className="bg-white p-6 md:p-8">
+                <Palette className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4" />
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">Design Services</h3>
+                <ul className="space-y-2 mb-6 text-gray-700">
+                  <li className="flex items-start">
+                    <Paintbrush className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm sm:text-base">Logo and brand identity systems</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Smartphone className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm sm:text-base">UI/UX (User Interface / User Experience) design for web and mobile</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Sparkles className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm sm:text-base">Social media creatives & campaign assets</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Globe className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm sm:text-base">Brochures, banners, and marketing collaterals</span>
+                  </li>
+                </ul>
+                <p className="text-sm sm:text-base text-gray-600 font-medium">
+                  <span className="text-secondary-500">Outcome:</span> A brand that looks professional, trustworthy, and unforgettable.
+              </p>
+            </div>
+            
+              {/* Development Services */}
+              <div className="bg-white p-6 md:p-8">
+                <Code className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4" />
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">Development Services</h3>
+                <ul className="space-y-2 mb-6 text-gray-700">
+                  <li className="flex items-start">
+                    <Globe className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm sm:text-base">Responsive websites (custom codebase, WordPress, Webflow)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Building2 className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm sm:text-base">E-commerce platforms (Shopify, WooCommerce)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Smartphone className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm sm:text-base">Mobile apps using Flutter and React Native (React Native — a mobile app framework built on React)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Zap className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm sm:text-base">Backend systems & API (Application Programming Interface — a structured protocol for communication between systems) integrations</span>
+                  </li>
+                </ul>
+                <p className="text-sm sm:text-base text-gray-600 font-medium">
+                  <span className="text-secondary-500">Outcome:</span> Fast, scalable, secure digital platforms built for performance.
+              </p>
+            </div>
+            
+              {/* Digital Marketing */}
+              <div className="bg-white p-6 md:p-8">
+                <TrendingUp className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4" />
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">Digital Marketing</h3>
+                <ul className="space-y-2 mb-6 text-gray-700">
+                  <li className="flex items-start">
+                    <Search className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm sm:text-base">Search engine optimization (SEO: search engine optimization)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <BarChart3 className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm sm:text-base">Paid ads across Google & Meta</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Users className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm sm:text-base">Social media management</span>
+                  </li>
+                  <li className="flex items-start">
+                    <MessageSquare className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm sm:text-base">Content marketing & brand storytelling</span>
+                  </li>
+                  <li className="flex items-start">
+                    <TrendingUp className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm sm:text-base">Analytics, tracking, and performance optimization</span>
+                  </li>
+                </ul>
+                <p className="text-sm sm:text-base text-gray-600 font-medium">
+                  <span className="text-secondary-500">Outcome:</span> Visibility, leads, conversions, and long-term growth.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Curved Loop Marquee - Extended Belt with Image */}
-      <div className="bg-white relative">
-        <div className="gradient-secondary relative h-[320px] md:h-[400px] w-full overflow-hidden">
-          {/* Top Loop - Above Image */}
-          <div className="absolute inset-x-0 top-0 md:top-4 h-1/2 md:h-auto flex items-center px-4 md:px-0 z-0">
-            <CurvedLoop 
-              marqueeText="MARKET CONTENT MARKETING"
-              speed={0.5}
-              curveAmount={0}
-              direction="left"
-              interactive={false}
-              className="text-[22vw] sm:text-[14vw] md:text-[6vw] lg:text-[5vw]"
-            />
-          </div>
-          
-          {/* Image - Middle Layer */}
-          <div className="absolute inset-0 z-10 flex items-center justify-center">
-            <div className="relative w-full max-w-4xl mx-auto h-full">
-              <Image
-                src="/slider.png"
-                alt="Slider"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-          </div>
-          
-          {/* Bottom Loop - Below Image with spacing */}
-          <div className="absolute inset-x-0 bottom-0 md:bottom-4 h-1/2 md:h-auto flex items-center px-4 md:px-0 z-20">
-            <CurvedLoop 
-              marqueeText="MEDIA ON SOCIAL MEDIA"
-              speed={0.5}
-              curveAmount={0}
-              direction="right"
-              interactive={false}
-              className="text-[22vw] sm:text-[14vw] md:text-[6vw] lg:text-[5vw]"
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* Brand Insights Bento Grid Section */}
+      {/* Our Process Section */}
       <section className="bg-white section-padding">
         <div className="container-custom">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
-            {/* Left Side - Bento Grid */}
-            <div className="grid grid-cols-3 gap-3 md:gap-4">
-              {/* Large Card - Happy Clients */}
-              <div className="col-span-2 gradient-secondary rounded-lg p-4 md:p-5 flex flex-col justify-center shadow-lg">
-                <div className="text-white">
-                  <div className="text-3xl md:text-4xl font-bold mb-1">500+</div>
-                  <div className="text-sm md:text-base font-semibold mb-0.5">Happy Clients</div>
-                  <div className="text-xs md:text-sm opacity-90">Satisfied customers</div>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 text-center text-gray-900">
+              How We Work With You
+            </h2>
+            
+            <div className="space-y-6 md:space-y-8">
+              {/* Step 1 */}
+              <div className="bg-white p-6 md:p-8">
+                <div className="flex items-start gap-4">
+                  <Search className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">Discovery & Strategy</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      We understand your business, goals, competition, and opportunities.
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              {/* Lines of Code */}
-              <div className="bg-white rounded-lg border border-gray-200 p-3 md:p-4 flex flex-col justify-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-secondary-500 mb-1">2M+</div>
-                <div className="text-xs md:text-sm font-medium text-gray-900">Lines of Code</div>
-                <div className="text-[10px] md:text-xs text-gray-600 mt-0.5">Written & optimized</div>
+              {/* Step 2 */}
+              <div className="bg-white p-6 md:p-8">
+                <div className="flex items-start gap-4">
+                  <Palette className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">Brand & Experience Design</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      We craft your visual identity, user experience, and communication style.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              {/* Projects Delivered */}
-              <div className="bg-white rounded-lg border border-gray-200 p-3 md:p-4 flex flex-col justify-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-secondary-500 mb-1">350+</div>
-                <div className="text-xs md:text-sm font-medium text-gray-900">Projects</div>
-                <div className="text-[10px] md:text-xs text-gray-600 mt-0.5">Delivered</div>
+              {/* Step 3 */}
+              <div className="bg-white p-6 md:p-8">
+                <div className="flex items-start gap-4">
+                  <Code className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">Build & Develop</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      Websites, apps, systems, automations — built for scale and speed.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              {/* Years of Experience */}
-              <div className="bg-white rounded-lg border border-gray-200 p-3 md:p-4 flex flex-col justify-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-secondary-500 mb-1">7+</div>
-                <div className="text-xs md:text-sm font-medium text-gray-900">Years</div>
-                <div className="text-[10px] md:text-xs text-gray-600 mt-0.5">Experience</div>
+              {/* Step 4 */}
+              <div className="bg-white p-6 md:p-8">
+                <div className="flex items-start gap-4">
+                  <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">Market & Grow</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      We launch campaigns, track analytics, and optimize for consistent growth.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              {/* Countries Served */}
-              <div className="bg-white rounded-lg border border-gray-200 p-3 md:p-4 flex flex-col justify-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-secondary-500 mb-1">25+</div>
-                <div className="text-xs md:text-sm font-medium text-gray-900">Countries</div>
-                <div className="text-[10px] md:text-xs text-gray-600 mt-0.5">Global reach</div>
-              </div>
-
-              {/* Team Members */}
-              <div className="bg-white rounded-lg border border-gray-200 p-3 md:p-4 flex flex-col justify-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-secondary-500 mb-1">50+</div>
-                <div className="text-xs md:text-sm font-medium text-gray-900">Team Members</div>
-                <div className="text-[10px] md:text-xs text-gray-600 mt-0.5">Expert professionals</div>
-              </div>
-
-              {/* Awards Won */}
-              <div className="bg-white rounded-lg border border-gray-200 p-3 md:p-4 flex flex-col justify-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-secondary-500 mb-1">15+</div>
-                <div className="text-xs md:text-sm font-medium text-gray-900">Awards</div>
-                <div className="text-[10px] md:text-xs text-gray-600 mt-0.5">Industry recognition</div>
-              </div>
-
-              {/* Client Retention */}
-              <div className="bg-white rounded-lg border border-gray-200 p-3 md:p-4 flex flex-col justify-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-secondary-500 mb-1">90%</div>
-                <div className="text-xs md:text-sm font-medium text-gray-900">Retention</div>
-                <div className="text-[10px] md:text-xs text-gray-600 mt-0.5">Client satisfaction</div>
-              </div>
-
-              {/* Support Hours */}
-              <div className="bg-white rounded-lg border border-gray-200 p-3 md:p-4 flex flex-col justify-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-secondary-500 mb-1">24/7</div>
-                <div className="text-xs md:text-sm font-medium text-gray-900">Support</div>
-                <div className="text-[10px] md:text-xs text-gray-600 mt-0.5">Always available</div>
+              {/* Step 5 */}
+              <div className="bg-white p-6 md:p-8">
+                <div className="flex items-start gap-4">
+                  <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">Improve & Support</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      Ongoing upgrades, creative support, and monthly management.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Right Side - Content */}
-            <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">Our Impact in Numbers</h2>
-              <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6">
-                Our track record speaks for itself. With over 500 happy clients across 25+ countries, we've built a reputation for delivering exceptional results. Our team has written over 2 million lines of code, powering 350+ successful projects.
-              </p>
-              <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6">
-                With 7+ years of experience in the creative industry, we've helped businesses transform their digital presence and achieve their goals. Every project is crafted with precision, creativity, and a commitment to excellence.
-              </p>
-              <p className="text-base sm:text-lg md:text-xl text-gray-700">
-                These numbers represent more than just statistics—they represent trust, dedication, and the countless hours we've invested in making our clients successful.
+            <div className="mt-8 md:mt-10 text-center">
+              <p className="text-base sm:text-lg md:text-xl text-gray-700 font-medium">
+                <span className="text-secondary-500">Outcome:</span> A long-term partnership for sustainable success.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Preview */}
-      <section className="section-padding">
+      {/* Why Choose Us Section */}
+      <section className="bg-gray-50 section-padding">
         <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Our Services</h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
-              Comprehensive solutions to elevate your brand and drive business growth
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-10 text-gray-900">
+              What Makes Us Different
+            </h2>
+            
+            {/* Features List */}
+            <div className="space-y-3 mb-8 md:mb-10 max-w-2xl mx-auto">
+              <div className="bg-white p-4 flex items-start">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">Expert designers, developers, and marketers</span>
+              </div>
+              <div className="bg-white p-4 flex items-start">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">Industry-specific strategies—not generic templates</span>
+              </div>
+              <div className="bg-white p-4 flex items-start">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">Transparent communication through every stage</span>
+              </div>
+              <div className="bg-white p-4 flex items-start">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">On-time delivery with milestone-based planning</span>
+              </div>
+              <div className="bg-white p-4 flex items-start">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">Full-stack digital support: from concept to scale</span>
+              </div>
+            </div>
+
+            {/* Closing Statement */}
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-900 font-bold">
+              Shark Creative Agency is not just a service provider —<br className="hidden sm:block" />
+              <span className="text-secondary-500">we become your digital team.</span>
             </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <Palette className="w-10 h-10 text-secondary-500 mb-4" />
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">Brand Identity</h3>
-              <p className="text-sm sm:text-base text-gray-600">
-                Create a memorable brand that resonates with your audience and stands out in the market.
-              </p>
-            </div>
-            
-            <div className="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <Laptop className="w-10 h-10 text-secondary-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Web Design</h3>
-              <p className="text-gray-600">
-                Modern, responsive websites that convert visitors into customers and drive business growth.
-              </p>
-            </div>
-            
-            <div className="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <Smartphone className="w-10 h-10 text-secondary-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Digital Marketing</h3>
-              <p className="text-gray-600">
-                Strategic marketing campaigns that increase visibility and generate qualified leads.
-              </p>
-            </div>
-            
-            <div className="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <Search className="w-10 h-10 text-secondary-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">SEO Optimization</h3>
-              <p className="text-gray-600">
-                Improve your search engine rankings and drive organic traffic to your website.
-              </p>
-            </div>
-          </div>
-          
-          <div className="text-center mt-12">
-            <Link href="/services" className="btn-secondary-gradient inline-block w-full sm:w-auto px-12">
-              View All Services
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Statistics Section */}
-      <section className="bg-white section-padding">
-        <div className="container-custom">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
-            {/* Left Side - Statistics Cards */}
-            <div className="grid grid-cols-2 gap-6">
-              <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-4xl md:text-5xl font-bold text-secondary-500 mb-2">7+</div>
-                <p className="text-sm md:text-base text-gray-900 font-medium">Years of Experience</p>
-              </div>
-              <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-4xl md:text-5xl font-bold text-secondary-500 mb-2">90%</div>
-                <p className="text-sm md:text-base text-gray-900 font-medium">Client Retention</p>
-              </div>
-              <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-4xl md:text-5xl font-bold text-secondary-500 mb-2">350+</div>
-                <p className="text-sm md:text-base text-gray-900 font-medium">Projects Delivered</p>
-              </div>
-              <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-4xl md:text-5xl font-bold text-secondary-500 mb-2">150+</div>
-                <p className="text-sm md:text-base text-gray-900 font-medium">Clients Worldwide</p>
-              </div>
-            </div>
-
-            {/* Right Side - Content */}
-            <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">Our Track Record</h2>
-              <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6">
-                With over 7 years of experience in the creative industry, we've built a reputation for delivering exceptional results. Our commitment to excellence has earned us the trust of clients worldwide, with a remarkable 90% client retention rate.
-              </p>
-              <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6">
-                We've successfully completed 350+ projects across various industries, helping businesses transform their digital presence and achieve their goals. Our global reach extends to 150+ clients, each benefiting from our innovative solutions and personalized approach.
-              </p>
-              <p className="text-base sm:text-lg md:text-xl text-gray-700">
-                At Shark Creative Agency, numbers tell a story, but our client relationships tell the real story of our success.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -390,64 +479,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="bg-white section-padding">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Why Choose Shark Creative Agency?</h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
-              We combine creativity with strategy to deliver exceptional results
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <Rocket className="w-12 h-12 text-secondary-500 mb-4 mx-auto" />
-              <h3 className="text-xl sm:text-2xl font-semibold mb-2">Innovative Solutions</h3>
-              <p className="text-sm sm:text-base text-gray-600">
-                We stay ahead of trends and use cutting-edge technology to deliver innovative solutions that set you apart.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <Target className="w-12 h-12 text-secondary-500 mb-4 mx-auto" />
-              <h3 className="text-2xl font-semibold mb-2">Results-Driven</h3>
-              <p className="text-gray-600">
-                Every project is designed with your business goals in mind, ensuring measurable results and ROI.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <Handshake className="w-12 h-12 text-secondary-500 mb-4 mx-auto" />
-              <h3 className="text-2xl font-semibold mb-2">Collaborative Approach</h3>
-              <p className="text-gray-600">
-                We work closely with you throughout the process, ensuring your vision comes to life exactly as you imagined.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials Section */}
       <Testimonials />
 
       {/* CTA Section */}
       <section className="bg-white section-padding">
         <div className="container-custom text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-900">Ready to Transform Your Brand?</h2>
-          <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 max-w-2xl mx-auto px-4">
-            Let's work together to create something amazing. Get in touch with us today.
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-gray-900">
+            Let's Build Your Brand Together
+          </h2>
+          <p className="text-base sm:text-lg md:text-xl mb-4 md:mb-6 text-gray-700 max-w-3xl mx-auto px-4">
+            Ready to turn your idea into a powerful digital brand?
           </p>
-          <div className="flex justify-center">
+          <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 max-w-3xl mx-auto px-4">
+            Our team is here to design, develop, and grow everything you envision.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="btn-secondary-gradient inline-block w-full sm:w-auto px-12">
-              Contact Us Today
+              Start Your Project
+            </Link>
+            <Link href="/contact" className="btn-primary inline-block w-full sm:w-auto px-12">
+              Talk to Our Team
             </Link>
           </div>
         </div>
       </section>
 
       {/* Instagram Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-gray-50 section-padding">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-900">Follow Us on Instagram</h2>
