@@ -130,9 +130,9 @@ export default function Internship() {
     <>
       {/* Hero Section */}
       <section className="bg-white text-gray-900 section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 px-4">
+            <h1 className="text-[clamp(1.5rem,4vw,3rem)] font-bold mb-4 md:mb-6 px-4">
               Internship Opportunities
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 px-4">
@@ -144,15 +144,15 @@ export default function Internship() {
 
       {/* Why Intern With Us */}
       <section className="section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Why Intern With Us?</h2>
+            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4">Why Intern With Us?</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               We're committed to providing meaningful internship experiences that help you grow professionally
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
             {benefits.map((benefit, index) => {
               const IconComponent = benefit.icon
               return (
@@ -168,9 +168,9 @@ export default function Internship() {
 
       {/* Open Internship Positions */}
       <section className="bg-white section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Open Internship Positions</h2>
+            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4">Open Internship Positions</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               Explore current internship opportunities to start your career journey
             </p>
@@ -235,16 +235,16 @@ export default function Internship() {
 
       {/* What to Expect Section */}
       <section className="section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">What to Expect</h2>
+              <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4">What to Expect</h2>
               <p className="text-base sm:text-lg md:text-xl text-gray-600 px-4">
                 A comprehensive internship experience designed for your growth
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <Calendar className="w-8 h-8 text-secondary-500 mb-4" />
                 <h3 className="text-xl sm:text-2xl font-semibold mb-3 md:mb-4">Structured Program</h3>
@@ -284,7 +284,7 @@ export default function Internship() {
       {/* CTA Section */}
       <section className="bg-white section-padding">
         <div className="container-custom text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-900">Ready to Start Your Journey?</h2>
+          <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4 text-gray-900">Ready to Start Your Journey?</h2>
           <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 max-w-2xl mx-auto px-4">
             Don't see a position that matches your interests? We're always open to hearing from passionate students eager to learn.
           </p>

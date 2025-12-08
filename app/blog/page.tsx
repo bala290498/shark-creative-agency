@@ -38,9 +38,9 @@ export default function Blog() {
     <>
       {/* Hero Section */}
       <section className="bg-white text-gray-900 section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 px-4">
+            <h1 className="text-[clamp(1.5rem,4vw,3rem)] font-bold mb-4 md:mb-6 px-4">
               Our Blog
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 px-4">
@@ -54,9 +54,9 @@ export default function Blog() {
 
       {/* Newsletter Section */}
       <section className="bg-white section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-2xl mx-auto text-center gradient-secondary rounded-2xl p-8 md:p-12 text-white">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-4">
               Stay Updated
             </h2>
             <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 opacity-90">

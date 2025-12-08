@@ -8,8 +8,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50 w-full">
-      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20">
+    <nav className="fixed top-0 w-full z-40 bg-white/95 backdrop-blur-sm shadow-sm">
+      <div className="container mx-auto px-4 max-w-screen-lg">
         <div className="flex items-center justify-between py-4 md:py-0 md:h-16">
           <Link href="/" className="flex items-center md:flex-shrink-0">
             <Image 
@@ -45,7 +45,7 @@ export default function Navbar() {
             <Link href="/internship" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
               Internship
             </Link>
-            <Link href="/contact" className="btn-secondary-gradient whitespace-nowrap text-center px-4 md:px-6 flex-shrink-0 no-underline">
+            <Link href="/contact-us" className="btn-secondary-gradient whitespace-nowrap text-center px-4 md:px-6 flex-shrink-0 no-underline">
               Contact Us
             </Link>
           </div>
@@ -91,7 +91,7 @@ export default function Navbar() {
               Internship
             </Link>
             <div className="flex justify-center pt-2">
-              <Link href="/contact" className="btn-secondary-gradient w-full text-center no-underline" onClick={() => setIsOpen(false)}>
+              <Link href="/contact-us" className="btn-secondary-gradient w-full text-center no-underline" onClick={() => setIsOpen(false)}>
                 Contact Us
               </Link>
             </div>

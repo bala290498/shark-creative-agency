@@ -125,9 +125,9 @@ export default function Careers() {
     <>
       {/* Hero Section */}
       <section className="bg-white text-gray-900 section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 px-4">
+            <h1 className="text-[clamp(1.5rem,4vw,3rem)] font-bold mb-4 md:mb-6 px-4">
               Join Our Team
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 px-4">
@@ -139,15 +139,15 @@ export default function Careers() {
 
       {/* Why Work With Us */}
       <section className="section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Why Work With Us?</h2>
+            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4">Why Work With Us?</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               We're building a culture of creativity, innovation, and growth
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
             {benefits.map((benefit, index) => {
               const IconComponent = benefit.icon
               return (
@@ -163,9 +163,9 @@ export default function Careers() {
 
       {/* Open Positions */}
       <section className="bg-white section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Open Positions</h2>
+            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4">Open Positions</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               Explore current opportunities to join our team
             </p>
@@ -219,10 +219,10 @@ export default function Careers() {
 
       {/* Culture Section */}
       <section className="section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Our Culture</h2>
+            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4">Our Culture</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 px-4">
                 We believe in creating an environment where everyone can thrive
               </p>
@@ -264,7 +264,7 @@ export default function Careers() {
       {/* CTA Section */}
       <section className="bg-white section-padding">
         <div className="container-custom text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-900">Don't See a Position That Fits?</h2>
+          <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4 text-gray-900">Don't See a Position That Fits?</h2>
           <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 max-w-2xl mx-auto px-4">
             We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.
           </p>

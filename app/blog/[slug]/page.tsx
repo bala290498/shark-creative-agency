@@ -91,7 +91,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         </div>
-        <div className="container-custom py-8 md:py-12">
+        <div className="container mx-auto px-4 max-w-screen-lg py-8 md:py-12">
           <Link 
             href="/blog" 
             className="inline-flex items-center gap-2 text-secondary-500 hover:text-secondary-600 mb-6 transition-colors"
@@ -115,7 +115,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
               </div>
             </div>
             
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+            <h1 className="text-[clamp(1.5rem,4vw,2.5rem)] font-bold mb-4 text-gray-900">
               {post.title}
             </h1>
             
@@ -140,7 +140,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
 
       {/* Blog Content */}
       <section className="section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-3xl mx-auto">
             <article className="prose prose-lg max-w-none">
               <ReactMarkdown

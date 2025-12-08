@@ -28,10 +28,10 @@ export default function BlogClient({ posts, categories }: BlogClientProps) {
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-lg text-sm sm:text-base font-medium transition-colors ${
+                className={`px-4 py-2 md:px-5 md:py-3 rounded-xl text-sm md:text-base font-medium transition-colors focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2 focus-visible:outline-none ${
                   category === selectedCategory
-                    ? 'bg-secondary-500 text-white'
-                    : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
+                    ? 'bg-secondary-500 text-white shadow-sm'
+                    : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 shadow-sm'
                 }`}
               >
                 {category}
@@ -49,15 +49,15 @@ export default function BlogClient({ posts, categories }: BlogClientProps) {
               <p className="text-gray-600 text-lg">No posts found in this category.</p>
             </div>
           ) : (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
               {filteredPosts.map((post) => (
                 <article
                   key={post.slug}
-                  className="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow"
+                  className="bg-white overflow-hidden"
                 >
                   <Link 
                     href={`/blog/${post.slug}`}
-                    className="block cursor-pointer"
+                    className="block cursor-pointer focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2 focus-visible:outline-none"
                     prefetch={true}
                   >
                     <div className="relative w-full h-48 sm:h-56 md:h-64 overflow-hidden">

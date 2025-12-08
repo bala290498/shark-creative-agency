@@ -226,12 +226,12 @@ export default function Works() {
       {/* CTA Section */}
       <section className="bg-white section-padding relative z-10">
         <div className="container-custom text-center">
-          <h2 className="text-4xl font-bold mb-4 text-gray-900">Ready to Start Your Project?</h2>
+          <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-4 text-gray-900">Ready to Start Your Project?</h2>
           <p className="text-xl mb-8 text-gray-700 max-w-2xl mx-auto">
             Let&apos;s work together to create something amazing. Get in touch with us today.
           </p>
           <div className="flex justify-center">
-            <Link href="/contact" className="btn-secondary-gradient inline-block w-full sm:w-auto px-12">
+            <Link href="/contact-us" className="btn-secondary-gradient inline-block w-full sm:w-auto px-12">
               Contact Us Today
             </Link>
           </div>

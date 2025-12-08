@@ -34,9 +34,9 @@ export default function About() {
     <>
       {/* Hero Section */}
       <section className="bg-white text-gray-900 section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 px-4">
+            <h1 className="text-[clamp(1.5rem,4vw,3rem)] font-bold mb-4 md:mb-6 px-4">
               About Shark Creative Agency
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 px-4">
@@ -48,9 +48,9 @@ export default function About() {
 
       {/* Our Story */}
       <section className="section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-center px-4">Our Story</h2>
+            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-4 md:mb-6 text-center px-4">Our Story</h2>
             <div className="prose prose-lg max-w-none text-gray-700">
               <p className="mb-4">
                 Shark Creative Agency was founded with a simple mission: to help businesses thrive in the digital age through innovative creative solutions. We believe that every brand has a unique story to tell, and our job is to help you tell it in the most compelling way possible.
@@ -68,10 +68,10 @@ export default function About() {
 
       {/* Mission & Values */}
       <section className="bg-white section-padding">
-        <div className="container-custom">
-          <div className="grid md:grid-cols-2 gap-12">
+        <div className="container mx-auto px-4 max-w-screen-lg">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">Our Mission</h2>
+              <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-4 md:mb-6">Our Mission</h2>
               <p className="text-base sm:text-lg text-gray-700 mb-4">
                 To empower businesses with creative solutions that drive growth, foster innovation, and create lasting impact. We're committed to delivering exceptional work that exceeds expectations and helps our clients achieve their goals.
               </p>
@@ -81,7 +81,7 @@ export default function About() {
             </div>
             
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">Our Values</h2>
+              <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-4 md:mb-6">Our Values</h2>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <span className="text-secondary-500 text-xl sm:text-2xl mr-3">✓</span>
@@ -119,15 +119,15 @@ export default function About() {
 
       {/* Team Section */}
       <section className="section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Our Team</h2>
+            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4">Our Team</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               Meet the talented individuals who make Shark Creative Agency great
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <div className="text-center">
               <div className="bg-gray-200 w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <User className="w-16 h-16 text-gray-600" />
@@ -166,7 +166,7 @@ export default function About() {
 
       {/* Stats Section */}
       <section className="bg-white section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
             <div>
               <div className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 text-gray-900">500+</div>
@@ -191,7 +191,7 @@ export default function About() {
       {/* CTA Section */}
       <section className="section-padding bg-white">
         <div className="container-custom text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Want to Join Our Team?</h2>
+          <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4">Want to Join Our Team?</h2>
           <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-600 max-w-2xl mx-auto px-4">
             We're always looking for talented individuals who share our passion for creativity and excellence.
           </p>

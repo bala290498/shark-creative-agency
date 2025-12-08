@@ -41,15 +41,15 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-white text-gray-900 section-padding pb-4 md:pb-8">
-        <div className="container-custom">
+      <section className="bg-white text-gray-900 section-padding">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
               <div className="mb-4">
               <p className="text-base sm:text-lg md:text-xl text-secondary-500 font-semibold mb-2">
                 Your Idea. Our Execution.
               </p>
               </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-gray-900 leading-tight min-h-[3rem] md:min-h-[4rem] lg:min-h-[5rem]">
+            <h1 className="text-[clamp(1.5rem,4vw,3rem)] font-bold mb-4 md:mb-6 text-gray-900 leading-tight min-h-[3rem] md:min-h-[4rem] lg:min-h-[5rem]">
                 <TextType 
                   text={[
                   "Build Your Brand.",
@@ -69,31 +69,31 @@ export default function Home() {
             </p>
             
             {/* Bullet Highlights */}
-            <div className="space-y-3 mb-6 md:mb-8 max-w-2xl mx-auto">
-              <div className="bg-gray-50 p-4 flex items-center justify-center">
-                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6 md:mb-8 max-w-4xl mx-auto">
+              <div className="bg-gray-50 p-4 flex items-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Complete brand foundation</span>
               </div>
-              <div className="bg-gray-50 p-4 flex items-center justify-center">
-                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+              <div className="bg-gray-50 p-4 flex items-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Modern, high-performing websites & apps</span>
               </div>
-              <div className="bg-gray-50 p-4 flex items-center justify-center">
-                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+              <div className="bg-gray-50 p-4 flex items-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Growth-focused digital marketing</span>
               </div>
-              <div className="bg-gray-50 p-4 flex items-center justify-center">
-                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+              <div className="bg-gray-50 p-4 flex items-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">End-to-end creative support</span>
               </div>
             </div>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4 md:mb-6">
-                <Link href="/contact" className="btn-secondary-gradient text-center w-full sm:w-auto">
+                <Link href="/contact-us" className="btn-secondary-gradient text-center w-full sm:w-auto">
                   Get Started
                 </Link>
-              <Link href="/contact" className="btn-primary text-center w-full sm:w-auto">
+              <Link href="/contact-us" className="btn-primary text-center w-full sm:w-auto">
                 Book a Strategy Call
               </Link>
             </div>
@@ -108,9 +108,9 @@ export default function Home() {
 
       {/* Problem Statement Section */}
       <section className="bg-gray-50 section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-gray-900">
+            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-gray-900">
               Why Most Businesses Struggle
             </h2>
             <p className="text-base sm:text-lg md:text-xl mb-8 md:mb-10 text-gray-700">
@@ -118,7 +118,7 @@ export default function Home() {
             </p>
             
             {/* Problem List */}
-            <div className="space-y-3 mb-8 md:mb-10 max-w-2xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8 md:mb-10 max-w-4xl mx-auto">
               <div className="bg-white p-4 flex items-start">
                 <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">No strong brand identity or positioning</span>
@@ -126,38 +126,38 @@ export default function Home() {
               <div className="bg-white p-4 flex items-start">
                 <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Outdated or inconsistent digital presence</span>
-              </div>
+          </div>
               <div className="bg-white p-4 flex items-start">
                 <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Websites or apps that don't convert</span>
-              </div>
+            </div>
               <div className="bg-white p-4 flex items-start">
                 <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Ineffective marketing campaigns</span>
-              </div>
-              <div className="bg-white p-4 flex items-start">
-                <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">No unified team to handle strategy + design + tech</span>
-              </div>
-              <div className="bg-white p-4 flex items-start">
-                <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Confusing vendor communication and delayed delivery</span>
-            </div>
           </div>
-          
+              <div className="bg-white p-4 flex items-start">
+                <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">No unified team</span>
+          </div>
+              <div className="bg-white p-4 flex items-start">
+                <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">Poor communication and delays</span>
+        </div>
+      </div>
+
             {/* Closing Statement */}
             <p className="text-base sm:text-lg md:text-xl text-gray-700 font-medium max-w-3xl mx-auto">
               Businesses have ideas — but lack a full-service partner to bring them to life.
             </p>
-          </div>
-        </div>
+                </div>
+              </div>
       </section>
 
       {/* Our Solution Section */}
       <section className="bg-white section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-gray-900">
+            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-gray-900">
               A Complete Digital Transformation Partner
             </h2>
             <p className="text-base sm:text-lg md:text-xl mb-8 md:mb-10 text-gray-700">
@@ -169,25 +169,25 @@ export default function Home() {
             </p>
             
             {/* Services List */}
-            <div className="space-y-3 mb-8 md:mb-10 max-w-2xl mx-auto">
-              <div className="bg-gray-50 p-4 flex items-center justify-center">
-                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8 md:mb-10 max-w-4xl mx-auto">
+              <div className="bg-gray-50 p-4 flex items-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Brand foundation</span>
               </div>
-              <div className="bg-gray-50 p-4 flex items-center justify-center">
-                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+              <div className="bg-gray-50 p-4 flex items-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Brand identity</span>
               </div>
-              <div className="bg-gray-50 p-4 flex items-center justify-center">
-                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+              <div className="bg-gray-50 p-4 flex items-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Brand experience</span>
               </div>
-              <div className="bg-gray-50 p-4 flex items-center justify-center">
-                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+              <div className="bg-gray-50 p-4 flex items-center">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Brand marketing</span>
               </div>
-              <div className="bg-gray-50 p-4 flex items-center justify-center">
-                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3" />
+              <div className="bg-gray-50 p-4 flex items-center md:col-span-2">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Brand improvement</span>
               </div>
             </div>
@@ -205,17 +205,17 @@ export default function Home() {
 
       {/* Services Section */}
       <section className="bg-gray-50 section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 text-center text-gray-900">
+            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-8 md:mb-12 text-center text-gray-900">
               What We Do
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-8 md:gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
               {/* Design Services */}
-              <div className="bg-white p-6 md:p-8">
+              <div className="bg-white p-4 md:p-6 lg:p-8">
                 <Palette className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4" />
-                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">Design Services</h3>
+                <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-4 text-gray-900">Design Services</h3>
                 <ul className="space-y-2 mb-6 text-gray-700">
                   <li className="flex items-start">
                     <Paintbrush className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
@@ -240,9 +240,9 @@ export default function Home() {
             </div>
             
               {/* Development Services */}
-              <div className="bg-white p-6 md:p-8">
+              <div className="bg-white p-4 md:p-6 lg:p-8">
                 <Code className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4" />
-                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">Development Services</h3>
+                <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-4 text-gray-900">Development Services</h3>
                 <ul className="space-y-2 mb-6 text-gray-700">
                   <li className="flex items-start">
                     <Globe className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
@@ -267,9 +267,9 @@ export default function Home() {
             </div>
             
               {/* Digital Marketing */}
-              <div className="bg-white p-6 md:p-8">
+              <div className="bg-white p-4 md:p-6 lg:p-8">
                 <TrendingUp className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4" />
-                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">Digital Marketing</h3>
+                <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-4 text-gray-900">Digital Marketing</h3>
                 <ul className="space-y-2 mb-6 text-gray-700">
                   <li className="flex items-start">
                     <Search className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
@@ -294,28 +294,28 @@ export default function Home() {
                 </ul>
                 <p className="text-sm sm:text-base text-gray-600 font-medium">
                   <span className="text-secondary-500">Outcome:</span> Visibility, leads, conversions, and long-term growth.
-                </p>
-              </div>
+              </p>
             </div>
+          </div>
           </div>
         </div>
       </section>
 
       {/* Our Process Section */}
       <section className="bg-white section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 text-center text-gray-900">
+            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-8 md:mb-12 text-center text-gray-900">
               How We Work With You
             </h2>
             
-            <div className="space-y-6 md:space-y-8">
+            <div className="space-y-4 md:space-y-6">
               {/* Step 1 */}
-              <div className="bg-white p-6 md:p-8">
+              <div className="bg-white p-4 md:p-6 lg:p-8">
                 <div className="flex items-start gap-4">
                   <Search className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">Discovery & Strategy</h3>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Discovery & Strategy</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       We understand your business, goals, competition, and opportunities.
                     </p>
@@ -324,37 +324,37 @@ export default function Home() {
               </div>
 
               {/* Step 2 */}
-              <div className="bg-white p-6 md:p-8">
+              <div className="bg-white p-4 md:p-6 lg:p-8">
                 <div className="flex items-start gap-4">
                   <Palette className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">Brand & Experience Design</h3>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Brand & Experience Design</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       We craft your visual identity, user experience, and communication style.
                     </p>
                   </div>
-                </div>
+              </div>
               </div>
 
               {/* Step 3 */}
-              <div className="bg-white p-6 md:p-8">
+              <div className="bg-white p-4 md:p-6 lg:p-8">
                 <div className="flex items-start gap-4">
                   <Code className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">Build & Develop</h3>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Build & Develop</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       Websites, apps, systems, automations — built for scale and speed.
                     </p>
-                  </div>
-                </div>
               </div>
+              </div>
+            </div>
 
               {/* Step 4 */}
-              <div className="bg-white p-6 md:p-8">
+              <div className="bg-white p-4 md:p-6 lg:p-8">
                 <div className="flex items-start gap-4">
                   <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
-                  <div>
-                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">Market & Grow</h3>
+            <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Market & Grow</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       We launch campaigns, track analytics, and optimize for consistent growth.
                     </p>
@@ -363,11 +363,11 @@ export default function Home() {
               </div>
 
               {/* Step 5 */}
-              <div className="bg-white p-6 md:p-8">
+              <div className="bg-white p-4 md:p-6 lg:p-8">
                 <div className="flex items-start gap-4">
                   <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">Improve & Support</h3>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Improve & Support</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       Ongoing upgrades, creative support, and monthly management.
                     </p>
@@ -387,14 +387,14 @@ export default function Home() {
 
       {/* Why Choose Us Section */}
       <section className="bg-gray-50 section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-10 text-gray-900">
+            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-8 md:mb-10 text-gray-900">
               What Makes Us Different
             </h2>
             
             {/* Features List */}
-            <div className="space-y-3 mb-8 md:mb-10 max-w-2xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8 md:mb-10 max-w-4xl mx-auto">
               <div className="bg-white p-4 flex items-start">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Expert designers, developers, and marketers</span>
@@ -411,7 +411,7 @@ export default function Home() {
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">On-time delivery with milestone-based planning</span>
               </div>
-              <div className="bg-white p-4 flex items-start">
+              <div className="bg-white p-4 flex items-start md:col-span-2">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Full-stack digital support: from concept to scale</span>
               </div>
@@ -428,9 +428,9 @@ export default function Home() {
 
       {/* Technologies Section */}
       <section className="bg-white section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Technologies We Use</h2>
+            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4">Technologies We Use</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               Cutting-edge tools and technologies that power our innovative solutions
             </p>
@@ -484,8 +484,8 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="bg-white section-padding">
-        <div className="container-custom text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-gray-900">
+        <div className="container mx-auto px-4 max-w-screen-lg text-center">
+          <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-gray-900">
             Let's Build Your Brand Together
           </h2>
           <p className="text-base sm:text-lg md:text-xl mb-4 md:mb-6 text-gray-700 max-w-3xl mx-auto px-4">
@@ -495,10 +495,10 @@ export default function Home() {
             Our team is here to design, develop, and grow everything you envision.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-secondary-gradient inline-block w-full sm:w-auto px-12">
+            <Link href="/contact-us" className="btn-secondary-gradient inline-block w-full sm:w-auto px-12">
               Start Your Project
             </Link>
-            <Link href="/contact" className="btn-primary inline-block w-full sm:w-auto px-12">
+            <Link href="/contact-us" className="btn-primary inline-block w-full sm:w-auto px-12">
               Talk to Our Team
             </Link>
           </div>
@@ -507,23 +507,23 @@ export default function Home() {
 
       {/* Instagram Section */}
       <section className="bg-gray-50 section-padding">
-        <div className="container-custom">
+        <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-900">Follow Us on Instagram</h2>
+            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4 text-gray-900">Follow Us on Instagram</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               Get inspired by our latest creative work and behind-the-scenes content
             </p>
           </div>
           
           {instagramPosts.length > 0 ? (
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
               {instagramPosts.map((post, index) => (
                 <a
                   key={index}
                   href={post.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative w-full overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col"
+                  className="group relative w-full overflow-hidden aspect-square flex flex-col focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2 focus-visible:outline-none"
                 >
                   <div className="relative w-full">
                     <Image

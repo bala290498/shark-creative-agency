@@ -17,7 +17,7 @@ A modern, SEO-optimized Next.js website for Shark Creative Agency featuring resp
 - **Services** - Comprehensive service listings with detailed features
 - **About Us** - Company story, mission, values, team, and stats
 - **Careers** - Open positions, benefits, and company culture
-- **Contact** - Contact form and information
+- **Contact Us** - Contact form and information
 
 ## Getting Started
 
@@ -58,7 +58,7 @@ npm start
 
 ## Customization
 
-- Update company information in footer and contact page
+- Update company information in footer and contact us page
 - Modify colors in `tailwind.config.js`
 - Add your own images and assets
 - Customize metadata in each page's metadata export
