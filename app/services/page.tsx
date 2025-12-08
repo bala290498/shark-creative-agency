@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Palette, Laptop, Smartphone, Search, BarChart3, Video } from 'lucide-react'
+import { Palette, Code, TrendingUp, CheckCircle2, Rocket, Search, Smartphone, Globe, Building2, Zap, BarChart3, Users, MessageSquare, Target, Handshake, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Services',
@@ -30,151 +30,387 @@ export const metadata: Metadata = {
 }
 
 export default function Services() {
-  const services = [
-    {
-      icon: Palette,
-      title: 'Brand Identity & Design',
-      description: 'Create a cohesive brand identity that tells your story and connects with your audience. From logo design to brand guidelines, we help you establish a strong visual presence.',
-      features: ['Logo Design', 'Brand Guidelines', 'Visual Identity', 'Brand Strategy']
-    },
-    {
-      icon: Laptop,
-      title: 'Web Design & Development',
-      description: 'Modern, responsive websites that look great on all devices and provide an exceptional user experience. We build sites that convert visitors into customers.',
-      features: ['Responsive Design', 'E-commerce Solutions', 'CMS Integration', 'Performance Optimization']
-    },
-    {
-      icon: Smartphone,
-      title: 'Digital Marketing',
-      description: 'Strategic marketing campaigns that increase your online visibility, engage your audience, and drive qualified leads to your business.',
-      features: ['Social Media Marketing', 'Email Campaigns', 'Content Marketing', 'PPC Advertising']
-    },
-    {
-      icon: Search,
-      title: 'SEO Optimization',
-      description: 'Improve your search engine rankings and drive organic traffic with our comprehensive SEO strategies. We help you rank higher and attract more customers.',
-      features: ['Keyword Research', 'On-Page SEO', 'Technical SEO', 'Link Building']
-    },
-    {
-      icon: BarChart3,
-      title: 'Analytics & Reporting',
-      description: 'Track your performance with detailed analytics and insights. We provide comprehensive reporting to help you understand what\'s working and optimize your strategy.',
-      features: ['Performance Tracking', 'Custom Dashboards', 'Monthly Reports', 'Data Analysis']
-    },
-    {
-      icon: Video,
-      title: 'Content Creation',
-      description: 'Engaging content that captures attention and drives action. From blog posts to video production, we create content that resonates with your audience.',
-      features: ['Copywriting', 'Video Production', 'Photography', 'Graphic Design']
-    }
-  ]
-
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-white text-gray-900 section-padding">
+      {/* Intro Section */}
+      <section className="bg-white section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-[clamp(1.5rem,4vw,3rem)] font-bold mb-4 md:mb-6 px-4">
-              Our Services
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-[clamp(1.5rem,4vw,3rem)] font-bold mb-4 md:mb-6 text-gray-900">
+              <span className="text-secondary-500">Design.</span>{' '}
+              <span className="text-blue-600">Develop.</span>{' '}
+              <span className="text-purple-600">Digital Marketing.</span>
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 px-4">
-              Comprehensive creative solutions to elevate your brand and drive business growth
+            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-gray-900">
+              Everything You Need to Build a Successful Brand
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700">
+              We provide full-stack creative, development, and marketing services so your business can grow without managing multiple vendors.
             </p>
+            <p className="text-lg sm:text-xl md:text-2xl font-bold mb-6 md:mb-8 text-gray-900">
+              One team. One strategy. One seamless experience.
+            </p>
+            <Link href="/contact-us" className="btn-secondary-gradient inline-block w-full sm:w-auto px-8 md:px-12">
+              Start Your Project
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Services Grid */}
-      <section className="section-padding">
+      {/* Design Services Section */}
+      <section className="bg-gray-50 section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-            {services.map((service, index) => {
-              const IconComponent = service.icon
-              return (
-              <div key={index} className="p-4 sm:p-6 md:p-8 rounded-lg border border-gray-200 hover:shadow-xl transition-shadow">
-                <IconComponent className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-3 md:mb-4" />
-                <h3 className="text-xl sm:text-2xl font-semibold mb-2 md:mb-3">{service.title}</h3>
-                <p className="text-sm sm:text-base text-gray-600 mb-3 md:mb-4">{service.description}</p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-sm sm:text-base text-gray-700">
-                      <span className="text-secondary-500 mr-2">✓</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-center text-gray-900">
+              Make Your Brand Unforgettable
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-10">
+              <div className="bg-white p-4 md:p-6">
+                <div className="flex items-start gap-4">
+                  <Palette className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Brand Identity & Logo Design</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      Crafting logos and brand systems that are instantly recognizable and built for long-term brand equity.
+                    </p>
+                  </div>
+                </div>
               </div>
-            )})}
+
+              <div className="bg-white p-4 md:p-6">
+                <div className="flex items-start gap-4">
+                  <Smartphone className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">UI/UX Design</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      Modern, intuitive designs for websites and mobile apps — focused on clarity, usability, and conversion.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-4 md:p-6 md:col-span-2">
+                <div className="flex items-start gap-4">
+                  <Rocket className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Marketing Creatives</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      Social posts, ad creatives, campaign visuals, brochures, banners, and print materials — designed to impress.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-4 md:p-6 mb-6 md:mb-8">
+              <p className="text-base sm:text-lg text-gray-700 font-medium">
+                <span className="text-secondary-500 font-bold">Outcome:</span> A visually powerful brand that builds trust and attracts customers.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <Link href="/works" className="btn-primary inline-block w-full sm:w-auto px-8 md:px-12">
+                Explore Design Work
+              </Link>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Development Services Section */}
+      <section className="bg-white section-padding">
+        <div className="container mx-auto px-4 max-w-screen-lg">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-center text-gray-900">
+              Build Fast, Scalable Digital Experiences
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-10">
+              <div className="bg-gray-50 p-4 md:p-6">
+                <div className="flex items-start gap-4">
+                  <Globe className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Custom Websites</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      From custom-coded apps to WordPress and Webflow builds — fast, responsive, and optimized for conversion.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 p-4 md:p-6">
+                <div className="flex items-start gap-4">
+                  <Building2 className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">E-Commerce Development</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      Shopify and WooCommerce stores designed for high sales, easy management, and fast checkout experiences.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 p-4 md:p-6">
+                <div className="flex items-start gap-4">
+                  <Smartphone className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Mobile App Development</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      High-quality mobile apps built using Flutter and React Native.
+                    </p>
+                  </div>
+                </div>
+          </div>
+          
+              <div className="bg-gray-50 p-4 md:p-6">
+                <div className="flex items-start gap-4">
+                  <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Backend & API Integration</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      Secure, scalable backend systems and seamless integration between platforms.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+            <div className="bg-gray-50 p-4 md:p-6 mb-6 md:mb-8">
+              <p className="text-base sm:text-lg text-gray-700 font-medium">
+                <span className="text-secondary-500 font-bold">Outcome:</span> High-performance digital products that grow with your business.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <Link href="/works" className="btn-primary inline-block w-full sm:w-auto px-8 md:px-12">
+                See Development Solutions
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Digital Marketing Section */}
+      <section className="bg-gray-50 section-padding">
+        <div className="container mx-auto px-4 max-w-screen-lg">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-center text-gray-900">
+              Visibility, Traffic, and Measurable Growth
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-10">
+              <div className="bg-white p-4 md:p-6">
+                <div className="flex items-start gap-4">
+                  <Search className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Search Engine Optimization (SEO)</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      Boost rankings, organic traffic, and discoverability with effective on-page and off-page strategies.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-4 md:p-6">
+                <div className="flex items-start gap-4">
+                  <BarChart3 className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Paid Advertising</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      Performance-driven ad campaigns across Google and Meta, crafted for maximum ROI.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-4 md:p-6">
+                <div className="flex items-start gap-4">
+                  <Users className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Social Media Management</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      Consistent posting, content planning, storytelling, and community engagement — all handled by experts.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-4 md:p-6">
+                <div className="flex items-start gap-4">
+                  <MessageSquare className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Content Marketing</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      Brand storytelling, blogs, scripts, product content, and campaign messages that connect and convert.
+                    </p>
+                  </div>
+                </div>
+            </div>
+            
+              <div className="bg-white p-4 md:p-6 md:col-span-2">
+                <div className="flex items-start gap-4">
+                  <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Analytics & Performance Tracking</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      Data-based insights to track real results and optimize your marketing funnel continually.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+            <div className="bg-white p-4 md:p-6 mb-6 md:mb-8">
+              <p className="text-base sm:text-lg text-gray-700 font-medium">
+                <span className="text-secondary-500 font-bold">Outcome:</span> More leads. More sales. More growth.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <Link href="/contact-us" className="btn-secondary-gradient inline-block w-full sm:w-auto px-8 md:px-12">
+                Grow My Business
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="bg-white section-padding">
+        <div className="container mx-auto px-4 max-w-screen-lg">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-6 md:mb-8 text-gray-900">
+              Your End-to-End Digital Partner
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 md:mb-10 max-w-3xl mx-auto">
+              <div className="bg-gray-50 p-4 flex items-start">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">Expert team of designers, developers, and marketers</span>
+              </div>
+              <div className="bg-gray-50 p-4 flex items-start">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">Industry-specific strategies</span>
+              </div>
+              <div className="bg-gray-50 p-4 flex items-start">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">Transparent communication & collaborative workflow</span>
+              </div>
+              <div className="bg-gray-50 p-4 flex items-start">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">On-time project delivery</span>
+              </div>
+              <div className="bg-gray-50 p-4 flex items-start md:col-span-2">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-base sm:text-lg text-gray-700">Long-term support after launch</span>
+              </div>
+            </div>
+
+            <p className="text-base sm:text-lg text-gray-700">
+              Community-backed and collaborating with <span className="font-semibold text-gray-900">TrustRech Club</span>.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Process Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-gray-50 section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
-          <div className="text-center mb-12">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4">Our Process</h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
-              We follow a proven process to ensure exceptional results
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
-            <div className="text-center">
-              <div className="gradient-secondary text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                1
-              </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">Discovery</h3>
-              <p className="text-sm sm:text-base text-gray-600">
-                We learn about your business, goals, and target audience to create a tailored strategy.
-              </p>
-            </div>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-8 md:mb-12 text-center text-gray-900">
+              Simple, Effective Workflow
+            </h2>
             
-            <div className="text-center">
-              <div className="gradient-secondary text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                2
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-10">
+              <div className="bg-white p-4 md:p-6 lg:p-8">
+                <div className="flex items-start gap-4">
+                  <Target className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Step 1 — Strategy</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      We understand your goals, audience, and brand vision.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Strategy</h3>
-              <p className="text-gray-600">
-                We develop a comprehensive strategy aligned with your objectives and market positioning.
-              </p>
+
+              <div className="bg-white p-4 md:p-6 lg:p-8">
+                <div className="flex items-start gap-4">
+                  <Palette className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Step 2 — Design</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      We create the visual identity and digital experience your customers will love.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-4 md:p-6 lg:p-8">
+                <div className="flex items-start gap-4">
+                  <Code className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Step 3 — Development</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      We build systems and platforms that are fast, scalable, and easy to manage.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-4 md:p-6 lg:p-8">
+                <div className="flex items-start gap-4">
+                  <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Step 4 — Marketing</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      We launch campaigns that generate immediate and long-term growth.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-4 md:p-6 lg:p-8 md:col-span-2">
+                <div className="flex items-start gap-4">
+                  <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Step 5 — Improvement</h3>
+                    <p className="text-base sm:text-lg text-gray-700">
+                      We refine, optimize, and support your brand as it evolves.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            
+
             <div className="text-center">
-              <div className="gradient-secondary text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                3
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Execution</h3>
-              <p className="text-gray-600">
-                We bring the strategy to life with creative excellence and attention to detail.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="gradient-secondary text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                4
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Optimization</h3>
-              <p className="text-gray-600">
-                We continuously monitor and optimize to ensure maximum performance and ROI.
-              </p>
+              <Link href="/contact-us" className="btn-secondary-gradient inline-block w-full sm:w-auto px-8 md:px-12">
+                Start Your Journey
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Final CTA Section */}
       <section className="bg-white section-padding">
-        <div className="container-custom text-center">
-          <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4 text-gray-900">Ready to Get Started?</h2>
-          <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 max-w-2xl mx-auto px-4">
-            Let's discuss how we can help transform your brand and achieve your business goals.
-          </p>
-          <div className="flex justify-center">
-            <Link href="/contact-us" className="btn-secondary-gradient inline-block w-full sm:w-auto px-12">
-              Contact Us Today
+        <div className="container mx-auto px-4 max-w-screen-lg">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-gray-900">
+              Ready to Build Something Extraordinary?
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700">
+              From idea to execution — we take care of everything.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/contact-us" className="btn-secondary-gradient inline-block w-full sm:w-auto px-8 md:px-12">
+                Start Your Project
+              </Link>
+              <Link href="/contact-us" className="btn-primary inline-block w-full sm:w-auto px-8 md:px-12">
+                Book a Free Strategy Call
             </Link>
+            </div>
           </div>
         </div>
       </section>

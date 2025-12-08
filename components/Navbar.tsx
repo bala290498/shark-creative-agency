@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 w-full z-40 bg-white/95 backdrop-blur-sm shadow-sm">
+    <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-4 max-w-screen-lg">
         <div className="flex items-center justify-between py-4 md:py-0 md:h-16">
           <Link href="/" className="flex items-center md:flex-shrink-0">
