@@ -171,7 +171,7 @@ export default function Services() {
 
             <div className="gradient-secondary border-b border-secondary-500/30 rounded-lg p-4 md:p-6 mb-6 md:mb-8 text-center w-full">
               <p className="text-base sm:text-lg text-white font-semibold">
-                <span className="text-white/90">Outcome:</span> A visually powerful brand that builds trust and attracts customers.
+                A visually powerful brand that builds trust and attracts customers.
               </p>
               </div>
           </div>
@@ -290,7 +290,7 @@ export default function Services() {
             
             <div className="gradient-secondary border-b border-secondary-500/30 rounded-lg p-4 md:p-6 mb-6 md:mb-8 text-center w-full">
               <p className="text-base sm:text-lg text-white font-semibold">
-                <span className="text-white/90">Outcome:</span> High-performance digital products that grow with your business.
+                High-performance digital products that grow with your business.
               </p>
             </div>
           </div>
@@ -434,7 +434,7 @@ export default function Services() {
 
             <div className="gradient-secondary border-b border-secondary-500/30 rounded-lg p-4 md:p-6 mb-6 md:mb-8 text-center w-full">
               <p className="text-base sm:text-lg text-white font-semibold">
-                <span className="text-white/90">Outcome:</span> More leads. More sales. More growth.
+                More leads. More sales. More growth.
               </p>
             </div>
           </div>
