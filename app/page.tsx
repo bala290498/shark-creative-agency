@@ -4,7 +4,7 @@ import Image from 'next/image'
 import TextType from '@/components/TextType'
 import { Testimonials } from '@/components/ui/testimonials'
 import LogoLoop from '@/components/ui/logo-loop'
-import { Rocket, Target, Handshake, Eye, X, CheckCircle2, Palette, Code, Code2, TrendingUp, Search, Lightbulb, Paintbrush, Smartphone, Globe, BarChart3, Users, MessageSquare, Clock, Zap, Building2, Sparkles, FileText, ShoppingCart, Image as ImageIcon } from 'lucide-react'
+import { Rocket, Target, Handshake, Eye, CheckCircle2, Palette, Code, Code2, TrendingUp, Search, Lightbulb, Paintbrush, Smartphone, Globe, BarChart3, Users, MessageSquare, Clock, Zap, Building2, Sparkles, FileText, ShoppingCart, Image as ImageIcon } from 'lucide-react'
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiPython, SiFigma, SiAdobe, SiJavascript, SiHtml5, SiCss3, SiMongodb } from 'react-icons/si'
 import { getInstagramPosts } from '@/lib/instagram'
 
@@ -201,19 +201,15 @@ export default function Home() {
             {/* Problem List */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 max-w-4xl mx-auto">
               <div className="bg-white p-4 flex items-start border-l-4 border-red-500">
-                <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg font-normal text-gray-700">No Strong Brand Identity or Positioning</span>
             </div>
               <div className="bg-white p-4 flex items-start border-l-4 border-red-500">
-                <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg font-normal text-gray-700">Outdated or Inconsistent Digital Presence</span>
           </div>
               <div className="bg-white p-4 flex items-start border-l-4 border-red-500">
-                <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg font-normal text-gray-700">Websites or Apps That Don't Convert</span>
           </div>
               <div className="bg-white p-4 flex items-start border-l-4 border-red-500">
-                <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg font-normal text-gray-700">Ineffective Marketing Campaigns</span>
             </div>
           </div>
