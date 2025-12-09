@@ -37,10 +37,10 @@ export default function Blog() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-white text-gray-900 section-padding">
+      <section className="bg-white text-gray-900 section-padding pt-20 md:pt-20">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-[clamp(1.5rem,4vw,3rem)] font-bold mb-4 md:mb-6 px-4">
+            <h1 className=" mb-4 md:mb-6 px-4">
               Our Blog
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 px-4">
@@ -56,7 +56,7 @@ export default function Blog() {
       <section className="bg-white section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-2xl mx-auto text-center gradient-secondary rounded-2xl p-8 md:p-12 text-white">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-4">
+            <h2 className=" mb-4">
               Stay Updated
             </h2>
             <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 opacity-90">

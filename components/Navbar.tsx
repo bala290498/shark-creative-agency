@@ -8,41 +8,41 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+    <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm shadow-[0_1px_3px_0_rgb(0,0,0,0.1)] overflow-x-hidden">
       <div className="container mx-auto px-4 max-w-screen-lg">
-        <div className="flex items-center justify-between py-4 md:py-0 md:h-16">
-          <Link href="/" className="flex items-center md:flex-shrink-0">
+        <div className="flex items-center justify-between py-4 md:py-0 md:h-16 min-w-0">
+          <Link href="/" className="flex items-center flex-shrink-0 min-w-0">
             <Image 
               src="/logo.png" 
               alt="Shark Creative Agency" 
               width={220} 
               height={55}
-              className="h-12 md:h-14 w-auto"
+              className="h-10 md:h-12 w-auto max-w-[180px] md:max-w-[220px]"
               priority
             />
           </Link>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center justify-end flex-1 w-full ml-8 space-x-2 md:space-x-4 lg:space-x-6">
-            <Link href="/" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
+          <div className="hidden md:flex items-center justify-end flex-1 w-full ml-4 md:ml-8 gap-2 md:gap-3 lg:gap-4 overflow-x-auto">
+            <Link href="/" className="text-gray-700 hover:text-secondary-500 transition-colors text-center py-2 px-2 md:px-3 rounded hover:bg-gray-50 whitespace-nowrap no-underline text-sm md:text-base">
               Home
             </Link>
-            <Link href="/services" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
+            <Link href="/services" className="text-gray-700 hover:text-secondary-500 transition-colors text-center py-2 px-2 md:px-3 rounded hover:bg-gray-50 whitespace-nowrap no-underline text-sm md:text-base">
               Services
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
+            <Link href="/about" className="text-gray-700 hover:text-secondary-500 transition-colors text-center py-2 px-2 md:px-3 rounded hover:bg-gray-50 whitespace-nowrap no-underline text-sm md:text-base">
               About Us
             </Link>
-            <Link href="/blog" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
+            <Link href="/blog" className="text-gray-700 hover:text-secondary-500 transition-colors text-center py-2 px-2 md:px-3 rounded hover:bg-gray-50 whitespace-nowrap no-underline text-sm md:text-base">
               Blog
             </Link>
-            <Link href="/careers" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
+            <Link href="/careers" className="text-gray-700 hover:text-secondary-500 transition-colors text-center py-2 px-2 md:px-3 rounded hover:bg-gray-50 whitespace-nowrap no-underline text-sm md:text-base">
               Careers
             </Link>
-            <Link href="/internship" className="text-gray-700 hover:text-secondary-500 transition-colors flex-1 text-center py-2 px-4 rounded hover:bg-gray-50 min-w-0 no-underline">
+            <Link href="/internship" className="text-gray-700 hover:text-secondary-500 transition-colors text-center py-2 px-2 md:px-3 rounded hover:bg-gray-50 whitespace-nowrap no-underline text-sm md:text-base">
               Internship
             </Link>
-            <Link href="/contact-us" className="btn-secondary-gradient whitespace-nowrap text-center px-4 md:px-6 flex-shrink-0 no-underline">
+            <Link href="/contact-us" className="btn-secondary-gradient whitespace-nowrap text-center px-3 md:px-4 lg:px-6 flex-shrink-0 no-underline text-sm md:text-base">
               Contact Us
             </Link>
           </div>
@@ -85,7 +85,7 @@ export default function Navbar() {
               Internship
             </Link>
             <div className="flex justify-center pt-2">
-              <Link href="/contact-us" className="btn-secondary-gradient w-full text-center no-underline" onClick={() => setIsOpen(false)}>
+              <Link href="/contact-us" className="btn-secondary-gradient max-w-xs sm:max-w-sm md:max-w-md mx-auto w-full text-center no-underline" onClick={() => setIsOpen(false)}>
                 Contact Us
               </Link>
             </div>

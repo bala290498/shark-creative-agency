@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Mail, Phone, Send, Instagram, Linkedin, MessageCircle } from 'lucide-react'
+import { Mail, Phone, Send, Instagram, Linkedin } from 'lucide-react'
 import {
   Accordion,
   AccordionContent,
@@ -40,13 +40,13 @@ export default function ContactUs() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-white text-gray-900 section-padding">
+      <section className="bg-white text-gray-900 section-padding pt-20 md:pt-20">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-[clamp(1.5rem,4vw,3rem)] font-bold mb-4 md:mb-6 text-gray-900">
+            <h1 className=" mb-4 md:mb-6 text-gray-900 px-4">
               Let's Build Something Extraordinary Together
             </h1>
-            <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 leading-relaxed max-w-3xl mx-auto px-4">
               Have a project in mind or need help shaping your brand? Reach out anytime — we're quick to respond and always excited to collaborate.
             </p>
           </div>
@@ -57,38 +57,38 @@ export default function ContactUs() {
       <section className="bg-gray-50 section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-8 md:mb-10 text-center text-gray-900">
+            <h2 className=" mb-8 md:mb-10 text-center text-gray-900">
               Get in Touch
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              <div className="bg-white p-6 md:p-8 text-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+              <div className="bg-white p-4 md:p-6 text-center">
                 <div className="flex flex-col items-center">
-                  <Mail className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4" />
-                  <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">Email</h3>
+                  <Mail className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-3" />
+                  <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-900">Email</h3>
                   <a 
                     href="mailto:contact@sharkcreativeagency.com" 
-                    className="text-base sm:text-lg text-secondary-500 hover:underline mb-4"
+                    className="text-sm sm:text-base text-secondary-500 hover:underline mb-3 break-all px-2"
                   >
                     contact@sharkcreativeagency.com
                   </a>
-                  <p className="text-sm sm:text-base text-gray-700">
+                  <p className="text-xs sm:text-sm text-gray-700 px-2">
                     Your direct line to us for inquiries, quotes, collaborations, and support.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-white p-6 md:p-8 text-center">
+              <div className="bg-white p-4 md:p-6 text-center">
                 <div className="flex flex-col items-center">
-                  <Phone className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4" />
-                  <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">Phone</h3>
+                  <Phone className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-3" />
+                  <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-900">Phone</h3>
                   <a 
                     href="tel:+917010584543" 
-                    className="text-base sm:text-lg text-secondary-500 hover:underline mb-4"
+                    className="text-sm sm:text-base text-secondary-500 hover:underline mb-3"
                   >
                     +91 7010584543
                   </a>
-                  <p className="text-sm sm:text-base text-gray-700">
+                  <p className="text-xs sm:text-sm text-gray-700 px-2">
                     Call or message us for quick assistance and project discussions.
                   </p>
                 </div>
@@ -101,12 +101,12 @@ export default function ContactUs() {
       {/* Send a Message Section */}
       <section className="bg-white section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
-          <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-8 md:mb-10 text-center text-gray-900">
+          <h2 className=" mb-6 md:mb-8 text-center text-gray-900 px-4">
             Send a Message
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-            <div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
+            <div className="min-w-0">
               <form className="space-y-4 md:space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -117,7 +117,7 @@ export default function ContactUs() {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent focus-visible:outline-none"
+                    className="w-full max-w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent focus-visible:outline-none"
                   />
                 </div>
                 
@@ -130,7 +130,7 @@ export default function ContactUs() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent focus-visible:outline-none"
+                    className="w-full max-w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent focus-visible:outline-none"
                   />
                 </div>
                 
@@ -142,7 +142,7 @@ export default function ContactUs() {
                     type="tel"
                     id="phone"
                     name="phone"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent focus-visible:outline-none"
+                    className="w-full max-w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent focus-visible:outline-none"
                   />
                 </div>
                 
@@ -154,7 +154,7 @@ export default function ContactUs() {
                     id="service"
                     name="service"
                     required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent focus-visible:outline-none"
+                    className="w-full max-w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent focus-visible:outline-none"
                   >
                     <option value="">Select a service</option>
                     <option value="branding">Branding</option>
@@ -175,19 +175,19 @@ export default function ContactUs() {
                     name="message"
                     rows={6}
                     required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent focus-visible:outline-none resize-y"
+                    className="w-full max-w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent focus-visible:outline-none resize-y"
                   ></textarea>
                 </div>
                 
-                <button type="submit" className="btn-secondary-gradient w-full flex items-center justify-center gap-2">
+                <button type="submit" className="btn-secondary-gradient max-w-xs sm:max-w-sm md:max-w-md mx-auto w-full flex items-center justify-center gap-2">
                   <Send className="w-5 h-5" />
                   Send Message
                 </button>
               </form>
             </div>
             
-            <div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-6 md:mb-8 text-gray-900">
+            <div className="min-w-0">
+              <h3 className=" mb-6 md:mb-8 text-gray-900">
                 Frequently Ask Questions
               </h3>
               <Accordion type="single" collapsible className="w-full">
@@ -219,7 +219,7 @@ export default function ContactUs() {
       <section className="bg-gray-50 section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-8 md:mb-10 text-gray-900">
+            <h2 className=" mb-8 md:mb-10 text-gray-900">
               Socials
             </h2>
             
@@ -248,22 +248,24 @@ export default function ContactUs() {
         </div>
       </section>
 
-      {/* Quick CTA Section */}
+      {/* Call to Action Section */}
       <section className="bg-white section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
-          <div className="max-w-2xl mx-auto text-center">
-            <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 font-medium">
-              Need something urgent? We respond in under 2 hours!
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className=" mb-4 md:mb-6 text-gray-900">
+              Ready to Begin?
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 leading-relaxed">
+              Let's discuss your idea, your goals, and how we can help bring your vision to life.
             </p>
-            <a
-              href="https://wa.me/917010584543"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary-gradient inline-flex items-center justify-center gap-2 px-8 md:px-12"
-            >
-              <MessageCircle className="w-5 h-5" />
-              WhatsApp Us
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/contact-us" className="btn-primary inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto sm:mx-0 px-8 md:px-12">
+                Book a Strategy Call
+              </Link>
+              <Link href="/contact-us" className="btn-secondary-gradient inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto sm:mx-0 px-8 md:px-12">
+                Start Your Project
+              </Link>
+            </div>
           </div>
         </div>
       </section>

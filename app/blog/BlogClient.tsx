@@ -79,7 +79,7 @@ export default function BlogClient({ posts, categories }: BlogClientProps) {
                           <span>{post.date ? new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : 'No date'}</span>
                         </div>
                       </div>
-                      <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 text-gray-900 line-clamp-2">
+                      <h2 className="mb-2 line-clamp-2">
                         {post.title}
                       </h2>
                       <p className="text-sm sm:text-base text-gray-600 mb-4 line-clamp-3">

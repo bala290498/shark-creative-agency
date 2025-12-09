@@ -124,10 +124,10 @@ export default function Careers() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-white text-gray-900 section-padding">
+      <section className="bg-white text-gray-900 section-padding pt-20 md:pt-20">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-[clamp(1.5rem,4vw,3rem)] font-bold mb-4 md:mb-6 px-4">
+            <h1 className=" mb-4 md:mb-6 px-4">
               Join Our Team
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 px-4">
@@ -141,7 +141,7 @@ export default function Careers() {
       <section className="section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4">Why Work With Us?</h2>
+            <h2 className=" mb-3 md:mb-4">Why Work With Us?</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               We're building a culture of creativity, innovation, and growth
             </p>
@@ -165,7 +165,7 @@ export default function Careers() {
       <section className="bg-white section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4">Open Positions</h2>
+            <h2 className=" mb-3 md:mb-4">Open Positions</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               Explore current opportunities to join our team
             </p>
@@ -176,7 +176,7 @@ export default function Careers() {
               <div key={index} className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3 md:mb-4">
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold mb-2">{position.title}</h3>
+                    <h3 className=" mb-2">{position.title}</h3>
                     <div className="flex flex-wrap gap-4 text-sm text-gray-600">
                       <span className="flex items-center">
                         <MapPin className="w-4 h-4 mr-2 text-secondary-500" />
@@ -207,7 +207,7 @@ export default function Careers() {
                 
                 <a 
                   href={`mailto:careers@sharkcreativeagency.com?subject=Application for ${position.title}`}
-                  className="btn-secondary-gradient inline-block w-full sm:w-auto text-center"
+                  className="btn-secondary-gradient inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto text-center"
                 >
                   Apply Now
                 </a>
@@ -222,7 +222,7 @@ export default function Careers() {
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4">Our Culture</h2>
+            <h2 className=" mb-3 md:mb-4">Our Culture</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 px-4">
                 We believe in creating an environment where everyone can thrive
               </p>
@@ -230,28 +230,28 @@ export default function Careers() {
             
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl sm:text-2xl font-semibold mb-3 md:mb-4">Collaboration</h3>
+                <h3 className=" mb-3 md:mb-4">Collaboration</h3>
                 <p className="text-sm sm:text-base text-gray-700">
                   We work together as a team, sharing ideas, supporting each other, and celebrating successes together. Collaboration is at the heart of everything we do.
                 </p>
               </div>
               
               <div>
-                <h3 className="text-2xl font-semibold mb-4">Innovation</h3>
+                <h3 className=" mb-4">Innovation</h3>
                 <p className="text-gray-700">
                   We encourage creative thinking and experimentation. Our team is always exploring new ideas, technologies, and approaches to solve problems.
                 </p>
               </div>
               
               <div>
-                <h3 className="text-2xl font-semibold mb-4">Growth</h3>
+                <h3 className=" mb-4">Growth</h3>
                 <p className="text-gray-700">
                   We're committed to your professional development. Whether through training, mentorship, or challenging projects, we help you grow your career.
                 </p>
               </div>
               
               <div>
-                <h3 className="text-2xl font-semibold mb-4">Balance</h3>
+                <h3 className=" mb-4">Balance</h3>
                 <p className="text-gray-700">
                   We understand the importance of work-life balance. We offer flexible schedules, remote work options, and encourage you to take time for yourself.
                 </p>
@@ -264,14 +264,14 @@ export default function Careers() {
       {/* CTA Section */}
       <section className="bg-white section-padding">
         <div className="container-custom text-center">
-          <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4 text-gray-900">Don't See a Position That Fits?</h2>
+          <h2 className=" mb-3 md:mb-4 text-gray-900">Don't See a Position That Fits?</h2>
           <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 max-w-2xl mx-auto px-4">
             We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.
           </p>
           <div className="flex justify-center">
             <a 
               href="mailto:careers@sharkcreativeagency.com?subject=General Application"
-              className="btn-secondary-gradient inline-block w-full sm:w-auto px-12"
+              className="btn-secondary-gradient inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto px-12"
             >
               Send Your Resume
             </a>

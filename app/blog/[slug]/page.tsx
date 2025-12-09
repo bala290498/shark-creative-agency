@@ -79,7 +79,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
   return (
     <>
       {/* Hero Section with Image */}
-      <section className="bg-white text-gray-900">
+      <section className="bg-white text-gray-900 pt-20 md:pt-20">
         <div className="relative w-full h-64 md:h-96 overflow-hidden">
           <Image
             src={post.image || 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop'}
@@ -186,7 +186,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
             Check out more insights and tips on our blog.
           </p>
           <div className="flex justify-center">
-            <Link href="/blog" className="btn-secondary-gradient inline-block w-full sm:w-auto px-12">
+            <Link href="/blog" className="btn-secondary-gradient inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto px-12">
               View All Posts
             </Link>
           </div>

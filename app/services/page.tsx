@@ -33,13 +33,13 @@ export default function Services() {
   return (
     <>
       {/* Intro Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white section-padding pt-20 md:pt-20">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-[clamp(1.5rem,4vw,3rem)] font-bold mb-4 md:mb-6 text-gray-900">
+            <h1 className="mb-4 md:mb-6">
               <span className="text-secondary-500">Design.</span>{' '}
               <span className="text-blue-600">Develop.</span>{' '}
-              <span className="text-purple-600">Digital Marketing.</span>
+              <span className="text-purple-600">Grow.</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700">
               We provide full-stack creative, development, and marketing services so your business can grow without managing multiple vendors.
@@ -47,7 +47,7 @@ export default function Services() {
             <p className="text-lg sm:text-xl md:text-2xl font-bold mb-6 md:mb-8 text-gray-900">
               One team. One strategy. One seamless experience.
             </p>
-            <Link href="/contact-us" className="btn-secondary-gradient inline-block w-full sm:w-auto px-8 md:px-12">
+            <Link href="/contact-us" className="btn-secondary-gradient inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto px-8 md:px-12">
               Start Your Project
             </Link>
           </div>
@@ -58,7 +58,7 @@ export default function Services() {
       <section className="bg-gray-50 section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-center text-gray-900">
+            <h2 className="mb-4 md:mb-6 text-center">
               Make Your Brand Unforgettable
             </h2>
             
@@ -67,7 +67,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <Palette className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Brand Identity & Logo Design</h3>
+                    <h3 className=" mb-2 text-gray-900">Brand Identity & Logo Design</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       Crafting logos and brand systems that are instantly recognizable and built for long-term brand equity.
                     </p>
@@ -79,7 +79,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <Smartphone className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">UI/UX Design</h3>
+                    <h3 className=" mb-2 text-gray-900">UI/UX Design</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       Modern, intuitive designs for websites and mobile apps — focused on clarity, usability, and conversion.
                     </p>
@@ -91,7 +91,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <Rocket className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Marketing Creatives</h3>
+                    <h3 className=" mb-2 text-gray-900">Marketing Creatives</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       Social posts, ad creatives, campaign visuals, brochures, banners, and print materials — designed to impress.
                     </p>
@@ -107,7 +107,7 @@ export default function Services() {
             </div>
 
             <div className="text-center">
-              <Link href="/contact-us" className="btn-primary inline-block w-full sm:w-auto px-8 md:px-12">
+              <Link href="/contact-us" className="btn-primary inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto px-8 md:px-12">
                 Explore Design Work
               </Link>
               </div>
@@ -119,7 +119,7 @@ export default function Services() {
       <section className="bg-white section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-center text-gray-900">
+            <h2 className="mb-4 md:mb-6 text-center">
               Build Fast, Scalable Digital Experiences
             </h2>
             
@@ -128,7 +128,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <Globe className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Custom Websites</h3>
+                    <h3 className=" mb-2 text-gray-900">Custom Websites</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       From custom-coded apps to WordPress and Webflow builds — fast, responsive, and optimized for conversion.
                     </p>
@@ -140,7 +140,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <Building2 className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">E-Commerce Development</h3>
+                    <h3 className=" mb-2 text-gray-900">E-Commerce Development</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       Shopify and WooCommerce stores designed for high sales, easy management, and fast checkout experiences.
                     </p>
@@ -152,7 +152,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <Smartphone className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Mobile App Development</h3>
+                    <h3 className=" mb-2 text-gray-900">Mobile App Development</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       High-quality mobile apps built using Flutter and React Native.
                     </p>
@@ -164,7 +164,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Backend & API Integration</h3>
+                    <h3 className=" mb-2 text-gray-900">Backend & API Integration</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       Secure, scalable backend systems and seamless integration between platforms.
                     </p>
@@ -180,7 +180,7 @@ export default function Services() {
             </div>
             
             <div className="text-center">
-              <Link href="/contact-us" className="btn-primary inline-block w-full sm:w-auto px-8 md:px-12">
+              <Link href="/contact-us" className="btn-primary inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto px-8 md:px-12">
                 See Development Solutions
               </Link>
             </div>
@@ -192,7 +192,7 @@ export default function Services() {
       <section className="bg-gray-50 section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-center text-gray-900">
+            <h2 className="mb-4 md:mb-6 text-center">
               Visibility, Traffic, and Measurable Growth
             </h2>
             
@@ -201,7 +201,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <Search className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Search Engine Optimization (SEO)</h3>
+                    <h3 className=" mb-2 text-gray-900">Search Engine Optimization (SEO)</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       Boost rankings, organic traffic, and discoverability with effective on-page and off-page strategies.
                     </p>
@@ -213,7 +213,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <BarChart3 className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Paid Advertising</h3>
+                    <h3 className=" mb-2 text-gray-900">Paid Advertising</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       Performance-driven ad campaigns across Google and Meta, crafted for maximum ROI.
                     </p>
@@ -225,7 +225,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <Users className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Social Media Management</h3>
+                    <h3 className=" mb-2 text-gray-900">Social Media Management</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       Consistent posting, content planning, storytelling, and community engagement — all handled by experts.
                     </p>
@@ -237,7 +237,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <MessageSquare className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Content Marketing</h3>
+                    <h3 className=" mb-2 text-gray-900">Content Marketing</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       Brand storytelling, blogs, scripts, product content, and campaign messages that connect and convert.
                     </p>
@@ -249,7 +249,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Analytics & Performance Tracking</h3>
+                    <h3 className=" mb-2 text-gray-900">Analytics & Performance Tracking</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       Data-based insights to track real results and optimize your marketing funnel continually.
                     </p>
@@ -265,7 +265,7 @@ export default function Services() {
             </div>
             
             <div className="text-center">
-              <Link href="/contact-us" className="btn-secondary-gradient inline-block w-full sm:w-auto px-8 md:px-12">
+              <Link href="/contact-us" className="btn-secondary-gradient inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto px-8 md:px-12">
                 Grow My Business
               </Link>
             </div>
@@ -277,7 +277,7 @@ export default function Services() {
       <section className="bg-white section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-6 md:mb-8 text-gray-900">
+            <h2 className="mb-6 md:mb-8">
               Your End-to-End Digital Partner
             </h2>
             
@@ -315,7 +315,7 @@ export default function Services() {
       <section className="bg-gray-50 section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-8 md:mb-12 text-center text-gray-900">
+            <h2 className="mb-8 md:mb-12 text-center">
               Simple, Effective Workflow
             </h2>
             
@@ -324,7 +324,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <Target className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Step 1 — Strategy</h3>
+                    <h3 className=" mb-2 text-gray-900">Step 1 — Strategy</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       We understand your goals, audience, and brand vision.
                     </p>
@@ -336,7 +336,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <Palette className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Step 2 — Design</h3>
+                    <h3 className=" mb-2 text-gray-900">Step 2 — Design</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       We create the visual identity and digital experience your customers will love.
                     </p>
@@ -348,7 +348,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <Code className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Step 3 — Development</h3>
+                    <h3 className=" mb-2 text-gray-900">Step 3 — Development</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       We build systems and platforms that are fast, scalable, and easy to manage.
                     </p>
@@ -360,7 +360,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Step 4 — Marketing</h3>
+                    <h3 className=" mb-2 text-gray-900">Step 4 — Marketing</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       We launch campaigns that generate immediate and long-term growth.
                     </p>
@@ -372,7 +372,7 @@ export default function Services() {
                 <div className="flex flex-col items-center">
                   <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
                   <div>
-                    <h3 className="text-[clamp(1.125rem,2vw,1.5rem)] font-bold mb-2 text-gray-900">Step 5 — Improvement</h3>
+                    <h3 className=" mb-2 text-gray-900">Step 5 — Improvement</h3>
                     <p className="text-base sm:text-lg text-gray-700">
                       We refine, optimize, and support your brand as it evolves.
                     </p>
@@ -382,7 +382,7 @@ export default function Services() {
             </div>
 
             <div className="text-center">
-              <Link href="/contact-us" className="btn-secondary-gradient inline-block w-full sm:w-auto px-8 md:px-12">
+              <Link href="/contact-us" className="btn-secondary-gradient inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto px-8 md:px-12">
                 Start Your Journey
               </Link>
             </div>
@@ -394,17 +394,17 @@ export default function Services() {
       <section className="bg-white section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-gray-900">
+            <h2 className="mb-4 md:mb-6">
               Ready to Build Something Extraordinary?
             </h2>
             <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700">
               From idea to execution — we take care of everything.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact-us" className="btn-secondary-gradient inline-block w-full sm:w-auto px-8 md:px-12">
+              <Link href="/contact-us" className="btn-secondary-gradient inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto sm:mx-0 px-8 md:px-12">
                 Start Your Project
               </Link>
-              <Link href="/contact-us" className="btn-primary inline-block w-full sm:w-auto px-8 md:px-12">
+              <Link href="/contact-us" className="btn-primary inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto sm:mx-0 px-8 md:px-12">
                 Book a Free Strategy Call
             </Link>
             </div>

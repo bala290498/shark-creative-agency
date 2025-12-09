@@ -129,10 +129,10 @@ export default function Internship() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-white text-gray-900 section-padding">
+      <section className="bg-white text-gray-900 section-padding pt-20 md:pt-20">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-[clamp(1.5rem,4vw,3rem)] font-bold mb-4 md:mb-6 px-4">
+            <h1 className=" mb-4 md:mb-6 px-4">
               Internship Opportunities
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 px-4">
@@ -146,7 +146,7 @@ export default function Internship() {
       <section className="section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4">Why Intern With Us?</h2>
+            <h2 className=" mb-3 md:mb-4">Why Intern With Us?</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               We're committed to providing meaningful internship experiences that help you grow professionally
             </p>
@@ -170,7 +170,7 @@ export default function Internship() {
       <section className="bg-white section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4">Open Internship Positions</h2>
+            <h2 className=" mb-3 md:mb-4">Open Internship Positions</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               Explore current internship opportunities to start your career journey
             </p>
@@ -181,7 +181,7 @@ export default function Internship() {
               <div key={index} className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3 md:mb-4">
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold mb-2">{position.title}</h3>
+                    <h3 className=" mb-2">{position.title}</h3>
                     <div className="flex flex-wrap gap-3 md:gap-4 text-xs sm:text-sm text-gray-600">
                       <span className="flex items-center">
                         <MapPin className="w-4 h-4 mr-2 text-secondary-500" />
@@ -223,7 +223,7 @@ export default function Internship() {
                 
                 <a 
                   href={`mailto:internships@sharkcreativeagency.com?subject=Internship Application for ${position.title}`}
-                  className="btn-secondary-gradient inline-block w-full sm:w-auto text-center"
+                  className="btn-secondary-gradient inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto text-center"
                 >
                   Apply Now
                 </a>
@@ -238,7 +238,7 @@ export default function Internship() {
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4">What to Expect</h2>
+              <h2 className=" mb-3 md:mb-4">What to Expect</h2>
               <p className="text-base sm:text-lg md:text-xl text-gray-600 px-4">
                 A comprehensive internship experience designed for your growth
               </p>
@@ -247,7 +247,7 @@ export default function Internship() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <Calendar className="w-8 h-8 text-secondary-500 mb-4" />
-                <h3 className="text-xl sm:text-2xl font-semibold mb-3 md:mb-4">Structured Program</h3>
+                <h3 className=" mb-3 md:mb-4">Structured Program</h3>
                 <p className="text-sm sm:text-base text-gray-700">
                   Our internship program includes orientation, regular check-ins, project assignments, and a final presentation. You'll have clear goals and milestones to track your progress.
                 </p>
@@ -255,7 +255,7 @@ export default function Internship() {
               
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <Users className="w-8 h-8 text-secondary-500 mb-4" />
-                <h3 className="text-xl sm:text-2xl font-semibold mb-3 md:mb-4">Team Collaboration</h3>
+                <h3 className=" mb-3 md:mb-4">Team Collaboration</h3>
                 <p className="text-sm sm:text-base text-gray-700">
                   Work alongside our team members, attend meetings, and contribute to real projects. You'll be part of the team, not just an observer.
                 </p>
@@ -263,7 +263,7 @@ export default function Internship() {
               
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <TrendingUp className="w-8 h-8 text-secondary-500 mb-4" />
-                <h3 className="text-xl sm:text-2xl font-semibold mb-3 md:mb-4">Skill Development</h3>
+                <h3 className=" mb-3 md:mb-4">Skill Development</h3>
                 <p className="text-sm sm:text-base text-gray-700">
                   Develop both technical and soft skills through hands-on projects, workshops, and mentorship. We invest in your professional growth.
                 </p>
@@ -271,7 +271,7 @@ export default function Internship() {
               
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <Briefcase className="w-8 h-8 text-secondary-500 mb-4" />
-                <h3 className="text-xl sm:text-2xl font-semibold mb-3 md:mb-4">Real-World Experience</h3>
+                <h3 className=" mb-3 md:mb-4">Real-World Experience</h3>
                 <p className="text-sm sm:text-base text-gray-700">
                   Work on actual client projects and campaigns. Your contributions will make a real impact and help build your professional portfolio.
                 </p>
@@ -284,14 +284,14 @@ export default function Internship() {
       {/* CTA Section */}
       <section className="bg-white section-padding">
         <div className="container-custom text-center">
-          <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] font-bold mb-3 md:mb-4 text-gray-900">Ready to Start Your Journey?</h2>
+          <h2 className=" mb-3 md:mb-4 text-gray-900">Ready to Start Your Journey?</h2>
           <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 max-w-2xl mx-auto px-4">
             Don't see a position that matches your interests? We're always open to hearing from passionate students eager to learn.
           </p>
           <div className="flex justify-center">
             <a 
               href="mailto:internships@sharkcreativeagency.com?subject=General Internship Inquiry"
-              className="btn-secondary-gradient inline-block w-full sm:w-auto px-12"
+              className="btn-secondary-gradient inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto px-12"
             >
               Send Your Resume
             </a>

@@ -33,15 +33,15 @@ export default function About() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-white text-gray-900 section-padding">
+      <section className="bg-white text-gray-900 section-padding pt-20 md:pt-20">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-base sm:text-lg md:text-xl text-secondary-500 font-semibold mb-2">
+            <h2 className="mb-4 md:mb-6 text-secondary-500">
               Who We Are
-            </p>
-            <h1 className="text-[clamp(1.5rem,4vw,3rem)] font-bold mb-4 md:mb-6 text-gray-900">
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl mb-4 md:mb-6 text-gray-900 font-semibold max-w-3xl mx-auto">
               A Creative, Technology & Marketing Agency Built for Modern Brands
-            </h1>
+            </p>
             <p className="text-base sm:text-lg md:text-xl mb-4 md:mb-6 text-gray-700 leading-relaxed max-w-3xl mx-auto">
               We help entrepreneurs and businesses transform ideas into powerful digital experiences — through strategy, design, development, and growth marketing.
             </p>
@@ -56,7 +56,7 @@ export default function About() {
       <section className="bg-gray-50 section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-center text-gray-900">
+            <h2 className=" mb-4 md:mb-6 text-center text-gray-900">
               Everything Starts With an Idea
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -78,7 +78,7 @@ export default function About() {
       <section className="bg-white section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-center text-gray-900">
+            <h2 className=" mb-4 md:mb-6 text-center text-gray-900">
               Design. Develop. Grow.
             </h2>
             <p className="text-base sm:text-lg md:text-xl mb-8 md:mb-10 text-center text-gray-700">
@@ -89,7 +89,7 @@ export default function About() {
               <div className="bg-gray-50 p-6 md:p-8 text-center">
                 <div className="flex flex-col items-center">
                   <Palette className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4" />
-                  <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">Design</h3>
+                  <h3 className=" mb-4 text-gray-900">Design</h3>
                   <p className="text-base sm:text-lg text-gray-700">
                     We believe design is not just visuals — it's communication, trust, and experience at first glance.
                   </p>
@@ -99,7 +99,7 @@ export default function About() {
               <div className="bg-gray-50 p-6 md:p-8 text-center">
                 <div className="flex flex-col items-center">
                   <Code className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4" />
-                  <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">Develop</h3>
+                  <h3 className=" mb-4 text-gray-900">Develop</h3>
                   <p className="text-base sm:text-lg text-gray-700">
                     Technology should be fast, scalable, and built to grow with the business — not limit it.
                   </p>
@@ -109,7 +109,7 @@ export default function About() {
               <div className="bg-gray-50 p-6 md:p-8 text-center">
                 <div className="flex flex-col items-center">
                   <TrendingUp className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4" />
-                  <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">Grow</h3>
+                  <h3 className=" mb-4 text-gray-900">Grow</h3>
                   <p className="text-base sm:text-lg text-gray-700">
                     Marketing should be intentional, data-backed, and aligned with long-term brand value.
                   </p>
@@ -128,7 +128,7 @@ export default function About() {
       <section className="bg-gray-50 section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-center text-gray-900">
+            <h2 className=" mb-4 md:mb-6 text-center text-gray-900">
               A Complete Digital Partner
             </h2>
             <p className="text-base sm:text-lg md:text-xl mb-8 md:mb-10 text-center text-gray-700">
@@ -184,7 +184,7 @@ export default function About() {
       <section className="bg-white section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-8 md:mb-10 text-center text-gray-900">
+            <h2 className=" mb-8 md:mb-10 text-center text-gray-900">
               Why Clients Choose Us
             </h2>
             
@@ -222,7 +222,7 @@ export default function About() {
       <section className="bg-gray-50 section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-8 md:mb-12 text-center text-gray-900">
+            <h2 className=" mb-8 md:mb-12 text-center text-gray-900">
               A Smooth, Clear Workflow
             </h2>
             
@@ -230,7 +230,7 @@ export default function About() {
               <div className="bg-white p-6 md:p-8 text-center">
                 <div className="flex flex-col items-center">
                   <Target className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
-                  <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">1 — Discovery & Strategy</h3>
+                  <h3 className=" mb-2 text-gray-900">1 — Discovery & Strategy</h3>
                   <p className="text-base sm:text-lg text-gray-700">
                     Understanding your business, goals, and audience.
                   </p>
@@ -240,7 +240,7 @@ export default function About() {
               <div className="bg-white p-6 md:p-8 text-center">
                 <div className="flex flex-col items-center">
                   <Palette className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
-                  <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">2 — Creative & Experience Design</h3>
+                  <h3 className=" mb-2 text-gray-900">2 — Creative & Experience Design</h3>
                   <p className="text-base sm:text-lg text-gray-700">
                     Crafting visuals, interfaces, and brand narratives.
                   </p>
@@ -250,7 +250,7 @@ export default function About() {
               <div className="bg-white p-6 md:p-8 text-center">
                 <div className="flex flex-col items-center">
                   <Code className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
-                  <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">3 — Build & Development</h3>
+                  <h3 className=" mb-2 text-gray-900">3 — Build & Development</h3>
                   <p className="text-base sm:text-lg text-gray-700">
                     Developing websites, apps, and backend systems built for scale.
                   </p>
@@ -260,7 +260,7 @@ export default function About() {
               <div className="bg-white p-6 md:p-8 text-center">
                 <div className="flex flex-col items-center">
                   <Rocket className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
-                  <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">4 — Launch & Marketing</h3>
+                  <h3 className=" mb-2 text-gray-900">4 — Launch & Marketing</h3>
                   <p className="text-base sm:text-lg text-gray-700">
                     Activating campaigns and optimizing your digital presence.
                   </p>
@@ -270,7 +270,7 @@ export default function About() {
               <div className="bg-white p-6 md:p-8 text-center md:col-span-2">
                 <div className="flex flex-col items-center">
                   <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
-                  <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-900">5 — Improvement & Support</h3>
+                  <h3 className=" mb-2 text-gray-900">5 — Improvement & Support</h3>
                   <p className="text-base sm:text-lg text-gray-700">
                     Regular updates, performance tracking, and feature enhancements.
                   </p>
@@ -285,7 +285,7 @@ export default function About() {
       <section className="bg-gray-50 section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-gray-900">
+            <h2 className=" mb-4 md:mb-6 text-gray-900">
               Backed by TrustRech Club
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
@@ -299,17 +299,17 @@ export default function About() {
       <section className="bg-white section-padding">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold mb-4 md:mb-6 text-gray-900">
+            <h2 className=" mb-4 md:mb-6 text-gray-900">
               Let's Build Something Amazing
             </h2>
             <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 leading-relaxed">
               Whether you're launching a new startup or scaling an established business, we're here to help you grow with clarity, creativity, and technology.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact-us" className="btn-secondary-gradient inline-block w-full sm:w-auto px-8 md:px-12">
+              <Link href="/contact-us" className="btn-secondary-gradient inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto sm:mx-0 px-8 md:px-12">
                 Start Your Project
               </Link>
-              <Link href="/contact-us" className="btn-primary inline-block w-full sm:w-auto px-8 md:px-12">
+              <Link href="/contact-us" className="btn-primary inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto sm:mx-0 px-8 md:px-12">
                 Book a Strategy Call
               </Link>
             </div>
