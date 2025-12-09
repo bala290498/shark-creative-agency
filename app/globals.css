@@ -152,4 +152,9 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+  .card-title {
+    @apply text-lg sm:text-xl font-semibold text-gray-900;
+    min-height: 3rem;
+  }
 }

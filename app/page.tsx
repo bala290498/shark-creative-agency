@@ -4,7 +4,7 @@ import Image from 'next/image'
 import TextType from '@/components/TextType'
 import { Testimonials } from '@/components/ui/testimonials'
 import LogoLoop from '@/components/ui/logo-loop'
-import { Rocket, Target, Handshake, Eye, X, CheckCircle2, Palette, Code, TrendingUp, Search, Lightbulb, Paintbrush, Smartphone, Globe, BarChart3, Users, MessageSquare, Clock, Zap, Building2, Sparkles } from 'lucide-react'
+import { Rocket, Target, Handshake, Eye, X, CheckCircle2, Palette, Code, Code2, TrendingUp, Search, Lightbulb, Paintbrush, Smartphone, Globe, BarChart3, Users, MessageSquare, Clock, Zap, Building2, Sparkles, FileText, ShoppingCart, Image as ImageIcon } from 'lucide-react'
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiPython, SiFigma, SiAdobe, SiJavascript, SiHtml5, SiCss3, SiMongodb } from 'react-icons/si'
 import { getInstagramPosts } from '@/lib/instagram'
 
@@ -135,19 +135,19 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
                   <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                     <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                    <span className="text-base sm:text-lg text-gray-700">Complete Brand Foundation</span>
+                    <span className="text-base sm:text-lg font-normal text-gray-700">Complete Brand Foundation</span>
                   </div>
                   <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                     <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                    <span className="text-base sm:text-lg text-gray-700">Modern, High-Performing Websites & Apps</span>
+                    <span className="text-base sm:text-lg font-normal text-gray-700">Modern, High-Performing Websites & Apps</span>
                   </div>
                   <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                     <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                    <span className="text-base sm:text-lg text-gray-700">Growth-Focused Digital Marketing</span>
+                    <span className="text-base sm:text-lg font-normal text-gray-700">Growth-Focused Digital Marketing</span>
                 </div>
                   <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                     <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                    <span className="text-base sm:text-lg text-gray-700">End-to-End Creative Support</span>
+                    <span className="text-base sm:text-lg font-normal text-gray-700">End-to-End Creative Support</span>
                   </div>
                 </div>
                 </div>
@@ -202,28 +202,28 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 max-w-4xl mx-auto">
               <div className="bg-white p-4 flex items-start border-l-4 border-red-500">
                 <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">No Strong Brand Identity or Positioning</span>
+                <span className="text-base sm:text-lg font-normal text-gray-700">No Strong Brand Identity or Positioning</span>
             </div>
               <div className="bg-white p-4 flex items-start border-l-4 border-red-500">
                 <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Outdated or Inconsistent Digital Presence</span>
+                <span className="text-base sm:text-lg font-normal text-gray-700">Outdated or Inconsistent Digital Presence</span>
           </div>
               <div className="bg-white p-4 flex items-start border-l-4 border-red-500">
                 <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Websites or Apps That Don't Convert</span>
+                <span className="text-base sm:text-lg font-normal text-gray-700">Websites or Apps That Don't Convert</span>
           </div>
               <div className="bg-white p-4 flex items-start border-l-4 border-red-500">
                 <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Ineffective Marketing Campaigns</span>
-        </div>
-      </div>
-
+                <span className="text-base sm:text-lg font-normal text-gray-700">Ineffective Marketing Campaigns</span>
+            </div>
+          </div>
+          
             {/* Closing Statement */}
             <p className="text-base sm:text-lg md:text-xl text-gray-700 font-medium max-w-3xl mx-auto">
               Businesses have ideas — but lack a full-service partner to bring them to life.
             </p>
-                </div>
-              </div>
+          </div>
+        </div>
       </section>
 
       {/* Our Solution Section */}
@@ -245,24 +245,24 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 max-w-4xl mx-auto">
               <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Brand Foundation</span>
+                <span className="text-base sm:text-lg font-normal text-gray-700">Brand Foundation</span>
               </div>
               <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Brand Identity</span>
+                <span className="text-base sm:text-lg font-normal text-gray-700">Brand Identity</span>
               </div>
               <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Brand Experience</span>
+                <span className="text-base sm:text-lg font-normal text-gray-700">Brand Experience</span>
               </div>
               <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Brand Marketing</span>
-              </div>
+                <span className="text-base sm:text-lg font-normal text-gray-700">Brand Marketing</span>
+      </div>
               <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Brand Improvement</span>
-              </div>
+                <span className="text-base sm:text-lg font-normal text-gray-700">Brand Improvement</span>
+                </div>
               </div>
 
             {/* Closing Statements */}
@@ -276,105 +276,164 @@ export default function Home() {
               </div>
       </section>
 
-      {/* Services Section */}
+      {/* What We Do Section */}
       <section className="bg-gray-50 site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-12 text-center">
               What We Do
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch">
-              {/* Design Services */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
-                <Palette className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4 flex-shrink-0" />
-                <h3 className="text-lg sm:text-xl font-semibold mb-4 text-gray-900">Design Services</h3>
-                <ul className="space-y-3 mb-6 text-gray-700 w-full flex-1">
-                  <li className="flex items-start">
-                    <Paintbrush className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">Logo and Brand Identity Systems</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Smartphone className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">UI/UX (User Interface / User Experience) Design for Web and Mobile</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Sparkles className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">Social Media Creatives & Campaign Assets</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Globe className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">Brochures, Banners, and Marketing Collaterals</span>
-                  </li>
-                </ul>
-                <div className="gradient-secondary border-b border-secondary-500/30 rounded-lg p-4 mt-auto text-center w-full -mx-6 -mb-6 px-6 pb-6">
-                  <p className="text-sm sm:text-base text-white font-semibold">
-                    <span className="text-white/90">Outcome:</span> A brand that looks professional, trustworthy, and unforgettable.
+              {/* Card 1 — Design Services */}
+              <div className="bg-white border border-secondary-500/30 rounded-lg p-8 md:p-10 hover:border-secondary-500 hover:shadow-sm transition-all duration-200 flex flex-col h-full">
+                <div className="flex flex-col items-center text-center h-full">
+                  <div className="mb-4">
+                    <Palette className="w-12 h-12 text-secondary-500" viewBox="0 0 24 24" />
+              </div>
+                  <h3 className="text-xl md:text-2xl font-medium mb-3 text-gray-900">
+                    <span className="block">Design</span>
+                    <span className="block">Services</span>
+                  </h3>
+                  <p className="text-sm md:text-base text-gray-500 mb-4 leading-[1.6]">
+                    What We Create
                   </p>
+                  <ul className="text-sm md:text-base text-gray-500 leading-[1.6] space-y-2 w-full text-left flex-1">
+                    <li className="grid grid-cols-[24px_1fr] items-start gap-3">
+                      <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                        <Sparkles className="w-5 h-5 text-secondary-500" viewBox="0 0 24 24" />
+                      </div>
+                      <span className="text-sm md:text-base leading-[1.6] text-gray-500 text-left">Logo and Brand Identity Systems</span>
+                    </li>
+                    <li className="grid grid-cols-[24px_1fr] items-start gap-3">
+                      <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                        <Smartphone className="w-5 h-5 text-secondary-500" viewBox="0 0 24 24" />
+                      </div>
+                      <span className="text-sm md:text-base leading-[1.6] text-gray-500 text-left">UI/UX (User Interface / User Experience) Design for Web and Mobile</span>
+                    </li>
+                    <li className="grid grid-cols-[24px_1fr] items-start gap-3">
+                      <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                        <ImageIcon className="w-5 h-5 text-secondary-500" viewBox="0 0 24 24" />
+                      </div>
+                      <span className="text-sm md:text-base leading-[1.6] text-gray-500 text-left">Social Media Creatives & Campaign Assets</span>
+                    </li>
+                    <li className="grid grid-cols-[24px_1fr] items-start gap-3">
+                      <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                        <FileText className="w-5 h-5 text-secondary-500" viewBox="0 0 24 24" />
+                      </div>
+                      <span className="text-sm md:text-base leading-[1.6] text-gray-500 text-left">Brochures, Banners, and Marketing Collaterals</span>
+                    </li>
+                  </ul>
+                  <hr className="w-full border-t border-orange-100 my-6" />
+                  <div className="mt-auto w-full">
+                    <p className="text-sm md:text-base text-gray-700 font-medium leading-[1.6]">
+                      Professional. Trustworthy. Unforgettable.
+                    </p>
+              </div>
               </div>
               </div>
 
-              {/* Development Services */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
-                <Code className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4 flex-shrink-0" />
-                <h3 className="text-lg sm:text-xl font-semibold mb-4 text-gray-900">Development Services</h3>
-                <ul className="space-y-3 mb-6 text-gray-700 w-full flex-1">
-                  <li className="flex items-start">
-                    <Globe className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">Responsive Websites (Custom Codebase, WordPress, Webflow)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Building2 className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">E-Commerce Platforms (Shopify, WooCommerce)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Smartphone className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">Mobile Apps Using Flutter and React Native </span>
-                  </li>
-                  <li className="flex items-start">
-                    <Zap className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">Backend Systems & API Integrations</span>
-                  </li>
-                </ul>
-                <div className="gradient-secondary border-b border-secondary-500/30 rounded-lg p-4 mt-auto text-center w-full -mx-6 -mb-6 px-6 pb-6">
-                  <p className="text-sm sm:text-base text-white font-semibold">
-                    <span className="text-white/90">Outcome:</span> Fast, scalable, secure digital platforms built for performance.
+              {/* Card 2 — Development Services */}
+              <div className="bg-white border border-secondary-500/30 rounded-lg p-8 md:p-10 hover:border-secondary-500 hover:shadow-sm transition-all duration-200 flex flex-col h-full">
+                <div className="flex flex-col items-center text-center h-full">
+                  <div className="mb-4">
+                    <Code2 className="w-12 h-12 text-secondary-500" viewBox="0 0 24 24" />
+              </div>
+                  <h3 className="text-xl md:text-2xl font-medium mb-3 text-gray-900">
+                    <span className="block">Development</span>
+                    <span className="block">Services</span>
+                  </h3>
+                  <p className="text-sm md:text-base text-gray-500 mb-4 leading-[1.6]">
+                    What We Build
                   </p>
+                  <ul className="text-sm md:text-base text-gray-500 leading-[1.6] space-y-2 w-full text-left flex-1">
+                    <li className="grid grid-cols-[24px_1fr] items-start gap-3">
+                      <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                        <Globe className="w-5 h-5 text-secondary-500" viewBox="0 0 24 24" />
+              </div>
+                      <span className="text-sm md:text-base leading-[1.6] text-gray-500 text-left">Responsive Websites (custom codebase, WordPress, Webflow)</span>
+                    </li>
+                    <li className="grid grid-cols-[24px_1fr] items-start gap-3">
+                      <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                        <ShoppingCart className="w-5 h-5 text-secondary-500" viewBox="0 0 24 24" />
+              </div>
+                      <span className="text-sm md:text-base leading-[1.6] text-gray-500 text-left">E-commerce Platforms (Shopify, WooCommerce)</span>
+                    </li>
+                    <li className="grid grid-cols-[24px_1fr] items-start gap-3">
+                      <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                        <Smartphone className="w-5 h-5 text-secondary-500" viewBox="0 0 24 24" />
+              </div>
+                      <span className="text-sm md:text-base leading-[1.6] text-gray-500 text-left">Mobile Applications using Flutter and React Native</span>
+                    </li>
+                    <li className="grid grid-cols-[24px_1fr] items-start gap-3">
+                      <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                        <Zap className="w-5 h-5 text-secondary-500" viewBox="0 0 24 24" />
+              </div>
+                      <span className="text-sm md:text-base leading-[1.6] text-gray-500 text-left">Backend Systems & API</span>
+                    </li>
+                  </ul>
+                  <hr className="w-full border-t border-orange-100 my-6" />
+                  <div className="mt-auto w-full">
+                    <p className="text-sm md:text-base text-gray-700 font-medium leading-[1.6]">
+                      Fast, scalable, and secure digital experiences.
+                    </p>
+              </div>
               </div>
             </div>
 
-              {/* Digital Marketing */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
-                <TrendingUp className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4 flex-shrink-0" />
-                <h3 className="text-lg sm:text-xl font-semibold mb-4 text-gray-900">Digital Marketing</h3>
-                <ul className="space-y-3 mb-6 text-gray-700 w-full flex-1">
-                  <li className="flex items-start">
-                    <Search className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">Search Engine Optimization </span>
-                  </li>
-                  <li className="flex items-start">
-                    <BarChart3 className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">Paid Ads Across Google & Meta</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Users className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">Social Media Management</span>
-                  </li>
-                  <li className="flex items-start">
-                    <MessageSquare className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">Content Marketing & Brand Storytelling</span>
-                  </li>
-                  <li className="flex items-start">
-                    <TrendingUp className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">Analytics, Tracking, and Performance Optimization</span>
-                  </li>
-                </ul>
-                <div className="gradient-secondary border-b border-secondary-500/30 rounded-lg p-4 mt-auto text-center w-full -mx-6 -mb-6 px-6 pb-6">
-                  <p className="text-sm sm:text-base text-white font-semibold">
-                    <span className="text-white/90">Outcome:</span> Visibility, leads, conversions, and long-term growth.
+              {/* Card 3 — Digital Marketing */}
+              <div className="bg-white border border-secondary-500/30 rounded-lg p-8 md:p-10 hover:border-secondary-500 hover:shadow-sm transition-all duration-200 flex flex-col h-full">
+                <div className="flex flex-col items-center text-center h-full">
+                  <div className="mb-4">
+                    <TrendingUp className="w-12 h-12 text-secondary-500" viewBox="0 0 24 24" />
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-medium mb-3 text-gray-900">
+                    <span className="block">Digital</span>
+                    <span className="block">Marketing</span>
+                  </h3>
+                  <p className="text-sm md:text-base text-gray-500 mb-4 leading-[1.6]">
+                    How We Grow Brands
                   </p>
-                </div>
+                  <ul className="text-sm md:text-base text-gray-500 leading-[1.6] space-y-2 w-full text-left flex-1">
+                    <li className="grid grid-cols-[24px_1fr] items-start gap-3">
+                      <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                        <Search className="w-5 h-5 text-secondary-500" viewBox="0 0 24 24" />
+                      </div>
+                      <span className="text-sm md:text-base leading-[1.6] text-gray-500 text-left">Search Engine Optimization</span>
+                    </li>
+                    <li className="grid grid-cols-[24px_1fr] items-start gap-3">
+                      <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                        <BarChart3 className="w-5 h-5 text-secondary-500" viewBox="0 0 24 24" />
+                      </div>
+                      <span className="text-sm md:text-base leading-[1.6] text-gray-500 text-left">Paid Advertisements across Google & Meta</span>
+                    </li>
+                    <li className="grid grid-cols-[24px_1fr] items-start gap-3">
+                      <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                        <Users className="w-5 h-5 text-secondary-500" viewBox="0 0 24 24" />
+                      </div>
+                      <span className="text-sm md:text-base leading-[1.6] text-gray-500 text-left">Social Media Management</span>
+                    </li>
+                    <li className="grid grid-cols-[24px_1fr] items-start gap-3">
+                      <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                        <MessageSquare className="w-5 h-5 text-secondary-500" viewBox="0 0 24 24" />
+                      </div>
+                      <span className="text-sm md:text-base leading-[1.6] text-gray-500 text-left">Content Marketing & Brand Storytelling</span>
+                    </li>
+                    <li className="grid grid-cols-[24px_1fr] items-start gap-3">
+                      <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                        <TrendingUp className="w-5 h-5 text-secondary-500" viewBox="0 0 24 24" />
+                      </div>
+                      <span className="text-sm md:text-base leading-[1.6] text-gray-500 text-left">Analytics, Tracking & Performance Optimization</span>
+                    </li>
+                  </ul>
+                  <hr className="w-full border-t border-orange-100 my-6" />
+                  <div className="mt-auto w-full">
+                    <p className="text-sm md:text-base text-gray-700 font-medium leading-[1.6]">
+                      More visibility. Better leads. Higher conversions.
+                    </p>
               </div>
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -466,28 +525,28 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
               <div className="bg-white p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Expert Designers, Developers, and Marketers</span>
+                <span className="text-base sm:text-lg font-normal text-gray-700">Expert Designers, Developers, and Marketers</span>
               </div>
               <div className="bg-white p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Industry-Specific Strategies—Not Generic Templates</span>
+                <span className="text-base sm:text-lg font-normal text-gray-700">Industry-Specific Strategies—Not Generic Templates</span>
               </div>
               <div className="bg-white p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Transparent Communication Through Every Stage</span>
+                <span className="text-base sm:text-lg font-normal text-gray-700">Transparent Communication Through Every Stage</span>
               </div>
               <div className="bg-white p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">On-Time Delivery With Milestone-Based Planning</span>
+                <span className="text-base sm:text-lg font-normal text-gray-700">On-Time Delivery With Milestone-Based Planning</span>
               </div>
               <div className="bg-white p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Full-Stack Digital Support: From Concept to Scale</span>
+                <span className="text-base sm:text-lg font-normal text-gray-700">Full-Stack Digital Support: From Concept to Scale</span>
               </div>
             </div>
 
             {/* Closing Statement */}
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-900 font-bold">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-900 font-bold mt-8 md:mt-10">
               Shark Creative Agency is not just a service provider —<br className="hidden sm:block" />
               <span className="text-secondary-500">we become your digital team.</span>
             </p>
@@ -496,7 +555,7 @@ export default function Home() {
       </section>
 
       {/* Technologies Section */}
-      <section className="bg-white site-section">
+      <section className="bg-gray-50 site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">Technologies We Use</h2>
@@ -552,7 +611,7 @@ export default function Home() {
       <Testimonials />
 
       {/* CTA Section */}
-      <section className="bg-white site-section">
+      <section className="bg-gray-50 site-section">
         <div className="container-custom text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
             Let's Build Your Brand Together
@@ -575,7 +634,7 @@ export default function Home() {
       </section>
 
       {/* Instagram Section */}
-      <section className="bg-gray-50 site-section">
+      <section className="bg-white site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">Follow Us on Instagram</h2>
