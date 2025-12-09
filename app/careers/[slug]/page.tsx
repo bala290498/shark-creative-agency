@@ -13,6 +13,9 @@ interface CareersPostPageProps {
   }
 }
 
+// Force static generation at build time
+export const dynamic = 'force-static'
+
 export async function generateStaticParams() {
   try {
     const positions = getAllPositions()

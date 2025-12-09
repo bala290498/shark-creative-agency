@@ -4,6 +4,9 @@ import { getAllPosts, getAllCategories } from '@/lib/blog'
 import BlogClient from './BlogClient'
 import PageBanner from '@/components/PageBanner'
 
+// Force static generation at build time
+export const dynamic = 'force-static'
+
 export const metadata: Metadata = {
   title: 'Blog',
   description: 'Read our latest insights on web design, branding, digital marketing, and creative strategies. Stay updated with tips, trends, and expert advice from Shark Creative Agency.',

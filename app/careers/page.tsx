@@ -4,6 +4,9 @@ import { DollarSign, Building2, Umbrella, Home, BookOpen, Zap, MapPin, Globe, Cl
 import PageBanner from '@/components/PageBanner'
 import { getAllPositions } from '@/lib/positions'
 
+// Force static generation at build time
+export const dynamic = 'force-static'
+
 export const metadata: Metadata = {
   title: 'Careers',
   description: 'Join Shark Creative Agency and build your career with a team of creative professionals. Explore open positions in design, development, marketing, and more.',
@@ -122,11 +125,11 @@ export default function Careers() {
                   
                   <div className="flex flex-wrap gap-2.5 mb-4">
                     <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-gray-50 text-xs font-medium text-gray-700">
-                      <MapPin className="w-3 h-3 mr-1.5 text-secondary-500" />
+                      <Building2 className="w-3 h-3 mr-1.5 text-secondary-500" />
                       {position.department}
                     </span>
                     <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-gray-50 text-xs font-medium text-gray-700">
-                      <Globe className="w-3 h-3 mr-1.5 text-secondary-500" />
+                      <MapPin className="w-3 h-3 mr-1.5 text-secondary-500" />
                       {position.location}
                     </span>
                     <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-gray-50 text-xs font-medium text-gray-700">

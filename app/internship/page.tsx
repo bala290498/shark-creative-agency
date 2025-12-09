@@ -4,6 +4,9 @@ import PageBanner from '@/components/PageBanner'
 import { GraduationCap, Briefcase, Code, Palette, TrendingUp, Users, MapPin, Clock, Calendar } from 'lucide-react'
 import { getAllInternships } from '@/lib/internships'
 
+// Force static generation at build time
+export const dynamic = 'force-static'
+
 export const metadata: Metadata = {
   title: 'Internships',
   description: 'Join Shark Creative Agency as an intern and gain hands-on experience in web design, development, marketing, and creative services. Launch your career with real-world projects.',
@@ -122,11 +125,11 @@ export default function Internship() {
                   
                   <div className="flex flex-wrap gap-2.5 mb-4">
                     <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-gray-50 text-xs font-medium text-gray-700">
-                      <MapPin className="w-3 h-3 mr-1.5 text-secondary-500" />
+                      <Briefcase className="w-3 h-3 mr-1.5 text-secondary-500" />
                       {position.department}
                     </span>
                     <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-gray-50 text-xs font-medium text-gray-700">
-                      <Users className="w-3 h-3 mr-1.5 text-secondary-500" />
+                      <MapPin className="w-3 h-3 mr-1.5 text-secondary-500" />
                       {position.location}
                     </span>
                     <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-gray-50 text-xs font-medium text-gray-700">
