@@ -12,7 +12,6 @@ export interface Position {
   type: string
   description: string
   requirements: string[]
-  skills?: string[]
   content: string
 }
 
@@ -36,7 +35,6 @@ export function getAllPositions(): Position[] {
             type: data.type || '',
             description: data.description || '',
             requirements: data.requirements || [],
-            skills: data.skills || [],
             content: content || '',
           }
         } catch (fileError) {
@@ -45,6 +43,7 @@ export function getAllPositions(): Position[] {
         }
       })
       .filter((position): position is Position => position !== null)
+      .sort((a, b) => a.title.localeCompare(b.title)) // Sort alphabetically by title
 
     return allPositionsData
   } catch (error) {
@@ -77,7 +76,6 @@ export function getPositionBySlug(slug: string): Position | null {
       type: data.type || '',
       description: data.description || '',
       requirements: data.requirements || [],
-      skills: data.skills || [],
       content: content || '',
     }
   } catch (error) {

@@ -45,6 +45,7 @@ export function getAllInternships(): Internship[] {
         }
       })
       .filter((internship): internship is Internship => internship !== null)
+      .sort((a, b) => a.title.localeCompare(b.title)) // Sort alphabetically by title
 
     return allInternshipsData
   } catch (error) {
