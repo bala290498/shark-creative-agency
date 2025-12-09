@@ -168,12 +168,12 @@ export default function Internship() {
             </p>
           </div>
           
-          <div className="space-y-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {internshipPositions.map((position, index) => (
-              <div key={index} className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div key={index} className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3 md:mb-4">
                   <div>
-                    <h3 className=" mb-2">{position.title}</h3>
+                    <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">{position.title}</h3>
                     <div className="flex flex-wrap gap-3 md:gap-4 text-xs sm:text-sm text-gray-600">
                       <span className="flex items-center">
                         <MapPin className="w-4 h-4 mr-2 text-secondary-500" />
@@ -215,7 +215,7 @@ export default function Internship() {
                 
                 <a 
                   href={`mailto:internships@sharkcreativeagency.com?subject=Internship Application for ${position.title}`}
-                  className="btn-secondary-gradient inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto text-center"
+                  className="btn-secondary-gradient inline-block w-full text-center mt-auto"
                 >
                   Apply Now
                 </a>
@@ -239,7 +239,7 @@ export default function Internship() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <Calendar className="w-8 h-8 text-secondary-500 mb-4" />
-                <h3 className=" mb-3 md:mb-4">Structured Program</h3>
+                <h3 className="text-lg sm:text-xl font-semibold mb-3 md:mb-4 text-gray-900">Structured Program</h3>
                 <p className="text-sm sm:text-base text-gray-700">
                   Our internship program includes orientation, regular check-ins, project assignments, and a final presentation. You'll have clear goals and milestones to track your progress.
                 </p>
@@ -247,7 +247,7 @@ export default function Internship() {
               
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <Users className="w-8 h-8 text-secondary-500 mb-4" />
-                <h3 className=" mb-3 md:mb-4">Team Collaboration</h3>
+                <h3 className="text-lg sm:text-xl font-semibold mb-3 md:mb-4 text-gray-900">Team Collaboration</h3>
                 <p className="text-sm sm:text-base text-gray-700">
                   Work alongside our team members, attend meetings, and contribute to real projects. You'll be part of the team, not just an observer.
                 </p>
@@ -255,7 +255,7 @@ export default function Internship() {
               
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <TrendingUp className="w-8 h-8 text-secondary-500 mb-4" />
-                <h3 className=" mb-3 md:mb-4">Skill Development</h3>
+                <h3 className="text-lg sm:text-xl font-semibold mb-3 md:mb-4 text-gray-900">Skill Development</h3>
                 <p className="text-sm sm:text-base text-gray-700">
                   Develop both technical and soft skills through hands-on projects, workshops, and mentorship. We invest in your professional growth.
                 </p>
@@ -263,7 +263,7 @@ export default function Internship() {
               
               <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <Briefcase className="w-8 h-8 text-secondary-500 mb-4" />
-                <h3 className=" mb-3 md:mb-4">Real-World Experience</h3>
+                <h3 className="text-lg sm:text-xl font-semibold mb-3 md:mb-4 text-gray-900">Real-World Experience</h3>
                 <p className="text-sm sm:text-base text-gray-700">
                   Work on actual client projects and campaigns. Your contributions will make a real impact and help build your professional portfolio.
                 </p>

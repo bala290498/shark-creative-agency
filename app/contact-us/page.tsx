@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import PageBanner from '@/components/PageBanner'
 
 export const metadata: Metadata = {
   title: 'Contact Us',
@@ -192,7 +193,7 @@ export default function ContactUs() {
             
             <div className="min-w-0">
               <h3 className=" mb-6 md:mb-8 text-gray-900">
-                Frequently Ask Questions
+                Frequently Asked Questions
               </h3>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">

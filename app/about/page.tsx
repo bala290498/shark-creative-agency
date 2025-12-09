@@ -196,23 +196,23 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8 md:mb-10">
               <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">A unified team for design, development, and marketing</span>
+                <span className="text-base sm:text-lg text-gray-700">A Unified Team for Design, Development, and Marketing</span>
               </div>
               <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Transparent communication and milestone-based structure</span>
+                <span className="text-base sm:text-lg text-gray-700">Transparent Communication and Milestone-Based Structure</span>
               </div>
               <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Fast delivery without compromising quality</span>
+                <span className="text-base sm:text-lg text-gray-700">Fast Delivery Without Compromising Quality</span>
               </div>
               <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Proven strategies for conversion and growth</span>
+                <span className="text-base sm:text-lg text-gray-700">Proven Strategies for Conversion and Growth</span>
               </div>
               <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500 md:col-span-2">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg text-gray-700">Community-backed — in collaboration with TrustRech Club</span>
+                <span className="text-base sm:text-lg text-gray-700">Community-Backed — In Collaboration With TrustRech Club</span>
               </div>
             </div>
 

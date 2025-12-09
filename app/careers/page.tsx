@@ -163,12 +163,12 @@ export default function Careers() {
             </p>
           </div>
           
-          <div className="space-y-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {openPositions.map((position, index) => (
-              <div key={index} className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div key={index} className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3 md:mb-4">
                   <div>
-                    <h3 className=" mb-2">{position.title}</h3>
+                    <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">{position.title}</h3>
                     <div className="flex flex-wrap gap-4 text-sm text-gray-600">
                       <span className="flex items-center">
                         <MapPin className="w-4 h-4 mr-2 text-secondary-500" />
@@ -199,7 +199,7 @@ export default function Careers() {
                 
                 <a 
                   href={`mailto:careers@sharkcreativeagency.com?subject=Application for ${position.title}`}
-                  className="btn-secondary-gradient inline-block max-w-xs sm:max-w-sm md:max-w-md mx-auto text-center"
+                  className="btn-secondary-gradient inline-block w-full text-center mt-auto"
                 >
                   Apply Now
                 </a>
@@ -222,28 +222,28 @@ export default function Careers() {
             
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className=" mb-3 md:mb-4">Collaboration</h3>
+                <h3 className="text-lg sm:text-xl font-semibold mb-3 md:mb-4 text-gray-900">Collaboration</h3>
                 <p className="text-sm sm:text-base text-gray-700">
                   We work together as a team, sharing ideas, supporting each other, and celebrating successes together. Collaboration is at the heart of everything we do.
                 </p>
               </div>
               
               <div>
-                <h3 className=" mb-4">Innovation</h3>
+                <h3 className="text-lg sm:text-xl font-semibold mb-4 text-gray-900">Innovation</h3>
                 <p className="text-gray-700">
                   We encourage creative thinking and experimentation. Our team is always exploring new ideas, technologies, and approaches to solve problems.
                 </p>
               </div>
               
               <div>
-                <h3 className=" mb-4">Growth</h3>
+                <h3 className="text-lg sm:text-xl font-semibold mb-4 text-gray-900">Growth</h3>
                 <p className="text-gray-700">
                   We're committed to your professional development. Whether through training, mentorship, or challenging projects, we help you grow your career.
                 </p>
               </div>
               
               <div>
-                <h3 className=" mb-4">Balance</h3>
+                <h3 className="text-lg sm:text-xl font-semibold mb-4 text-gray-900">Balance</h3>
                 <p className="text-gray-700">
                   We understand the importance of work-life balance. We offer flexible schedules, remote work options, and encourage you to take time for yourself.
                 </p>
