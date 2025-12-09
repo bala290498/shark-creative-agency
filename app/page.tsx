@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-white text-gray-900 site-section pt-16 md:pt-4">
+      <section className="bg-white text-gray-900 site-section pt-20 md:pt-6 pb-4 md:pb-6">
         <div className="container mx-auto px-4 max-w-screen-lg">
           {(() => {
             const hasImage = true; // Hero section has image
@@ -49,8 +49,9 @@ export default function Home() {
             const useImageFirstLayout = hasImage && hasContent;
             
             return useImageFirstLayout ? (
-              <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                <div className="text-center md:text-left">
+              <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                {/* Desktop: All content on left, Mobile: Title and Typing Text First */}
+                <div className="text-center md:text-left w-full order-1">
                   <p className="text-lg sm:text-xl md:text-2xl text-secondary-500 font-semibold mb-6">
                   Shark Creative Agency
                   </p>
@@ -69,31 +70,37 @@ export default function Home() {
                   cursorClassName="text-secondary-500"
                 />
                 </h1>
-                <p className="text-base sm:text-lg md:text-xl mb-6 text-gray-700 leading-relaxed max-w-3xl mx-auto">
-                  We help entrepreneurs and businesses turn ideas into powerful brands with strategy, design, development, and marketing — all handled by one expert team.
-                </p>
                 
-                {/* Bullet Highlights */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
-                  <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
-                    <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                    <span className="text-base sm:text-lg text-gray-700">Complete Brand Foundation</span>
-                  </div>
-                  <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
-                    <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                    <span className="text-base sm:text-lg text-gray-700">Modern, High-Performing Websites & Apps</span>
-                  </div>
-                  <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
-                    <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                    <span className="text-base sm:text-lg text-gray-700">Growth-Focused Digital Marketing</span>
+                {/* Mobile: Hide description and bullets, show after image */}
+                <div className="hidden md:block">
+                  <p className="text-base sm:text-lg md:text-xl mb-6 text-gray-700 leading-relaxed max-w-3xl mx-auto md:mx-0">
+                    We help entrepreneurs and businesses turn ideas into powerful brands with strategy, design, development, and marketing — all handled by one expert team.
+                  </p>
+                  
+                  {/* Bullet Highlights */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+                    <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
+                      <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                      <span className="text-base sm:text-lg text-gray-700">Complete Brand Foundation</span>
+                    </div>
+                    <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
+                      <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                      <span className="text-base sm:text-lg text-gray-700">Modern, High-Performing Websites & Apps</span>
+                    </div>
+                    <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
+                      <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                      <span className="text-base sm:text-lg text-gray-700">Growth-Focused Digital Marketing</span>
                 </div>
-                  <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
-                    <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                    <span className="text-base sm:text-lg text-gray-700">End-to-End Creative Support</span>
+                    <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
+                      <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                      <span className="text-base sm:text-lg text-gray-700">End-to-End Creative Support</span>
+                    </div>
                   </div>
-              </div>
-            </div>
-                <div className="w-full flex justify-center md:justify-end">
+                </div>
+                </div>
+                
+                {/* Mobile: Hero Image Second */}
+                <div className="w-full flex justify-center md:justify-end order-2">
                   <div className="relative w-full max-w-xl md:max-w-2xl lg:max-w-3xl h-96 md:h-[600px] lg:h-[700px] flex items-center justify-center">
                 <Image
                   src="/hero.png"
@@ -105,6 +112,33 @@ export default function Home() {
                 />
               </div>
             </div>
+            
+                {/* Mobile: Rest of Content Third */}
+                <div className="text-center md:text-left w-full order-3 md:hidden">
+                  <p className="text-base sm:text-lg md:text-xl mb-6 text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                    We help entrepreneurs and businesses turn ideas into powerful brands with strategy, design, development, and marketing — all handled by one expert team.
+                  </p>
+                  
+                  {/* Bullet Highlights */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+                    <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
+                      <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                      <span className="text-base sm:text-lg text-gray-700">Complete Brand Foundation</span>
+                    </div>
+                    <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
+                      <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                      <span className="text-base sm:text-lg text-gray-700">Modern, High-Performing Websites & Apps</span>
+                    </div>
+                    <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
+                      <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                      <span className="text-base sm:text-lg text-gray-700">Growth-Focused Digital Marketing</span>
+                </div>
+                    <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
+                      <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
+                      <span className="text-base sm:text-lg text-gray-700">End-to-End Creative Support</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -166,24 +200,6 @@ export default function Home() {
               </div>
             );
           })()}
-          
-          {/* CTAs and Microcopy - Full Width */}
-          <div className="w-full text-center mt-4 md:mt-0">
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 md:gap-2 justify-center">
-              <Link href="/contact-us" className="btn-secondary-gradient text-center max-w-xs sm:max-w-sm md:max-w-md mx-auto sm:mx-0">
-                Get Started
-              </Link>
-              <Link href="/contact-us" className="btn-primary text-center max-w-xs sm:max-w-sm md:max-w-md mx-auto sm:mx-0">
-                Book a Strategy Call
-              </Link>
-            </div>
-
-            {/* Micro-Trust Line */}
-            <p className="text-sm sm:text-base text-gray-600 mt-6">
-              Community-backed. Proud collaborator of <span className="font-semibold text-gray-900">TrustRech Club</span>.
-            </p>
-          </div>
         </div>
       </section>
 
