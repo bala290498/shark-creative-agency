@@ -459,67 +459,71 @@ export default function Home() {
               How We Work With You
             </h2>
             
-            <div className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               {/* Step 1 */}
-              <div className="bg-white p-6 md:p-8 text-center">
-                <div className="flex flex-col items-center">
-                  <Search className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
-                  <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Discovery & Strategy</h3>
-                  <p className="text-base sm:text-lg text-gray-700">
-                    We understand your business, goals, competition, and opportunities.
-            </p>
-          </div>
-            </div>
-            
+              <div className="bg-white rounded-xl border-2 border-tiger-orange-200 p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-200 text-center">
+                <div className="flex justify-center mb-4">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full gradient-secondary flex items-center justify-center text-white font-bold text-xl md:text-2xl">
+                    1
+                  </div>
+                </div>
+                <div className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 mb-3 leading-normal">Discovery & Strategy</div>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                  We understand your business, goals, competition, and opportunities.
+                </p>
+              </div>
+              
               {/* Step 2 */}
-              <div className="bg-white p-6 md:p-8 text-center">
-                <div className="flex flex-col items-center">
-                  <Palette className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
-                  <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Brand & Experience Design</h3>
-                  <p className="text-base sm:text-lg text-gray-700">
-                    We craft your visual identity, user experience, and communication style.
-              </p>
-            </div>
-            </div>
-            
+              <div className="bg-white rounded-xl border-2 border-tiger-orange-200 p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-200 text-center">
+                <div className="flex justify-center mb-4">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full gradient-secondary flex items-center justify-center text-white font-bold text-xl md:text-2xl">
+                    2
+                  </div>
+                </div>
+                <div className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 mb-3 leading-normal">Brand & Experience Design</div>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                  We craft your visual identity, user experience, and communication style.
+                </p>
+              </div>
+              
               {/* Step 3 */}
-              <div className="bg-white p-6 md:p-8 text-center">
-                <div className="flex flex-col items-center">
-                  <Code className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
-                  <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Build & Develop</h3>
-                  <p className="text-base sm:text-lg text-gray-700">
-                    Websites, apps, systems, automations — built for scale and speed.
-              </p>
-            </div>
-          </div>
-          
+              <div className="bg-white rounded-xl border-2 border-tiger-orange-200 p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-200 text-center">
+                <div className="flex justify-center mb-4">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full gradient-secondary flex items-center justify-center text-white font-bold text-xl md:text-2xl">
+                    3
+                  </div>
+                </div>
+                <div className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 mb-3 leading-normal">Build & Develop</div>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                  Websites, apps, systems, automations — built for scale and speed.
+                </p>
+              </div>
+              
               {/* Step 4 */}
-              <div className="bg-white p-6 md:p-8 text-center">
-                <div className="flex flex-col items-center">
-                  <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
-                  <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Market & Grow</h3>
-                  <p className="text-base sm:text-lg text-gray-700">
-                    We launch campaigns, track analytics, and optimize for consistent growth.
-                  </p>
-          </div>
-        </div>
+              <div className="bg-white rounded-xl border-2 border-tiger-orange-200 p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-200 text-center">
+                <div className="flex justify-center mb-4">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full gradient-secondary flex items-center justify-center text-white font-bold text-xl md:text-2xl">
+                    4
+                  </div>
+                </div>
+                <div className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 mb-3 leading-normal">Market & Grow</div>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                  We launch campaigns, track analytics, and optimize for consistent growth.
+                </p>
+              </div>
 
               {/* Step 5 */}
-              <div className="bg-white p-6 md:p-8 text-center">
-                <div className="flex flex-col items-center">
-                  <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-4" />
-                  <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Improve & Support</h3>
-                  <p className="text-base sm:text-lg text-gray-700">
-                    Ongoing upgrades, creative support, and monthly management.
-                  </p>
+              <div className="bg-white rounded-xl border-2 border-tiger-orange-200 p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-200 text-center">
+                <div className="flex justify-center mb-4">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full gradient-secondary flex items-center justify-center text-white font-bold text-xl md:text-2xl">
+                    5
+                  </div>
+                </div>
+                <div className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 mb-3 leading-normal">Improve & Support</div>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                  Ongoing upgrades, creative support, and monthly management.
+                </p>
               </div>
-              </div>
-            </div>
-
-            <div className="gradient-secondary border-b border-secondary-500/30 rounded-lg p-4 md:p-6 mt-6 text-center w-full">
-              <p className="text-base sm:text-lg md:text-xl text-white font-semibold">
-                <span className="text-white/90">Outcome:</span> A long-term partnership for sustainable success.
-              </p>
             </div>
           </div>
         </div>
