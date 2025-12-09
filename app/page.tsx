@@ -532,8 +532,8 @@ export default function Home() {
       {/* Why Choose Us Section */}
       <section className="bg-gray-50 site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center">
               What Makes Us Different
             </h2>
             
@@ -541,23 +541,23 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
               <div className="bg-white p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg font-normal text-gray-700">Expert Designers, Developers, and Marketers</span>
+                <span className="text-base sm:text-lg font-normal text-gray-700 text-left">Expert Designers, Developers, and Marketers</span>
               </div>
               <div className="bg-white p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg font-normal text-gray-700">Industry-Specific Strategies—Not Generic Templates</span>
+                <span className="text-base sm:text-lg font-normal text-gray-700 text-left">Industry-Specific Strategies—Not Generic Templates</span>
               </div>
               <div className="bg-white p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg font-normal text-gray-700">Transparent Communication Through Every Stage</span>
+                <span className="text-base sm:text-lg font-normal text-gray-700 text-left">Transparent Communication Through Every Stage</span>
               </div>
               <div className="bg-white p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg font-normal text-gray-700">On-Time Delivery With Milestone-Based Planning</span>
+                <span className="text-base sm:text-lg font-normal text-gray-700 text-left">On-Time Delivery With Milestone-Based Planning</span>
               </div>
               <div className="bg-white p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
-                <span className="text-base sm:text-lg font-normal text-gray-700">Full-Stack Digital Support: From Concept to Scale</span>
+                <span className="text-base sm:text-lg font-normal text-gray-700 text-left">Full-Stack Digital Support: From Concept to Scale</span>
               </div>
             </div>
 
