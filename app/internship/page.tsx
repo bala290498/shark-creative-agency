@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import PageBanner from '@/components/PageBanner'
 import { GraduationCap, Briefcase, Code, Palette, TrendingUp, Users, MapPin, Clock, Calendar } from 'lucide-react'
+import { getAllInternships } from '@/lib/internships'
 
 export const metadata: Metadata = {
   title: 'Internships',
@@ -31,68 +32,7 @@ export const metadata: Metadata = {
 }
 
 export default function Internship() {
-  const internshipPositions = [
-    {
-      title: 'Web Development Intern',
-      department: 'Development',
-      location: 'Remote / Hybrid',
-      duration: '3-6 months',
-      description: 'Learn web development with React, Next.js, and modern frameworks. Work on real client projects and build your portfolio.',
-      requirements: [
-        'Currently pursuing a degree in Computer Science or related field',
-        'Basic knowledge of HTML, CSS, and JavaScript',
-        'Eagerness to learn and grow',
-        'Strong problem-solving skills',
-        'Good communication abilities'
-      ],
-      skills: ['React', 'Next.js', 'TypeScript', 'CSS'],
-    },
-    {
-      title: 'UI/UX Design Intern',
-      department: 'Design',
-      location: 'Remote / Hybrid',
-      duration: '3-6 months',
-      description: 'Gain experience in user interface and user experience design. Work on design projects and learn industry-standard tools.',
-      requirements: [
-        'Currently pursuing a degree in Design or related field',
-        'Basic knowledge of design principles',
-        'Familiarity with Figma or Adobe Creative Suite',
-        'Creative thinking and attention to detail',
-        'Portfolio of design work (academic projects welcome)'
-      ],
-      skills: ['Figma', 'Adobe Creative Suite', 'Prototyping', 'User Research'],
-    },
-    {
-      title: 'Digital Marketing Intern',
-      department: 'Marketing',
-      location: 'Remote / Hybrid',
-      duration: '3-6 months',
-      description: 'Learn digital marketing strategies, social media management, and content creation. Work on real campaigns and analytics.',
-      requirements: [
-        'Currently pursuing a degree in Marketing, Communications, or related field',
-        'Interest in digital marketing and social media',
-        'Strong writing and communication skills',
-        'Creative thinking',
-        'Basic knowledge of social media platforms'
-      ],
-      skills: ['Social Media', 'Content Creation', 'SEO', 'Analytics'],
-    },
-    {
-      title: 'Content Writing Intern',
-      department: 'Content',
-      location: 'Remote',
-      duration: '3-6 months',
-      description: 'Develop your writing skills by creating content for websites, blogs, and social media. Learn SEO and content strategy.',
-      requirements: [
-        'Currently pursuing a degree in English, Journalism, Communications, or related field',
-        'Excellent writing and editing skills',
-        'Ability to adapt writing style for different audiences',
-        'Strong research skills',
-        'Passion for storytelling'
-      ],
-      skills: ['Copywriting', 'Blog Writing', 'SEO', 'Editing'],
-    },
-  ]
+  const internshipPositions = getAllInternships()
 
   const benefits = [
     {
@@ -169,57 +109,46 @@ export default function Internship() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {internshipPositions.map((position, index) => (
-              <div key={index} className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow flex flex-col">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3 md:mb-4">
-                  <div>
-                    <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">{position.title}</h3>
-                    <div className="flex flex-wrap gap-3 md:gap-4 text-xs sm:text-sm text-gray-600">
-                      <span className="flex items-center">
-                        <MapPin className="w-4 h-4 mr-2 text-secondary-500" />
-                        {position.department}
-                      </span>
-                      <span className="flex items-center">
-                        <Users className="w-4 h-4 mr-2 text-secondary-500" />
-                        {position.location}
-                      </span>
-                      <span className="flex items-center">
-                        <Clock className="w-4 h-4 mr-2 text-secondary-500" />
-                        {position.duration}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                
-                <p className="text-sm sm:text-base text-gray-700 mb-3 md:mb-4">{position.description}</p>
-                
-                <div className="mb-3 md:mb-4">
-                  <h4 className="font-semibold mb-2 text-sm sm:text-base">Requirements:</h4>
-                  <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700">
-                    {position.requirements.map((req, idx) => (
-                      <li key={idx}>{req}</li>
-                    ))}
-                  </ul>
-                </div>
-
+            {internshipPositions.map((position) => (
+              <Link 
+                key={position.slug}
+                href={`/internship/${position.slug}`}
+                className="bg-white p-6 rounded-lg border-2 border-gray-300 hover:border-secondary-500 hover:shadow-lg transition-all duration-200 flex flex-col group h-full"
+              >
                 <div className="mb-4">
-                  <h4 className="font-semibold mb-2 text-sm sm:text-base">Skills You'll Learn:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {position.skills.map((skill, idx) => (
-                      <span key={idx} className="bg-secondary-500/10 text-secondary-500 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
-                        {skill}
-                      </span>
-                    ))}
+                  <h3 className="text-lg sm:text-xl font-semibold mb-3 text-gray-900 group-hover:text-secondary-500 transition-colors min-h-[3.5rem] line-clamp-2 leading-tight">
+                    {position.title}
+                  </h3>
+                  
+                  <div className="flex flex-wrap gap-2.5 mb-4">
+                    <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-gray-50 text-xs font-medium text-gray-700">
+                      <MapPin className="w-3 h-3 mr-1.5 text-secondary-500" />
+                      {position.department}
+                    </span>
+                    <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-gray-50 text-xs font-medium text-gray-700">
+                      <Users className="w-3 h-3 mr-1.5 text-secondary-500" />
+                      {position.location}
+                    </span>
+                    <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-gray-50 text-xs font-medium text-gray-700">
+                      <Clock className="w-3 h-3 mr-1.5 text-secondary-500" />
+                      {position.duration}
+                    </span>
                   </div>
                 </div>
                 
-                <a 
-                  href={`mailto:internships@sharkcreativeagency.com?subject=Internship Application for ${position.title}`}
-                  className="btn-secondary-gradient inline-block w-full text-center mt-auto"
-                >
-                  Apply Now
-                </a>
-              </div>
+                <p className="text-sm sm:text-base text-gray-700 mb-6 line-clamp-3 flex-1 leading-relaxed">
+                  {position.description}
+                </p>
+                
+                <div className="mt-auto pt-4 border-t border-gray-100">
+                  <span className="text-sm font-semibold text-secondary-500 group-hover:text-secondary-600 transition-colors inline-flex items-center">
+                    View Details
+                    <svg className="w-4 h-4 ml-1.5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </div>
+              </Link>
             ))}
           </div>
         </div>

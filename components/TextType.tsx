@@ -134,8 +134,7 @@ const TextType = ({
             },
             variableSpeed ? getRandomSpeed() : typingSpeed
           );
-        } else if (textArray.length >= 1) {
-          if (!loop && currentTextIndex === textArray.length - 1) return;
+        } else if (textArray.length > 1) {
           timeout = setTimeout(() => {
             setIsDeleting(true);
           }, pauseDuration);

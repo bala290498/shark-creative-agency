@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { DollarSign, Building2, Umbrella, Home, BookOpen, Zap, MapPin, Globe, Clock } from 'lucide-react'
 import PageBanner from '@/components/PageBanner'
+import { getAllPositions } from '@/lib/positions'
 
 export const metadata: Metadata = {
   title: 'Careers',
@@ -30,64 +32,7 @@ export const metadata: Metadata = {
 }
 
 export default function Careers() {
-  const openPositions = [
-    {
-      title: 'Senior Web Developer',
-      department: 'Development',
-      location: 'Remote / Hybrid',
-      type: 'Full-time',
-      description: 'We are seeking an experienced web developer to join our team. You will work on exciting projects, build modern web applications, and collaborate with designers and marketers.',
-      requirements: [
-        '5+ years of experience in web development',
-        'Proficiency in React, Next.js, and TypeScript',
-        'Experience with modern CSS frameworks',
-        'Strong problem-solving skills',
-        'Excellent communication and teamwork abilities'
-      ]
-    },
-    {
-      title: 'UI/UX Designer',
-      department: 'Design',
-      location: 'Remote / Hybrid',
-      type: 'Full-time',
-      description: 'Join our design team to create beautiful, user-centered designs for web and mobile applications. You will work on diverse projects and collaborate with clients and developers.',
-      requirements: [
-        '3+ years of UI/UX design experience',
-        'Proficiency in Figma, Adobe Creative Suite',
-        'Strong portfolio showcasing web and mobile designs',
-        'Understanding of user research and usability principles',
-        'Ability to work in a fast-paced environment'
-      ]
-    },
-    {
-      title: 'Digital Marketing Specialist',
-      department: 'Marketing',
-      location: 'Remote / Hybrid',
-      type: 'Full-time',
-      description: 'We are looking for a digital marketing specialist to develop and execute marketing strategies, manage campaigns, and analyze performance to drive results for our clients.',
-      requirements: [
-        '3+ years of digital marketing experience',
-        'Experience with SEO, SEM, and social media marketing',
-        'Proficiency in Google Analytics and marketing tools',
-        'Strong analytical and reporting skills',
-        'Creative thinking and strategic mindset'
-      ]
-    },
-    {
-      title: 'Content Writer',
-      department: 'Content',
-      location: 'Remote',
-      type: 'Full-time',
-      description: 'Create compelling content for websites, blogs, social media, and marketing materials. You will work with our team to develop content strategies and produce engaging copy.',
-      requirements: [
-        '2+ years of content writing experience',
-        'Excellent writing and editing skills',
-        'Experience with SEO-friendly content',
-        'Ability to adapt writing style for different audiences',
-        'Strong research and fact-checking abilities'
-      ]
-    }
-  ]
+  const openPositions = getAllPositions()
 
   const benefits = [
     {
@@ -164,46 +109,46 @@ export default function Careers() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {openPositions.map((position, index) => (
-              <div key={index} className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow flex flex-col">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3 md:mb-4">
-                  <div>
-                    <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">{position.title}</h3>
-                    <div className="flex flex-wrap gap-4 text-sm text-gray-600">
-                      <span className="flex items-center">
-                        <MapPin className="w-4 h-4 mr-2 text-secondary-500" />
-                        {position.department}
-                      </span>
-                      <span className="flex items-center">
-                        <Globe className="w-4 h-4 mr-2 text-secondary-500" />
-                        {position.location}
-                      </span>
-                      <span className="flex items-center">
-                        <Clock className="w-4 h-4 mr-2 text-secondary-500" />
-                        {position.type}
-                      </span>
-                    </div>
+            {openPositions.map((position) => (
+              <Link 
+                key={position.slug}
+                href={`/careers/${position.slug}`}
+                className="bg-white p-6 rounded-lg border-2 border-gray-300 hover:border-secondary-500 hover:shadow-lg transition-all duration-200 flex flex-col group h-full"
+              >
+                <div className="mb-4">
+                  <h3 className="text-lg sm:text-xl font-semibold mb-3 text-gray-900 group-hover:text-secondary-500 transition-colors min-h-[3.5rem] line-clamp-2 leading-tight">
+                    {position.title}
+                  </h3>
+                  
+                  <div className="flex flex-wrap gap-2.5 mb-4">
+                    <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-gray-50 text-xs font-medium text-gray-700">
+                      <MapPin className="w-3 h-3 mr-1.5 text-secondary-500" />
+                      {position.department}
+                    </span>
+                    <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-gray-50 text-xs font-medium text-gray-700">
+                      <Globe className="w-3 h-3 mr-1.5 text-secondary-500" />
+                      {position.location}
+                    </span>
+                    <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-gray-50 text-xs font-medium text-gray-700">
+                      <Clock className="w-3 h-3 mr-1.5 text-secondary-500" />
+                      {position.type}
+                    </span>
                   </div>
                 </div>
                 
-                <p className="text-sm sm:text-base text-gray-700 mb-3 md:mb-4">{position.description}</p>
+                <p className="text-sm sm:text-base text-gray-700 mb-6 line-clamp-3 flex-1 leading-relaxed">
+                  {position.description}
+                </p>
                 
-                <div className="mb-3 md:mb-4">
-                  <h4 className="font-semibold mb-2 text-sm sm:text-base">Requirements:</h4>
-                  <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700">
-                    {position.requirements.map((req, idx) => (
-                      <li key={idx}>{req}</li>
-                    ))}
-                  </ul>
+                <div className="mt-auto pt-4 border-t border-gray-100">
+                  <span className="text-sm font-semibold text-secondary-500 group-hover:text-secondary-600 transition-colors inline-flex items-center">
+                    View Details
+                    <svg className="w-4 h-4 ml-1.5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
                 </div>
-                
-                <a 
-                  href={`mailto:careers@sharkcreativeagency.com?subject=Application for ${position.title}`}
-                  className="btn-secondary-gradient inline-block w-full text-center mt-auto"
-                >
-                  Apply Now
-                </a>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
