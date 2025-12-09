@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-white text-gray-900 site-section pt-20 md:pt-16">
+      <section className="bg-white text-gray-900 site-section pt-16 md:pt-4">
         <div className="container mx-auto px-4 max-w-screen-lg">
           {(() => {
             const hasImage = true; // Hero section has image
@@ -168,9 +168,9 @@ export default function Home() {
           })()}
           
           {/* CTAs and Microcopy - Full Width */}
-          <div className="w-full text-center mt-8">
+          <div className="w-full text-center mt-4 md:mt-0">
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-2 justify-center">
               <Link href="/contact-us" className="btn-secondary-gradient text-center max-w-xs sm:max-w-sm md:max-w-md mx-auto sm:mx-0">
                 Get Started
               </Link>
@@ -371,7 +371,7 @@ export default function Home() {
                   <hr className="w-full border-t border-orange-100 my-6" />
                   <div className="mt-auto w-full">
                     <p className="text-sm md:text-base text-gray-700 font-medium leading-[1.6]">
-                      Fast, scalable, and secure digital experiences.
+                      Fast. Scalable. Secure digital experiences.
                     </p>
               </div>
               </div>
