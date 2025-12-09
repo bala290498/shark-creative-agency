@@ -21,7 +21,7 @@ export default function BlogClient({ posts, categories }: BlogClientProps) {
   return (
     <>
       {/* Category Filter */}
-      <section className="bg-gray-50 section-padding">
+      <section className="bg-gray-50 site-section">
         <div className="container-custom">
           <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-8">
             {categories.map((category) => (
@@ -42,7 +42,7 @@ export default function BlogClient({ posts, categories }: BlogClientProps) {
       </section>
 
       {/* Blog Posts Grid */}
-      <section className="section-padding">
+      <section className="site-section">
         <div className="container-custom">
           {filteredPosts.length === 0 ? (
             <div className="text-center py-12">

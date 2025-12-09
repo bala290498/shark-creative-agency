@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllPosts, getAllCategories } from '@/lib/blog'
 import BlogClient from './BlogClient'
+import PageBanner from '@/components/PageBanner'
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -36,24 +37,14 @@ export default function Blog() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-white text-gray-900 section-padding pt-20 md:pt-20">
-        <div className="container mx-auto px-4 max-w-screen-lg">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className=" mb-4 md:mb-6 px-4">
-              Our Blog
-            </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 px-4">
-              Insights, tips, and strategies to help you succeed in the digital world
-            </p>
-          </div>
-        </div>
-      </section>
-
+      <PageBanner 
+        title="Blog" 
+        description="Insights, tips, and stories about design, development, marketing, and building successful brands"
+      />
       <BlogClient posts={blogPosts} categories={categories} />
 
       {/* Newsletter Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-2xl mx-auto text-center gradient-secondary rounded-2xl p-8 md:p-12 text-white">
             <h2 className=" mb-4">

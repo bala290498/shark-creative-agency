@@ -39,8 +39,12 @@ export default function ContactUs() {
 
   return (
     <>
+      <PageBanner 
+        title="Contact Us" 
+        description="Let's build something extraordinary together. Reach out anytime — we're quick to respond and always excited to collaborate"
+      />
       {/* Hero Section */}
-      <section className="bg-white text-gray-900 section-padding pt-20 md:pt-20">
+      <section className="bg-white text-gray-900 site-section pt-20 md:pt-16">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className=" mb-4 md:mb-6 text-gray-900 px-4">
@@ -54,7 +58,7 @@ export default function ContactUs() {
       </section>
 
       {/* Get in Touch Section */}
-      <section className="bg-gray-50 section-padding">
+      <section className="bg-gray-50 site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <h2 className=" mb-8 md:mb-10 text-center text-gray-900">
@@ -99,7 +103,7 @@ export default function ContactUs() {
       </section>
 
       {/* Send a Message Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <h2 className=" mb-6 md:mb-8 text-center text-gray-900 px-4">
             Send a Message
@@ -216,7 +220,7 @@ export default function ContactUs() {
       </section>
 
       {/* Socials Section */}
-      <section className="bg-gray-50 section-padding">
+      <section className="bg-gray-50 site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className=" mb-8 md:mb-10 text-gray-900">
@@ -249,7 +253,7 @@ export default function ContactUs() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className=" mb-4 md:mb-6 text-gray-900">

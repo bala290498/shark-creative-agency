@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Palette, Code, TrendingUp, CheckCircle2, Rocket, Search, Smartphone, Globe, Building2, Zap, BarChart3, Users, MessageSquare, Target, Handshake, Clock } from 'lucide-react'
+import PageBanner from '@/components/PageBanner'
 
 export const metadata: Metadata = {
   title: 'Services',
@@ -32,8 +33,12 @@ export const metadata: Metadata = {
 export default function Services() {
   return (
     <>
+      <PageBanner 
+        title="Our Services" 
+        description="Complete design, development, and digital marketing solutions to build and grow your brand"
+      />
       {/* Intro Section */}
-      <section className="bg-white section-padding pt-20 md:pt-20">
+      <section className="bg-white site-section pt-20 md:pt-16">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="mb-4 md:mb-6">
@@ -55,7 +60,7 @@ export default function Services() {
       </section>
 
       {/* Design Services Section */}
-      <section className="bg-gray-50 section-padding">
+      <section className="bg-gray-50 site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <h2 className="mb-4 md:mb-6 text-center">
@@ -116,7 +121,7 @@ export default function Services() {
       </section>
 
       {/* Development Services Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <h2 className="mb-4 md:mb-6 text-center">
@@ -189,7 +194,7 @@ export default function Services() {
       </section>
 
       {/* Digital Marketing Section */}
-      <section className="bg-gray-50 section-padding">
+      <section className="bg-gray-50 site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <h2 className="mb-4 md:mb-6 text-center">
@@ -274,7 +279,7 @@ export default function Services() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="mb-6 md:mb-8">
@@ -312,7 +317,7 @@ export default function Services() {
       </section>
 
       {/* Process Section */}
-      <section className="bg-gray-50 section-padding">
+      <section className="bg-gray-50 site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <h2 className="mb-8 md:mb-12 text-center">
@@ -391,7 +396,7 @@ export default function Services() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="mb-4 md:mb-6">

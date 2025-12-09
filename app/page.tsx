@@ -41,15 +41,13 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-white text-gray-900 section-padding pb-4 md:pb-8 pt-20 md:pt-20">
+      <section className="bg-white text-gray-900 site-section pt-20 md:pt-16">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="text-center md:text-left">
-              <div className="mb-4 md:mb-6">
-              <p className="text-lg sm:text-xl md:text-2xl text-secondary-500 font-semibold mb-2 md:mb-3">
-                Shark Creative Agency
+              <p className="text-lg sm:text-xl md:text-2xl text-secondary-500 font-semibold mb-4 md:mb-6">
+                  Shark Creative Agency
               </p>
-              </div>
             <h1 className="mb-4 md:mb-6 min-h-[2.5rem] md:min-h-[3rem] text-xl sm:text-2xl md:text-3xl lg:text-4xl">
                 <TextType 
                   text={[
@@ -70,7 +68,7 @@ export default function Home() {
             </p>
             
             {/* Bullet Highlights */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6 md:mb-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-4xl mx-auto">
               <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Complete brand foundation</span>
@@ -82,7 +80,7 @@ export default function Home() {
               <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Growth-focused digital marketing</span>
-              </div>
+            </div>
               <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">End-to-end creative support</span>
@@ -104,9 +102,9 @@ export default function Home() {
           </div>
           
           {/* CTAs and Microcopy - Full Width */}
-          <div className="w-full text-center mt-2 md:mt-3">
+          <div className="w-full text-center mt-8 md:mt-12">
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4 md:mb-6">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact-us" className="btn-secondary-gradient text-center max-w-xs sm:max-w-sm md:max-w-md mx-auto sm:mx-0">
                 Get Started
               </Link>
@@ -116,7 +114,7 @@ export default function Home() {
             </div>
 
             {/* Micro-Trust Line */}
-            <p className="text-sm sm:text-base text-gray-600">
+            <p className="text-sm sm:text-base text-gray-600 mt-4 md:mt-6">
               Community-backed. Proud collaborator of <span className="font-semibold text-gray-900">TrustRech Club</span>.
             </p>
           </div>
@@ -124,18 +122,18 @@ export default function Home() {
       </section>
 
       {/* Problem Statement Section */}
-      <section className="bg-gray-50 section-padding">
+      <section className="bg-gray-50 site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="mb-4 md:mb-6">
+            <h2 className="mb-6 md:mb-8">
               Why Most Businesses Struggle
             </h2>
-            <p className="text-base sm:text-lg md:text-xl mb-8 md:mb-10 text-gray-700">
+            <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700">
               Most founders and companies face the same obstacles:
             </p>
             
             {/* Problem List */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8 md:mb-10 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6 md:mb-8 max-w-4xl mx-auto">
               <div className="bg-white p-4 flex items-start border-l-4 border-red-500">
                 <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">No strong brand identity or positioning</span>
@@ -147,13 +145,13 @@ export default function Home() {
               <div className="bg-white p-4 flex items-start border-l-4 border-red-500">
                 <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Websites or apps that don't convert</span>
-              </div>
+          </div>
               <div className="bg-white p-4 flex items-start border-l-4 border-red-500">
                 <X className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Ineffective marketing campaigns</span>
-              </div>
             </div>
-            
+          </div>
+          
             {/* Closing Statement */}
             <p className="text-base sm:text-lg md:text-xl text-gray-700 font-medium max-w-3xl mx-auto">
               Businesses have ideas — but lack a full-service partner to bring them to life.
@@ -163,13 +161,13 @@ export default function Home() {
       </section>
 
       {/* Our Solution Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="mb-4 md:mb-6">
+            <h2 className="mb-6 md:mb-8">
               A Complete Digital Transformation Partner
             </h2>
-            <p className="text-base sm:text-lg md:text-xl mb-8 md:mb-10 text-gray-700">
+            <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700">
               Shark Creative Agency provides every service you need to launch, grow, and scale:
             </p>
             
@@ -178,7 +176,7 @@ export default function Home() {
             </p>
             
             {/* Services List */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8 md:mb-10 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6 md:mb-8 max-w-4xl mx-auto">
               <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Brand foundation</span>
@@ -198,8 +196,8 @@ export default function Home() {
               <div className="bg-gray-50 p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Brand improvement</span>
+                </div>
               </div>
-            </div>
 
             {/* Closing Statements */}
             <p className="text-lg sm:text-xl md:text-2xl font-bold mb-4 md:mb-6 text-gray-900">
@@ -208,15 +206,15 @@ export default function Home() {
             <p className="text-base sm:text-lg md:text-xl text-gray-700 font-medium">
               You focus on business — we take care of everything else.
             </p>
-          </div>
-        </div>
+              </div>
+              </div>
       </section>
 
       {/* Services Section */}
-      <section className="bg-gray-50 section-padding">
+      <section className="bg-gray-50 site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-6xl mx-auto">
-            <h2 className="mb-8 md:mb-12 text-center">
+            <h2 className="mb-6 md:mb-8 text-center">
               What We Do
             </h2>
             
@@ -226,7 +224,7 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <Palette className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4" />
                   <h3 className=" mb-4 text-gray-900">Design Services</h3>
-                <ul className="space-y-2 mb-6 text-gray-700">
+                <ul className="space-y-2 mb-6 text-gray-700 w-full">
                   <li className="flex items-start">
                     <Paintbrush className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
                     <span className="text-sm sm:text-base">Logo and brand identity systems</span>
@@ -244,18 +242,18 @@ export default function Home() {
                     <span className="text-sm sm:text-base">Brochures, banners, and marketing collaterals</span>
                   </li>
                 </ul>
-                <p className="text-sm sm:text-base text-gray-600 font-medium">
+                <p className="text-sm sm:text-base text-gray-600 font-medium text-center">
                   <span className="text-secondary-500">Outcome:</span> A brand that looks professional, trustworthy, and unforgettable.
-              </p>
-                </div>
+                </p>
               </div>
-            
+              </div>
+
               {/* Development Services */}
               <div className="bg-white p-6 md:p-8 text-center">
                 <div className="flex flex-col items-center">
                   <Code className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4" />
                   <h3 className=" mb-4 text-gray-900">Development Services</h3>
-                <ul className="space-y-2 mb-6 text-gray-700">
+                <ul className="space-y-2 mb-6 text-gray-700 w-full">
                   <li className="flex items-start">
                     <Globe className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
                     <span className="text-sm sm:text-base">Responsive websites (custom codebase, WordPress, Webflow)</span>
@@ -266,28 +264,28 @@ export default function Home() {
                   </li>
                   <li className="flex items-start">
                     <Smartphone className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">Mobile apps using Flutter and React Native (React Native — a mobile app framework built on React)</span>
+                    <span className="text-sm sm:text-base">Mobile apps using Flutter and React Native </span>
                   </li>
                   <li className="flex items-start">
                     <Zap className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">Backend systems & API (Application Programming Interface — a structured protocol for communication between systems) integrations</span>
+                    <span className="text-sm sm:text-base">Backend systems & API integrations</span>
                   </li>
                 </ul>
-                <p className="text-sm sm:text-base text-gray-600 font-medium">
+                <p className="text-sm sm:text-base text-gray-600 font-medium text-center">
                   <span className="text-secondary-500">Outcome:</span> Fast, scalable, secure digital platforms built for performance.
-              </p>
-                </div>
+                </p>
               </div>
-            
+            </div>
+
               {/* Digital Marketing */}
               <div className="bg-white p-6 md:p-8 text-center">
                 <div className="flex flex-col items-center">
                   <TrendingUp className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4" />
                   <h3 className=" mb-4 text-gray-900">Digital Marketing</h3>
-                <ul className="space-y-2 mb-6 text-gray-700">
+                <ul className="space-y-2 mb-6 text-gray-700 w-full">
                   <li className="flex items-start">
                     <Search className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">Search engine optimization (SEO: search engine optimization)</span>
+                    <span className="text-sm sm:text-base">Search engine optimization </span>
                   </li>
                   <li className="flex items-start">
                     <BarChart3 className="w-4 h-4 text-secondary-500 mr-2 mt-1 flex-shrink-0" />
@@ -306,10 +304,10 @@ export default function Home() {
                     <span className="text-sm sm:text-base">Analytics, tracking, and performance optimization</span>
                   </li>
                 </ul>
-                <p className="text-sm sm:text-base text-gray-600 font-medium">
+                <p className="text-sm sm:text-base text-gray-600 font-medium text-center">
                   <span className="text-secondary-500">Outcome:</span> Visibility, leads, conversions, and long-term growth.
                 </p>
-                </div>
+              </div>
               </div>
             </div>
           </div>
@@ -317,7 +315,7 @@ export default function Home() {
       </section>
 
       {/* Our Process Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <h2 className="mb-8 md:mb-12 text-center">
@@ -332,10 +330,10 @@ export default function Home() {
                   <h3 className=" mb-2 text-gray-900">Discovery & Strategy</h3>
                   <p className="text-base sm:text-lg text-gray-700">
                     We understand your business, goals, competition, and opportunities.
-                  </p>
-                </div>
-              </div>
-
+            </p>
+          </div>
+            </div>
+            
               {/* Step 2 */}
               <div className="bg-white p-6 md:p-8 text-center">
                 <div className="flex flex-col items-center">
@@ -343,10 +341,10 @@ export default function Home() {
                   <h3 className=" mb-2 text-gray-900">Brand & Experience Design</h3>
                   <p className="text-base sm:text-lg text-gray-700">
                     We craft your visual identity, user experience, and communication style.
-                  </p>
-                </div>
-              </div>
-
+              </p>
+            </div>
+            </div>
+            
               {/* Step 3 */}
               <div className="bg-white p-6 md:p-8 text-center">
                 <div className="flex flex-col items-center">
@@ -354,10 +352,10 @@ export default function Home() {
                   <h3 className=" mb-2 text-gray-900">Build & Develop</h3>
                   <p className="text-base sm:text-lg text-gray-700">
                     Websites, apps, systems, automations — built for scale and speed.
-                  </p>
-                </div>
-              </div>
-
+              </p>
+            </div>
+          </div>
+          
               {/* Step 4 */}
               <div className="bg-white p-6 md:p-8 text-center">
                 <div className="flex flex-col items-center">
@@ -366,8 +364,8 @@ export default function Home() {
                   <p className="text-base sm:text-lg text-gray-700">
                     We launch campaigns, track analytics, and optimize for consistent growth.
                   </p>
-                </div>
-              </div>
+          </div>
+        </div>
 
               {/* Step 5 */}
               <div className="bg-white p-6 md:p-8 text-center">
@@ -377,29 +375,27 @@ export default function Home() {
                   <p className="text-base sm:text-lg text-gray-700">
                     Ongoing upgrades, creative support, and monthly management.
                   </p>
-                </div>
+              </div>
               </div>
             </div>
 
-            <div className="mt-8 md:mt-10 text-center">
-              <p className="text-base sm:text-lg md:text-xl text-gray-700 font-medium">
-                <span className="text-secondary-500">Outcome:</span> A long-term partnership for sustainable success.
-              </p>
-            </div>
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 font-medium text-center mt-6 md:mt-8">
+              <span className="text-secondary-500">Outcome:</span> A long-term partnership for sustainable success.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="bg-gray-50 section-padding">
+      <section className="bg-gray-50 site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="mb-8 md:mb-10">
+            <h2 className="mb-6 md:mb-8">
               What Makes Us Different
             </h2>
             
             {/* Features List */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8 md:mb-10 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-4xl mx-auto">
               <div className="bg-white p-4 flex items-start border-l-4 border-secondary-500">
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-base sm:text-lg text-gray-700">Expert designers, developers, and marketers</span>
@@ -432,7 +428,7 @@ export default function Home() {
       </section>
 
       {/* Technologies Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
             <h2 className="mb-3 md:mb-4">Technologies We Use</h2>
@@ -488,12 +484,12 @@ export default function Home() {
       <Testimonials />
 
       {/* CTA Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container-custom text-center">
-          <h2 className="mb-4 md:mb-6">
+          <h2 className="mb-6 md:mb-8">
             Let's Build Your Brand Together
           </h2>
-          <p className="text-base sm:text-lg md:text-xl mb-4 md:mb-6 text-gray-700 max-w-3xl mx-auto px-4">
+          <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 max-w-3xl mx-auto px-4">
             Ready to turn your idea into a powerful digital brand?
           </p>
           <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 max-w-3xl mx-auto px-4">
@@ -511,11 +507,11 @@ export default function Home() {
       </section>
 
       {/* Instagram Section */}
-      <section className="bg-gray-50 section-padding">
+      <section className="bg-gray-50 site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
-          <div className="text-center mb-12">
-            <h2 className="mb-3 md:mb-4">Follow Us on Instagram</h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
+          <div className="text-center">
+            <h2 className="mb-6 md:mb-8">Follow Us on Instagram</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4 mb-6 md:mb-8">
               Get inspired by our latest creative work and behind-the-scenes content
             </p>
           </div>

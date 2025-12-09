@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Palette, Code, TrendingUp, CheckCircle2, Target, Search, Rocket, Zap, Users, Handshake } from 'lucide-react'
+import PageBanner from '@/components/PageBanner'
 
 export const metadata: Metadata = {
   title: 'About Us',
@@ -32,8 +33,12 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <>
+      <PageBanner 
+        title="About Us" 
+        description="A creative, technology & marketing agency built for modern brands"
+      />
       {/* Hero Section */}
-      <section className="bg-white text-gray-900 section-padding pt-20 md:pt-20">
+      <section className="bg-white text-gray-900 site-section pt-20 md:pt-16">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="mb-4 md:mb-6 text-secondary-500">
@@ -53,7 +58,7 @@ export default function About() {
       </section>
 
       {/* Our Story Section */}
-      <section className="bg-gray-50 section-padding">
+      <section className="bg-gray-50 site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <h2 className=" mb-4 md:mb-6 text-center text-gray-900">
@@ -75,7 +80,7 @@ export default function About() {
       </section>
 
       {/* Our Philosophy Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <h2 className=" mb-4 md:mb-6 text-center text-gray-900">
@@ -125,7 +130,7 @@ export default function About() {
       </section>
 
       {/* What We Do Section */}
-      <section className="bg-gray-50 section-padding">
+      <section className="bg-gray-50 site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <h2 className=" mb-4 md:mb-6 text-center text-gray-900">
@@ -181,7 +186,7 @@ export default function About() {
       </section>
 
       {/* Why Clients Choose Us Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <h2 className=" mb-8 md:mb-10 text-center text-gray-900">
@@ -219,7 +224,7 @@ export default function About() {
       </section>
 
       {/* Our Process Section */}
-      <section className="bg-gray-50 section-padding">
+      <section className="bg-gray-50 site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <h2 className=" mb-8 md:mb-12 text-center text-gray-900">
@@ -282,7 +287,7 @@ export default function About() {
       </section>
 
       {/* Community & Collaboration Section */}
-      <section className="bg-gray-50 section-padding">
+      <section className="bg-gray-50 site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className=" mb-4 md:mb-6 text-gray-900">
@@ -296,7 +301,7 @@ export default function About() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className=" mb-4 md:mb-6 text-gray-900">

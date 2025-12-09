@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import PageBanner from '@/components/PageBanner'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Calendar, Clock, ArrowLeft } from 'lucide-react'
@@ -78,8 +79,12 @@ export default function BlogPost({ params }: BlogPostPageProps) {
 
   return (
     <>
+      <PageBanner 
+        title={post.title} 
+        description={post.excerpt}
+      />
       {/* Hero Section with Image */}
-      <section className="bg-white text-gray-900 pt-20 md:pt-20">
+      <section className="bg-white text-gray-900 site-section pt-20 md:pt-16">
         <div className="relative w-full h-64 md:h-96 overflow-hidden">
           <Image
             src={post.image || 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop'}
@@ -139,7 +144,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
       </section>
 
       {/* Blog Content */}
-      <section className="section-padding">
+      <section className="site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-3xl mx-auto">
             <article className="prose prose-lg max-w-none">
@@ -179,7 +184,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container-custom text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-900">Enjoyed This Article?</h2>
           <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 max-w-2xl mx-auto px-4">

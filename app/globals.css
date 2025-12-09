@@ -78,8 +78,21 @@
     @apply gradient-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200;
   }
   
+  .site-section {
+    @apply py-10 md:py-16;
+  }
+  
+  .site-section--tight {
+    @apply py-6 md:py-10;
+  }
+  
+  .site-section--loose {
+    @apply py-14 md:py-24;
+  }
+  
+  /* Legacy support - can be removed after migration */
   .section-padding {
-    @apply py-16 md:py-24;
+    @apply py-10 md:py-16;
   }
   
   .container-custom {

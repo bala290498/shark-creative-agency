@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { DollarSign, Building2, Umbrella, Home, BookOpen, Zap, MapPin, Globe, Clock } from 'lucide-react'
+import PageBanner from '@/components/PageBanner'
 
 export const metadata: Metadata = {
   title: 'Careers',
@@ -123,22 +124,13 @@ export default function Careers() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-white text-gray-900 section-padding pt-20 md:pt-20">
-        <div className="container mx-auto px-4 max-w-screen-lg">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className=" mb-4 md:mb-6 px-4">
-              Join Our Team
-            </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 px-4">
-              Build your career with a team of creative professionals passionate about excellence
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageBanner 
+        title="Careers" 
+        description="Join our team of designers, developers, and marketers building brands that stand out"
+      />
 
       {/* Why Work With Us */}
-      <section className="section-padding">
+      <section className="site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
             <h2 className=" mb-3 md:mb-4">Why Work With Us?</h2>
@@ -162,7 +154,7 @@ export default function Careers() {
       </section>
 
       {/* Open Positions */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
             <h2 className=" mb-3 md:mb-4">Open Positions</h2>
@@ -218,7 +210,7 @@ export default function Careers() {
       </section>
 
       {/* Culture Section */}
-      <section className="section-padding">
+      <section className="site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -262,7 +254,7 @@ export default function Careers() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container-custom text-center">
           <h2 className=" mb-3 md:mb-4 text-gray-900">Don't See a Position That Fits?</h2>
           <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 max-w-2xl mx-auto px-4">

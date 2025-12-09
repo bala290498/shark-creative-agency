@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import PageBanner from '@/components/PageBanner'
 import { GraduationCap, Briefcase, Code, Palette, TrendingUp, Users, MapPin, Clock, Calendar } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -128,22 +129,13 @@ export default function Internship() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-white text-gray-900 section-padding pt-20 md:pt-20">
-        <div className="container mx-auto px-4 max-w-screen-lg">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className=" mb-4 md:mb-6 px-4">
-              Internship Opportunities
-            </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 px-4">
-              Launch your career with hands-on experience in a creative, collaborative environment
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageBanner 
+        title="Internship Program" 
+        description="Launch your career with hands-on experience in design, development, and digital marketing"
+      />
 
       {/* Why Intern With Us */}
-      <section className="section-padding">
+      <section className="site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
             <h2 className=" mb-3 md:mb-4">Why Intern With Us?</h2>
@@ -167,7 +159,7 @@ export default function Internship() {
       </section>
 
       {/* Open Internship Positions */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="text-center mb-12">
             <h2 className=" mb-3 md:mb-4">Open Internship Positions</h2>
@@ -234,7 +226,7 @@ export default function Internship() {
       </section>
 
       {/* What to Expect Section */}
-      <section className="section-padding">
+      <section className="site-section">
         <div className="container mx-auto px-4 max-w-screen-lg">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -282,7 +274,7 @@ export default function Internship() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-white section-padding">
+      <section className="bg-white site-section">
         <div className="container-custom text-center">
           <h2 className=" mb-3 md:mb-4 text-gray-900">Ready to Start Your Journey?</h2>
           <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-gray-700 max-w-2xl mx-auto px-4">
