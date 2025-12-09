@@ -91,7 +91,7 @@ export default function Careers() {
             {benefits.map((benefit, index) => {
               const IconComponent = benefit.icon
               return (
-              <div key={index} className="p-4 sm:p-6 rounded-lg border border-gray-200">
+              <div key={index} className="p-4 sm:p-6 rounded-xl border-2 border-tiger-orange-200 shadow-sm hover:shadow-md transition-shadow duration-200">
                 <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-3 md:mb-4" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2">{benefit.title}</h3>
                 <p className="text-sm sm:text-base text-gray-600">{benefit.description}</p>
@@ -116,7 +116,7 @@ export default function Careers() {
               <Link 
                 key={position.slug}
                 href={`/careers/${position.slug}`}
-                className="bg-white p-6 rounded-lg border-2 border-gray-300 hover:border-secondary-500 hover:shadow-lg transition-all duration-200 flex flex-col group h-full"
+                className="bg-white p-6 rounded-xl border-2 border-tiger-orange-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col group h-full"
               >
                 <div className="mb-4">
                   <h3 className="text-lg sm:text-xl font-semibold mb-3 text-gray-900 group-hover:text-secondary-500 transition-colors min-h-[3.5rem] line-clamp-2 leading-tight">

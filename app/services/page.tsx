@@ -69,7 +69,7 @@ export default function Services() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch mb-6 md:mb-8">
               {/* Logo & Brand Identity */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
+              <div className="bg-white border-2 border-tiger-orange-200 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
                 <Palette className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4 flex-shrink-0" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Logo & Brand Identity</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-2 italic">Make a first impression that lasts.</p>
@@ -94,7 +94,7 @@ export default function Services() {
               </div>
 
               {/* UI/UX Design */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
+              <div className="bg-white border-2 border-tiger-orange-200 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
                 <Smartphone className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4 flex-shrink-0" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">UI/UX Design</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-2 italic">Beautiful interfaces that people actually use.</p>
@@ -119,7 +119,7 @@ export default function Services() {
               </div>
 
               {/* Social Media Creatives */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
+              <div className="bg-white border-2 border-tiger-orange-200 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
                 <Image className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4 flex-shrink-0" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Social Media Creatives</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-2 italic">Scroll-stopping visuals for every channel.</p>
@@ -144,7 +144,7 @@ export default function Services() {
               </div>
 
               {/* Brochures, Banners & Print Collateral */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
+              <div className="bg-white border-2 border-tiger-orange-200 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
                 <Printer className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4 flex-shrink-0" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Brochures, Banners & Print Collateral</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-2 italic">Print that reinforces your premium feel.</p>
@@ -188,7 +188,7 @@ export default function Services() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch mb-6 md:mb-8">
               {/* Responsive Websites */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
+              <div className="bg-white border-2 border-tiger-orange-200 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
                 <Globe className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4 flex-shrink-0" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Responsive Websites</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-2 italic">Fast, flexible sites that adapt to every screen.</p>
@@ -213,7 +213,7 @@ export default function Services() {
           </div>
           
               {/* E-commerce */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
+              <div className="bg-white border-2 border-tiger-orange-200 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
                 <ShoppingCart className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4 flex-shrink-0" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">E-commerce</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-2 italic">Stores built to sell — beautifully and reliably.</p>
@@ -238,7 +238,7 @@ export default function Services() {
               </div>
             
               {/* Mobile Apps */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
+              <div className="bg-white border-2 border-tiger-orange-200 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
                 <Smartphone className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4 flex-shrink-0" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Mobile Apps</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-2 italic">Native-like apps, faster.</p>
@@ -263,7 +263,7 @@ export default function Services() {
             </div>
             
               {/* Backend & API Integration */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
+              <div className="bg-white border-2 border-tiger-orange-200 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
                 <Server className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4 flex-shrink-0" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Backend & API Integration</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-2 italic">Secure, scalable systems behind the scenes.</p>
@@ -307,7 +307,7 @@ export default function Services() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch mb-6 md:mb-8">
               {/* SEO */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
+              <div className="bg-white border-2 border-tiger-orange-200 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
                 <Search className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4 flex-shrink-0" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Search Engine Optimization</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-2 italic">Rank higher, get found, grow traffic.</p>
@@ -332,7 +332,7 @@ export default function Services() {
               </div>
 
               {/* Paid Advertising */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
+              <div className="bg-white border-2 border-tiger-orange-200 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
                 <BarChart3 className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4 flex-shrink-0" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Paid Advertising</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-2 italic">Ads that convert, not just click.</p>
@@ -357,7 +357,7 @@ export default function Services() {
               </div>
 
               {/* Social Media Management */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
+              <div className="bg-white border-2 border-tiger-orange-200 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
                 <Users className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4 flex-shrink-0" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Social Media Management</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-2 italic">Consistent presence, authentic growth.</p>
@@ -382,7 +382,7 @@ export default function Services() {
               </div>
 
               {/* Content Marketing */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
+              <div className="bg-white border-2 border-tiger-orange-200 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
                 <MessageSquare className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4 flex-shrink-0" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Content Marketing & Brand Storytelling</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-2 italic">Content that builds authority and trust.</p>
@@ -407,7 +407,7 @@ export default function Services() {
             </div>
             
               {/* Analytics & Performance Tracking */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
+              <div className="bg-white border-2 border-tiger-orange-200 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-200 focus-within:ring-2 focus-within:ring-secondary-500 focus-within:ring-offset-2">
                 <TrendingUp className="w-10 h-10 sm:w-12 sm:h-12 text-secondary-500 mb-4 flex-shrink-0" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Analytics & Performance Tracking</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-2 italic">Data you can act on.</p>

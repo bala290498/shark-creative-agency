@@ -91,7 +91,7 @@ export default function Internship() {
             {benefits.map((benefit, index) => {
               const IconComponent = benefit.icon
               return (
-              <div key={index} className="p-4 sm:p-6 rounded-lg border border-gray-200 bg-white hover:shadow-md transition-shadow">
+              <div key={index} className="p-4 sm:p-6 rounded-xl border-2 border-tiger-orange-200 bg-white shadow-sm hover:shadow-md transition-shadow duration-200">
                 <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-secondary-500 mb-3 md:mb-4" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-2">{benefit.title}</h3>
                 <p className="text-sm sm:text-base text-gray-600">{benefit.description}</p>
@@ -116,7 +116,7 @@ export default function Internship() {
               <Link 
                 key={position.slug}
                 href={`/internship/${position.slug}`}
-                className="bg-white p-6 rounded-lg border-2 border-gray-300 hover:border-secondary-500 hover:shadow-lg transition-all duration-200 flex flex-col group h-full"
+                className="bg-white p-6 rounded-xl border-2 border-tiger-orange-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col group h-full"
               >
                 <div className="mb-4">
                   <h3 className="text-lg sm:text-xl font-semibold mb-3 text-gray-900 group-hover:text-secondary-500 transition-colors min-h-[3.5rem] line-clamp-2 leading-tight">
@@ -169,7 +169,7 @@ export default function Internship() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
-              <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <div className="bg-white p-6 rounded-xl border-2 border-tiger-orange-200 shadow-sm hover:shadow-md transition-shadow duration-200">
                 <Calendar className="w-8 h-8 text-secondary-500 mb-4" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-3 md:mb-4 text-gray-900">Structured Program</h3>
                 <p className="text-sm sm:text-base text-gray-700">
@@ -177,7 +177,7 @@ export default function Internship() {
                 </p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <div className="bg-white p-6 rounded-xl border-2 border-tiger-orange-200 shadow-sm hover:shadow-md transition-shadow duration-200">
                 <Users className="w-8 h-8 text-secondary-500 mb-4" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-3 md:mb-4 text-gray-900">Team Collaboration</h3>
                 <p className="text-sm sm:text-base text-gray-700">
@@ -185,7 +185,7 @@ export default function Internship() {
                 </p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <div className="bg-white p-6 rounded-xl border-2 border-tiger-orange-200 shadow-sm hover:shadow-md transition-shadow duration-200">
                 <TrendingUp className="w-8 h-8 text-secondary-500 mb-4" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-3 md:mb-4 text-gray-900">Skill Development</h3>
                 <p className="text-sm sm:text-base text-gray-700">
@@ -193,7 +193,7 @@ export default function Internship() {
                 </p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <div className="bg-white p-6 rounded-xl border-2 border-tiger-orange-200 shadow-sm hover:shadow-md transition-shadow duration-200">
                 <Briefcase className="w-8 h-8 text-secondary-500 mb-4" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-3 md:mb-4 text-gray-900">Real-World Experience</h3>
                 <p className="text-sm sm:text-base text-gray-700">

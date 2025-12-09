@@ -298,7 +298,7 @@ export default function Home() {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch">
               {/* Card 1 — Design Services */}
-              <div className="bg-white border border-secondary-500/30 rounded-lg p-8 md:p-10 hover:border-secondary-500 hover:shadow-sm transition-all duration-200 flex flex-col h-full">
+              <div className="bg-white border-2 border-tiger-orange-200 rounded-xl p-8 md:p-10 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col h-full">
                 <div className="flex flex-col items-center text-center h-full">
                   <div className="mb-4">
                     <Palette className="w-12 h-12 text-secondary-500" viewBox="0 0 24 24" />
@@ -346,7 +346,7 @@ export default function Home() {
               </div>
 
               {/* Card 2 — Development Services */}
-              <div className="bg-white border border-secondary-500/30 rounded-lg p-8 md:p-10 hover:border-secondary-500 hover:shadow-sm transition-all duration-200 flex flex-col h-full">
+              <div className="bg-white border-2 border-tiger-orange-200 rounded-xl p-8 md:p-10 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col h-full">
                 <div className="flex flex-col items-center text-center h-full">
                   <div className="mb-4">
                     <Code2 className="w-12 h-12 text-secondary-500" viewBox="0 0 24 24" />
@@ -394,7 +394,7 @@ export default function Home() {
             </div>
 
               {/* Card 3 — Digital Marketing */}
-              <div className="bg-white border border-secondary-500/30 rounded-lg p-8 md:p-10 hover:border-secondary-500 hover:shadow-sm transition-all duration-200 flex flex-col h-full">
+              <div className="bg-white border-2 border-tiger-orange-200 rounded-xl p-8 md:p-10 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col h-full">
                 <div className="flex flex-col items-center text-center h-full">
                   <div className="mb-4">
                     <TrendingUp className="w-12 h-12 text-secondary-500" viewBox="0 0 24 24" />
